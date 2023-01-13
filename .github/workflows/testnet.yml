@@ -43,9 +43,6 @@ jobs:
       - name: Deploy static site to S3 bucket
         run: aws s3 sync ./dist/ s3://${{ secrets.TESTNET_S3_BUCKET }} --delete
 
-      - name: Deploy images to S3 bucket
-        run: aws s3 sync ./bumpkin-parts/ s3://${{ secrets.TESTNET_S3_BUMPKIN_PARTS_BUCKET }} --delete
-
       - name: Refresh Cache
         run: aws cloudfront create-invalidation --distribution-id E3NWMA3WUFHHSX --paths "/*"
 
