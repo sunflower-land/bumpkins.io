@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import arrowDown from "assets/icons/down.svg";
+import arrowDown from "assets/images/down.svg";
 import { Category, Shop } from "features/collection/actions/items";
 import { CategoryButton } from "features/collection/components/CategoryButton";
 
