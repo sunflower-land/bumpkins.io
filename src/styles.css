@@ -1,0 +1,171 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@layer utilities {
+  .pixelate {
+    image-rendering: pixelated;
+  }
+
+  /* Loading ellipsis animation that will be added to the end of text ie Loading... */
+  .loading {
+    display: inline-block;
+    overflow: hidden;
+    height: 3rem;
+    vertical-align: text-bottom;
+  }
+
+  .loading::after {
+    display: inline-table;
+    white-space: pre;
+    text-align: left;
+    content: "\A.\A..\A...";
+    animation: ellipsis 1s steps(4) infinite;
+  }
+}
+
+.modal-content {
+  background: transparent;
+  border: none;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 60%;
+  }
+}
+
+.bubble {
+  border-radius: 50%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1),
+    inset 0px 10px 30px 5px rgba(255, 255, 255, 0.4);
+
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
+@keyframes animateBubble {
+  0% {
+    margin-top: 60px;
+  }
+  100% {
+    margin-top: -40%;
+  }
+}
+
+@keyframes ellipsis {
+  to {
+    transform: translateY(-6em);
+  }
+}
+
+.bubble-1 {
+  animation: animateBubble 5s linear infinite,
+    sideWays 3s ease-in-out infinite alternate;
+  left: 5%;
+  top: 5%;
+  transform: scale(0.2);
+}
+
+.bubble-2 {
+  animation: animateBubble 7s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+  left: 5%;
+  top: 80%;
+  transform: scale(0.3);
+}
+
+.bubble-3 {
+  animation: animateBubble 4s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+  left: 10%;
+  top: 40%;
+  transform: scale(0.4);
+}
+
+.bubble-4 {
+  animation: animateBubble 4s linear infinite,
+    sideWays 3s ease-in-out infinite alternate;
+  left: 20%;
+  top: 0;
+  transform: scale(0.2);
+}
+
+.bubble-5 {
+  animation: animateBubble 8s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+  left: 60%;
+  top: 50%;
+  transform: scale(0.1);
+}
+
+.bubble-6 {
+  animation: animateBubble 7s linear infinite,
+    sideWays 5s ease-in-out infinite alternate;
+  left: 35%;
+  top: 0;
+  transform: scale(0.4);
+}
+
+.bubble-7 {
+  animation: animateBubble 4s linear infinite,
+    sideWays 5s ease-in-out infinite alternate;
+  left: 75%;
+  top: 20%;
+  transform: scale(0.3);
+}
+
+/* ItemCard style for parts */
+.bumpkin-background {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.mouth-eyes-shoes {
+  width: 60% !important;
+  object-fit: contain !important;
+}
+
+.available-item-shadow {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.timer-text {
+  text-shadow: 2px 1px 0 rgba(0, 0, 0, 0.4);
+  color: white;
+  -webkit-text-stroke-width: thin;
+  -webkit-text-stroke-color: black;
+}
+
+.item-card-background {
+  background-image: url("assets/images/brown_background.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card-background {
+  background-image: url("assets/images/brown_background.png");
+  background-position: center center;
+  background-size: cover;
+}

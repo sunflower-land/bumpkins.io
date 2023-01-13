@@ -1,0 +1,58 @@
+name: Testnet deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    environment: develop
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Build
+        run: yarn build
+        env:
+          VITE_API_URL: ${{ secrets.TESTNET_API_URL }}
+          VITE_NETWORK: mumbai
+          VITE_TOKEN_CONTRACT: "0xdD0cdB13D62aADdc6A9F19f836Aaaa32E07f4d04"
+          VITE_BUMPKIN_DETAILS_CONTRACT: "0xAeB15F2aE9f248bf6a3606fadA02EF79f35c8bEF"
+          VITE_BUMPKIN_MINTER_CONTRACT: "0xea3A069aeB7431C4A02aF397F6415937E2B72BCb"
+          VITE_BUMPKIN_ITEMS_CONTRACT: "0xa163b82370DeBb82C12B735b995a332D50a02252"
+          VITE_BUMPKIN_CONTRACT: "0x48F53E506882A502B07668f6990f0E15422a539B"
+          VITE_BUMPKIN_EQUIPPER_CONTRACT: "0x11bB252CaD40df0FC9C3a23BcF8FDfCdc53D8806"
+          VITE_BUMPKIN_SHOP_CONTRACT: "0xc0A2eC4861b3830b640e2057d023680CD0c215C8"
+          VITE_SUNFLOWER_LAND_CONTRACT: "0xa6c6bbF5C772916bB39D13D972da9f9CE3E9f369"
+          VITE_ALCHEMY_RPC: ${{ secrets.ALCHEMY_RPC }}
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets.TESTNET_AWS_ROLE }}
+          aws-region: us-west-2
+
+      - name: Deploy static site to S3 bucket
+        run: aws s3 sync ./dist/ s3://${{ secrets.TESTNET_S3_BUCKET }} --delete
+
+      - name: Deploy images to S3 bucket
+        run: aws s3 sync ./bumpkin-parts/ s3://${{ secrets.TESTNET_S3_BUMPKIN_PARTS_BUCKET }} --delete
+
+      - name: Refresh Cache
+        run: aws cloudfront create-invalidation --distribution-id E3NWMA3WUFHHSX --paths "/*"
+
+  update_release_draft:
+    runs-on: ubuntu-latest
+    steps:
+      # Drafts your next Release notes as Pull Requests are merged into "master"
+      - uses: release-drafter/release-drafter@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

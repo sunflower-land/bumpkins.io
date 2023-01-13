@@ -1,0 +1,54 @@
+name: Mainnet deploy
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  deploy:
+    environment: production
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Build
+        run: yarn build
+        env:
+          CI: false
+          VITE_API_URL: ${{ secrets.MAINNET_API_URL }}
+          VITE_NETWORK: mainnet
+          VITE_TOKEN_CONTRACT: "0xD1f9c58e33933a993A3891F8acFe05a68E1afC05"
+          VITE_BUMPKIN_DETAILS_CONTRACT: "0x687BcED586A8AECEdA5bd6b142577DE1d83a2a9c"
+          VITE_BUMPKIN_MINTER_CONTRACT: "0x205A5499c12Ae4AD82a308AB2d3572b702e54299"
+          VITE_BUMPKIN_ITEMS_CONTRACT: "0x4bb5b2461e9Ef782152c3a96698b2a4cF55B6162"
+          VITE_BUMPKIN_CONTRACT: "0x624E4fa6980Afcf8EA27BFe08e2fB5979b64DF1C"
+          VITE_BUMPKIN_SHOP_CONTRACT: "0x9c28Ebff68400B29D6F7B440CdC07cFd9214996F"
+          VITE_BUMPKIN_EQUIPPER_CONTRACT: "0x4c14737D46066c364644E4150fe43cCC867DE303"
+          VITE_SUNFLOWER_LAND_CONTRACT: "0x2B4A66557A79263275826AD31a4cDDc2789334bD"
+          VITE_ALCHEMY_RPC: ${{ secrets.ALCHEMY_RPC }}
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets.MAINNET_AWS_ROLE }}
+          aws-region: us-west-2
+
+      - name: Deploy static site to S3 bucket
+        run: aws s3 sync ./dist/ s3://${{ secrets.MAINNET_S3_BUCKET }} --delete
+
+      - name: Deploy images to S3 bucket
+        run: aws s3 sync ./bumpkin-parts/ s3://${{ secrets.MAINNET_S3_BUMPKIN_PARTS_BUCKET }} --delete
+
+      - name: Refresh Cache
+        run: aws cloudfront create-invalidation --distribution-id E3AYDFQKU3S31K --paths "/*"
+
+      - name: Refresh Cache
+        run: aws cloudfront create-invalidation --distribution-id E3BH72WM0DU7ZR --paths "/*"

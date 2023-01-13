@@ -1,0 +1,80 @@
+{
+  "name": "bumpkins",
+  "version": "0.0.0",
+  "author": "developer@sunflower-land.com",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev": "set NODE_ENV=development && vite --port 3000 --host",
+    "build": "tsc && vite build",
+    "lint": "eslint --ext .tsx,.ts .",
+    "format": "yarn lint --fix",
+    "preview": "vite preview",
+    "test": "jest",
+    "prepare": "husky install",
+    "metadata": "NODE_PATH=./src ts-node src/metadata/generateMetadata.ts"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "0xsequence": "^0.43.7",
+    "@types/luxon": "^3.0.1",
+    "@walletconnect/web3-provider": "^1.8.0",
+    "@xstate/inspect": "^0.7.0",
+    "@xstate/react": "^3.0.1",
+    "classnames": "^2.3.1",
+    "decimal.js-light": "^2.5.1",
+    "ethers": "^5.7.2",
+    "jwt-decode": "^3.1.2",
+    "luxon": "^3.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.3.0",
+    "stream-browserify": "^3.0.0",
+    "web3": "^1.6.1",
+    "web3-utils": "^1.6.1",
+    "web3modal": "^1.9.9",
+    "xstate": "^4.33.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "@vitejs/plugin-react": "^1.0.7",
+    "@vitejs/plugin-react-refresh": "^1.3.6",
+    "autoprefixer": "^10.4.2",
+    "dotenv": "^16.0.0",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": ">=6",
+    "jest": "^27.4.7",
+    "lint-staged": ">=10",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.0.13",
+    "tailwindscss": "^0.3.0",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vite-plugin-html": "^2.1.2",
+    "vite-tsconfig-paths": "^3.3.17"
+  },
+  "resolutions": {
+    "async": "^2.6.4",
+    "minimist": "^1.2.6",
+    "simple-get": "^2.8.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*": "prettier -u --write"
+  }
+}
