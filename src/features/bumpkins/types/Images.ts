@@ -10,7 +10,6 @@ import redFarmerShirt from "src/assets/bumpkins/shop/shirts/red_farmer_shirt.png
 import blueFarmerShirt from "src/assets/bumpkins/shop/shirts/blue_farmer_shirt.png";
 import yellowFarmerShirt from "src/assets/bumpkins/shop/shirts/yellow_farmer_shirt.png";
 import fancyTop from "src/assets/bumpkins/shop/shirts/fancy_top.png";
-import chefApron from "src/assets/bumpkins/shop/shirts/chef_apron.png";
 import warriorTop from "src/assets/bumpkins/shop/shirts/warrior_top.png";
 import sflTshirt from "src/assets/bumpkins/shop/shirts/sfl_tshirt.png";
 import maidenTop from "src/assets/bumpkins/shop/shirts/maiden_top.png";
@@ -19,6 +18,10 @@ import projectDignityHoodie from "src/assets/bumpkins/shop/shirts/project_dignit
 import coderHoodie from "src/assets/bumpkins/shop/shirts/developer_hoodie.png";
 import fireShirt from "src/assets/bumpkins/shop/shirts/fire_shirt.png";
 import pineappleShirt from "src/assets/bumpkins/shop/shirts/pineapple_shirt.png";
+import fruitPickerShirt from "src/assets/bumpkins/shop/shirts/fruit_picker_shirt.png";
+
+import chefApron from "src/assets/bumpkins/shop/shirts/chef_apron.png";
+import fruitPickerApron from "src/assets/bumpkins/shop/coat/fruit_picker_apron.png";
 
 import farmerPants from "src/assets/bumpkins/shop/pants/farmer_pants.png";
 import blueOveralls from "src/assets/bumpkins/shop/pants/blue_overalls.png";
@@ -57,6 +60,7 @@ import skullHat from "src/assets/bumpkins/shop/hats/skull_hat.png";
 import reindeerAntlers from "src/assets/bumpkins/shop/hats/reindeer_antlers.png";
 import santaHat from "src/assets/bumpkins/shop/hats/santa_hat.png";
 import lionDanceMask from "src/assets/bumpkins/shop/hats/lion_dance_mask.png";
+import fruitBowl from "src/assets/bumpkins/shop/hats/fruit_bowl.png";
 
 import pitchFork from "src/assets/bumpkins/shop/tools/farmer_pitchfork.png";
 import axe from "src/assets/bumpkins/shop/tools/axe.png";
@@ -70,12 +74,12 @@ import ancientSword from "src/assets/bumpkins/shop/tools/ancient_sword.png";
 import background from "src/assets/bumpkins/shop/background/farm_background.png";
 import forestBackground from "assets/bumpkins/shop/background/forest_background.png";
 import seashoreBackground from "assets/bumpkins/shop/background/seashore_background.png";
-import cemeteryBackground from "assets/bumpkins/shop/background/cemetery_background.png";
-import moonBackground from "assets/bumpkins/shop/background/moon_background.png";
-import jaiLBackground from "assets/bumpkins/shop/background/jail_background.png";
-import mountainViewBackground from "assets/bumpkins/shop/background/mountain_view_background.png";
-import christmasBackground from "assets/bumpkins/shop/background/christmas_background.png";
-import chinaTownBackground from "assets/bumpkins/shop/background/china_background.png";
+import cemeteryBackground from "bumpkin-parts/53.png";
+import moonBackground from "bumpkin-parts/55.png";
+import jaiLBackground from "bumpkin-parts/57.png";
+import mountainViewBackground from "bumpkin-parts/78.png";
+import christmasBackground from "bumpkin-parts/71.png";
+import chinaTownBackground from "bumpkin-parts/83.png";
 
 import sunflowerAmulet from "src/assets/bumpkins/shop/necklaces/sunflower_amulet.png";
 import carrotAmulet from "src/assets/bumpkins/shop/necklaces/carrot_amulet.png";
@@ -333,5 +337,14 @@ export const IMAGES: Record<BumpkinItem, ItemImages> = {
   },
   "Lion Dance Mask": {
     shopImage: lionDanceMask,
+  },
+  "Fruit Bowl": {
+    shopImage: fruitBowl,
+  },
+  "Fruit Picker Apron": {
+    shopImage: fruitPickerApron,
+  },
+  "Fruit Picker Shirt": {
+    shopImage: fruitPickerShirt,
   },
 };
