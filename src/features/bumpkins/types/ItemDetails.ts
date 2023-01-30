@@ -369,4 +369,19 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "Bring good luck and drive away evil spirits.",
     part: "hat",
   },
+  "Fruit Bowl": {
+    description: "A festive fruit hat fit for any occassion!",
+    part: "hat",
+  },
+  "Fruit Picker Apron": {
+    description:
+      "Whether you're a professional fruit picker or just enjoy picking fruit as a hobby, this apron is a must-have accessory",
+    part: "coat",
+    boosts: ["Bonus +0.1 picking Apples, Blueberries & Oranges"],
+  },
+  "Fruit Picker Shirt": {
+    description:
+      "A comfortable and sturdy shirt that can withstand the elements while picking fruit.",
+    part: "shirt",
+  },
 };

@@ -10,7 +10,6 @@ import redFarmerShirt from "src/assets/bumpkins/shop/shirts/red_farmer_shirt.png
 import blueFarmerShirt from "src/assets/bumpkins/shop/shirts/blue_farmer_shirt.png";
 import yellowFarmerShirt from "src/assets/bumpkins/shop/shirts/yellow_farmer_shirt.png";
 import fancyTop from "src/assets/bumpkins/shop/shirts/fancy_top.png";
-import chefApron from "src/assets/bumpkins/shop/shirts/chef_apron.png";
 import warriorTop from "src/assets/bumpkins/shop/shirts/warrior_top.png";
 import sflTshirt from "src/assets/bumpkins/shop/shirts/sfl_tshirt.png";
 import maidenTop from "src/assets/bumpkins/shop/shirts/maiden_top.png";
@@ -19,6 +18,10 @@ import projectDignityHoodie from "src/assets/bumpkins/shop/shirts/project_dignit
 import coderHoodie from "src/assets/bumpkins/shop/shirts/developer_hoodie.png";
 import fireShirt from "src/assets/bumpkins/shop/shirts/fire_shirt.png";
 import pineappleShirt from "src/assets/bumpkins/shop/shirts/pineapple_shirt.png";
+import fruitPickerShirt from "src/assets/bumpkins/shop/shirts/fruit_picker_shirt.png";
+
+import chefApron from "src/assets/bumpkins/shop/shirts/chef_apron.png";
+import fruitPickerApron from "src/assets/bumpkins/shop/coat/fruit_picker_apron.png";
 
 import farmerPants from "src/assets/bumpkins/shop/pants/farmer_pants.png";
 import blueOveralls from "src/assets/bumpkins/shop/pants/blue_overalls.png";
@@ -57,6 +60,7 @@ import skullHat from "src/assets/bumpkins/shop/hats/skull_hat.png";
 import reindeerAntlers from "src/assets/bumpkins/shop/hats/reindeer_antlers.png";
 import santaHat from "src/assets/bumpkins/shop/hats/santa_hat.png";
 import lionDanceMask from "src/assets/bumpkins/shop/hats/lion_dance_mask.png";
+import fruitBowl from "src/assets/bumpkins/shop/hats/fruit_bowl.png";
 
 import pitchFork from "src/assets/bumpkins/shop/tools/farmer_pitchfork.png";
 import axe from "src/assets/bumpkins/shop/tools/axe.png";
@@ -333,5 +337,14 @@ export const IMAGES: Record<BumpkinItem, ItemImages> = {
   },
   "Lion Dance Mask": {
     shopImage: lionDanceMask,
+  },
+  "Fruit Bowl": {
+    shopImage: fruitBowl,
+  },
+  "Fruit Picker Apron": {
+    shopImage: fruitPickerApron,
+  },
+  "Fruit Picker Shirt": {
+    shopImage: fruitPickerShirt,
   },
 };
