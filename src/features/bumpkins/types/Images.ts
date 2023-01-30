@@ -74,12 +74,12 @@ import ancientSword from "src/assets/bumpkins/shop/tools/ancient_sword.png";
 import background from "src/assets/bumpkins/shop/background/farm_background.png";
 import forestBackground from "assets/bumpkins/shop/background/forest_background.png";
 import seashoreBackground from "assets/bumpkins/shop/background/seashore_background.png";
-import cemeteryBackground from "bumpkin-parts/53.png";
-import moonBackground from "bumpkin-parts/55.png";
-import jaiLBackground from "bumpkin-parts/57.png";
-import mountainViewBackground from "bumpkin-parts/78.png";
-import christmasBackground from "bumpkin-parts/71.png";
-import chinaTownBackground from "bumpkin-parts/83.png";
+import cemeteryBackground from "assets/bumpkins/shop/background/cemetery_background.png";
+import moonBackground from "assets/bumpkins/shop/background/moon_background.png";
+import jaiLBackground from "assets/bumpkins/shop/background/jail_background.png";
+import mountainViewBackground from "assets/bumpkins/shop/background/mountain_view_background.png";
+import christmasBackground from "assets/bumpkins/shop/background/christmas_background.png";
+import chinaTownBackground from "assets/bumpkins/shop/background/china_background.png";
 
 import sunflowerAmulet from "src/assets/bumpkins/shop/necklaces/sunflower_amulet.png";
 import carrotAmulet from "src/assets/bumpkins/shop/necklaces/carrot_amulet.png";
