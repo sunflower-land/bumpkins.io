@@ -5,6 +5,7 @@ import beigeBody from "src/assets/bumpkins/shop/body/beige_potion.png";
 import lightBrownBody from "src/assets/bumpkins/shop/body/light_brown_potion.png";
 import darkBrownBody from "src/assets/bumpkins/shop/body/dark_brown_potion.png";
 import goblinBody from "src/assets/bumpkins/shop/body/goblin_potion.png";
+import pirateBody from "src/assets/bumpkins/shop/body/pirate_potion.png";
 
 import redFarmerShirt from "src/assets/bumpkins/shop/shirts/red_farmer_shirt.png";
 import blueFarmerShirt from "src/assets/bumpkins/shop/shirts/blue_farmer_shirt.png";
@@ -19,6 +20,7 @@ import coderHoodie from "src/assets/bumpkins/shop/shirts/developer_hoodie.png";
 import fireShirt from "src/assets/bumpkins/shop/shirts/fire_shirt.png";
 import pineappleShirt from "src/assets/bumpkins/shop/shirts/pineapple_shirt.png";
 import fruitPickerShirt from "src/assets/bumpkins/shop/shirts/fruit_picker_shirt.png";
+import stripedBlueShirt from "src/assets/bumpkins/shop/shirts/striped_blue_shirt.png";
 
 import chefApron from "src/assets/bumpkins/shop/shirts/chef_apron.png";
 import fruitPickerApron from "src/assets/bumpkins/shop/coat/fruit_picker_apron.png";
@@ -52,6 +54,7 @@ import farmerBoots from "src/assets/bumpkins/shop/shoes/black_farmer_boots.png";
 import brownBoots from "src/assets/bumpkins/shop/shoes/brown_boots.png";
 import yellowBoots from "src/assets/bumpkins/shop/shoes/yellow_boots.png";
 import bumpkinBoots from "src/assets/bumpkins/shop/shoes/bumpkin_boots.png";
+import pegLeg from "src/assets/bumpkins/shop/shoes/peg_leg.png";
 
 import farmerHat from "src/assets/bumpkins/shop/hats/farm_hat.png";
 import warriorHelmet from "src/assets/bumpkins/shop/hats/warrior_helmet.png";
@@ -61,6 +64,7 @@ import reindeerAntlers from "src/assets/bumpkins/shop/hats/reindeer_antlers.png"
 import santaHat from "src/assets/bumpkins/shop/hats/santa_hat.png";
 import lionDanceMask from "src/assets/bumpkins/shop/hats/lion_dance_mask.png";
 import fruitBowl from "src/assets/bumpkins/shop/hats/fruit_bowl.png";
+import pirateHat from "src/assets/bumpkins/shop/hats/pirate_hat.png";
 
 import pitchFork from "src/assets/bumpkins/shop/tools/farmer_pitchfork.png";
 import axe from "src/assets/bumpkins/shop/tools/axe.png";
@@ -346,5 +350,17 @@ export const IMAGES: Record<BumpkinItem, ItemImages> = {
   },
   "Fruit Picker Shirt": {
     shopImage: fruitPickerShirt,
+  },
+  "Striped Blue Shirt": {
+    shopImage: stripedBlueShirt,
+  },
+  "Peg Leg": {
+    shopImage: pegLeg,
+  },
+  "Pirate Potion": {
+    shopImage: pirateBody,
+  },
+  "Pirate Hat": {
+    shopImage: pirateHat,
   },
 };

@@ -13,7 +13,8 @@ export type BumpkinBody =
   | "Beige Farmer Potion"
   | "Light Brown Farmer Potion"
   | "Dark Brown Farmer Potion"
-  | "Goblin Potion";
+  | "Goblin Potion"
+  | "Pirate Potion";
 
 export type BumpkinHair =
   | "Basic Hair"
@@ -44,7 +45,8 @@ export type BumpkinShirt =
   | "Bumpkin Art Competition Merch"
   | "Fire Shirt"
   | "Pineapple Shirt"
-  | "Fruit Picker Shirt";
+  | "Fruit Picker Shirt"
+  | "Striped Blue Shirt";
 
 export type BumpkinCoat = "Chef Apron" | "Fruit Picker Apron";
 
@@ -62,7 +64,8 @@ export type BumpkinShoe =
   | "Black Farmer Boots"
   | "Brown Boots"
   | "Yellow Boots"
-  | "Bumpkin Boots";
+  | "Bumpkin Boots"
+  | "Peg Leg";
 
 export type BumpkinNecklace =
   | "Sunflower Amulet"
@@ -79,7 +82,8 @@ export type BumpkinHat =
   | "Reindeer Antlers"
   | "Santa Hat"
   | "Lion Dance Mask"
-  | "Fruit Bowl";
+  | "Fruit Bowl"
+  | "Pirate Hat";
 
 export type BumpkinPant =
   | "Farmer Overalls"
@@ -200,6 +204,10 @@ export const ITEM_IDS: Record<BumpkinItem, number> = {
   "Fruit Picker Shirt": 85,
   "Fruit Picker Apron": 86,
   "Fruit Bowl": 87,
+  "Striped Blue Shirt": 88,
+  "Peg Leg": 89,
+  "Pirate Potion": 90,
+  "Pirate Hat": 91,
 };
 
 // The reverse of above
