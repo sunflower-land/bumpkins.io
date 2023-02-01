@@ -148,7 +148,7 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     part: "necklace",
   },
   "Beetroot Amulet": {
-    description: "Grandma always said to carry a beetroot whereever you go.",
+    description: "Grandma always said to carry a beetroot wherever you go.",
     part: "necklace",
   },
   "Green Amulet": {
@@ -290,7 +290,7 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     part: "shirt",
   },
   "Red Long Hair": {
-    description: "Let the firey hair flow.",
+    description: "Let the fiery hair flow.",
     part: "hair",
   },
   "Snowman Onesie": {
@@ -303,7 +303,7 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
   },
   "Ancient Goblin Sword": {
     description:
-      "A rare artifact found from an ancient battle. The blood of enemeies stain the handle.",
+      "A rare artifact found from an ancient battle. The blood of enemies stain the handle.",
     part: "tool",
   },
   "Ancient War Hammer": {
@@ -370,7 +370,7 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     part: "hat",
   },
   "Fruit Bowl": {
-    description: "A festive fruit hat fit for any occassion!",
+    description: "A festive fruit hat fit for any occasion!",
     part: "hat",
   },
   "Fruit Picker Apron": {
@@ -383,5 +383,47 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description:
       "A comfortable and sturdy shirt that can withstand the elements while picking fruit.",
     part: "shirt",
+  },
+  "Striped Blue Shirt": {
+    description:
+      "Yo ho ho, the pirate with the Striped Blue Shirt has style that'll make even Davy Jones jealous!",
+    part: "shirt",
+  },
+  "Peg Leg": {
+    description: "Your jig dancing skills would make Blackbeard proud!",
+    part: "shoes",
+  },
+  "Pirate Potion": {
+    description:
+      "Becoming a pirate is like trading in your suit and tie for a life of adventure on the high seas!",
+    part: "body",
+  },
+  "Pirate Hat": {
+    description:
+      "Arrr! A pirate hat is the cherry on top of a swashbuckling ensemble that inspires fear and respect on the seven seas.",
+    part: "hat",
+  },
+  "Crab Claw": {
+    description:
+      "The pirate's claw-some companion was a crab with a hook for a hand, making them the terror of the seas and the king and queen of crab cakes.",
+    part: "secondaryTool",
+  },
+  "Pirate General Coat": {
+    description: "So grand, even the seas would salute you.",
+    part: "coat",
+  },
+  "Pirate Leather Polo": {
+    description: "Rough and tough, just like his sea-faring reputation.",
+    part: "shirt",
+  },
+  "Pirate Pants": {
+    description:
+      "With this pirate baggy pants, you could have hidden a whole treasure trove in the pockets.",
+    part: "pants",
+  },
+  "Pirate Scimitar": {
+    description:
+      "The Pirate's scimitar is sharp enough to slice through the seven seas and sail with ease.",
+    part: "tool",
   },
 };
