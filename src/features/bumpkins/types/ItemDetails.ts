@@ -403,4 +403,27 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "Arrr! A pirate hat is the cherry on top of a swashbuckling ensemble that inspires fear and respect on the seven seas.",
     part: "hat",
   },
+  "Crab Claw": {
+    description:
+      "The pirate's claw-some companion was a crab with a hook for a hand, making them the terror of the seas and the king and queen of crab cakes.",
+    part: "secondaryTool",
+  },
+  "Pirate General Coat": {
+    description: "So grand, even the seas would salute you.",
+    part: "coat",
+  },
+  "Pirate Leather Polo": {
+    description: "Rough and tough, just like his sea-faring reputation.",
+    part: "shirt",
+  },
+  "Pirate Pants": {
+    description:
+      "With this pirate baggy pants, you could have hidden a whole treasure trove in the pockets.",
+    part: "pants",
+  },
+  "Pirate Scimitar": {
+    description:
+      "The Pirate's scimitar is sharp enough to slice through the seven seas and sail with ease.",
+    part: "tool",
+  },
 };

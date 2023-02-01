@@ -46,9 +46,13 @@ export type BumpkinShirt =
   | "Fire Shirt"
   | "Pineapple Shirt"
   | "Fruit Picker Shirt"
-  | "Striped Blue Shirt";
+  | "Striped Blue Shirt"
+  | "Pirate Leather Polo";
 
-export type BumpkinCoat = "Chef Apron" | "Fruit Picker Apron";
+export type BumpkinCoat =
+  | "Chef Apron"
+  | "Fruit Picker Apron"
+  | "Pirate General Coat";
 
 export type BumpkinTool =
   | "Farmer Pitchfork"
@@ -58,7 +62,8 @@ export type BumpkinTool =
   | "Golden Spatula"
   | "Hammer"
   | "Ancient War Hammer"
-  | "Ancient Goblin Sword";
+  | "Ancient Goblin Sword"
+  | "Pirate Scimitar";
 
 export type BumpkinShoe =
   | "Black Farmer Boots"
@@ -94,9 +99,10 @@ export type BumpkinPant =
   | "Blue Suspenders"
   | "Fancy Pants"
   | "Maiden Skirt"
-  | "Peasant Skirt";
+  | "Peasant Skirt"
+  | "Pirate Pants";
 
-export type BumpkinSecondaryTool = "Sunflower Shield";
+export type BumpkinSecondaryTool = "Sunflower Shield" | "Crab Claw";
 
 // Goes over clothes + head
 export type BumpkinOnesie = "Snowman Onesie" | "Shark Onesie";
@@ -208,6 +214,11 @@ export const ITEM_IDS: Record<BumpkinItem, number> = {
   "Peg Leg": 89,
   "Pirate Potion": 90,
   "Pirate Hat": 91,
+  "Pirate General Coat": 92,
+  "Pirate Pants": 93,
+  "Pirate Leather Polo": 94,
+  "Crab Claw": 95,
+  "Pirate Scimitar": 96,
 };
 
 // The reverse of above

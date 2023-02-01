@@ -21,9 +21,11 @@ import fireShirt from "src/assets/bumpkins/shop/shirts/fire_shirt.png";
 import pineappleShirt from "src/assets/bumpkins/shop/shirts/pineapple_shirt.png";
 import fruitPickerShirt from "src/assets/bumpkins/shop/shirts/fruit_picker_shirt.png";
 import stripedBlueShirt from "src/assets/bumpkins/shop/shirts/striped_blue_shirt.png";
+import pirateLeatherPolo from "assets/bumpkins/shop/shirts/pirate_leather_polo.png";
 
 import chefApron from "src/assets/bumpkins/shop/shirts/chef_apron.png";
 import fruitPickerApron from "src/assets/bumpkins/shop/coat/fruit_picker_apron.png";
+import pirateGeneralCoat from "src/assets/bumpkins/shop/coat/pirate_general_coat.png";
 
 import farmerPants from "src/assets/bumpkins/shop/pants/farmer_pants.png";
 import blueOveralls from "src/assets/bumpkins/shop/pants/blue_overalls.png";
@@ -34,6 +36,7 @@ import peasantSkirt from "src/assets/bumpkins/shop/pants/peasant_skirt.png";
 import fancyPants from "src/assets/bumpkins/shop/pants/fancy_pants.png";
 import brownSuspenders from "src/assets/bumpkins/shop/pants/brown_suspenders.png";
 import blueSuspenders from "assets/bumpkins/shop/pants/blue_suspenders.png";
+import piratePants from "assets/bumpkins/shop/pants/pirate_pants.png";
 
 import rancherHair from "src/assets/bumpkins/shop/hair/rancher.png";
 import explorerHair from "src/assets/bumpkins/shop/hair/explorer.png";
@@ -74,6 +77,7 @@ import goldenSpatula from "src/assets/bumpkins/shop/tools/golden_spatula.png";
 import hammer from "src/assets/bumpkins/shop/tools/hammer.png";
 import warhammer from "src/assets/bumpkins/shop/tools/ancient_warhammer.png";
 import ancientSword from "src/assets/bumpkins/shop/tools/ancient_sword.png";
+import pirateScimitar from "src/assets/bumpkins/shop/tools/pirate_scimitar.png";
 
 import background from "src/assets/bumpkins/shop/background/farm_background.png";
 import forestBackground from "assets/bumpkins/shop/background/forest_background.png";
@@ -92,6 +96,7 @@ import greenAmulet from "src/assets/bumpkins/shop/necklaces/green_amulet.png";
 import artistScarf from "src/assets/bumpkins/shop/necklaces/artist_scarf.png";
 
 import sunflowerShield from "src/assets/bumpkins/shop/tools/sunflower_shield.png";
+import crabClaw from "src/assets/bumpkins/shop/tools/crab_claw.png";
 
 import snowman from "src/assets/bumpkins/shop/onesie/snowman.png";
 import shark from "src/assets/bumpkins/shop/onesie/shark_onesie.png";
@@ -362,5 +367,20 @@ export const IMAGES: Record<BumpkinItem, ItemImages> = {
   },
   "Pirate Hat": {
     shopImage: pirateHat,
+  },
+  "Crab Claw": {
+    shopImage: crabClaw,
+  },
+  "Pirate General Coat": {
+    shopImage: pirateGeneralCoat,
+  },
+  "Pirate Leather Polo": {
+    shopImage: pirateLeatherPolo,
+  },
+  "Pirate Pants": {
+    shopImage: piratePants,
+  },
+  "Pirate Scimitar": {
+    shopImage: pirateScimitar,
   },
 };
