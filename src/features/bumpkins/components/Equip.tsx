@@ -11,7 +11,6 @@ import {
   BumpkinItem,
   BumpkinPant,
   BumpkinPart,
-  BumpkinShirt,
   Equipped,
   NAMES,
   WalletItems,

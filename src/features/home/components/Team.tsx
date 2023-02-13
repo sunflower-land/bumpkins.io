@@ -6,7 +6,6 @@ import spencer from "assets/images/spencer.jpg";
 import romy from "assets/images/romy.jpg";
 import steve from "assets/images/steve.jpg";
 import harry from "assets/images/harry.jpg";
-import harnoor from "assets/images/harnoor.jpg";
 import brandon from "assets/images/brandon.jpeg";
 
 export const Team: React.FC = () => {
@@ -64,15 +63,6 @@ export const Team: React.FC = () => {
           <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-12">
             <img
               className="h-64 w-64 mx-auto rounded object-cover object-top"
-              src={harnoor}
-              alt=""
-            />
-            <p className="mt-6 text-xl">Harnoor Bandesh</p>
-            <p className="mt-2 mb-4 text-blue-600">Bumpkin Beautifier</p>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-12">
-            <img
-              className="h-64 w-64 mx-auto rounded object-cover object-top"
               src={steve}
               alt=""
             />
@@ -85,7 +75,7 @@ export const Team: React.FC = () => {
               src={harry}
               alt=""
             />
-            <p className="mt-6 text-xl">Harry McBrydge</p>
+            <p className="mt-6 text-xl">Harry McBryde</p>
             <p className="mt-2 mb-4 text-blue-600">Bumpkin Banker</p>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-12">
