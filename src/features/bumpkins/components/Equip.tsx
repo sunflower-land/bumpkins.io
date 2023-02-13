@@ -7,8 +7,11 @@ import { Modal } from "features/components/Modal";
 import { Context } from "features/auth/lib/Provider";
 import { interpretTokenUri } from "../lib/tokenUri";
 import {
+  BumpkinDress,
   BumpkinItem,
+  BumpkinPant,
   BumpkinPart,
+  BumpkinShirt,
   Equipped,
   NAMES,
   WalletItems,
@@ -76,6 +79,7 @@ export const Equip: React.FC = () => {
   const { equipped: tokenUriEquipped, tokenId } = interpretTokenUri(
     bumpkin?.tokenURI as string
   );
+  console.log({ tokenUriEquipped });
   const walletEquipped = getWalletEquipped(wallet, tokenUriEquipped);
 
   const [walletItems, setWalletItems] = useState<WalletItems>(
@@ -121,6 +125,46 @@ export const Equip: React.FC = () => {
       setWalletItems((prev) => ({
         ...prev,
         [lastPart]: prev[lastPart] + 1,
+      }));
+    }
+
+    // If wearing a dress, remove the shirt
+    if (part === "dress" && equipped["shirt"]) {
+      const shirt = equipped["shirt"] as BumpkinPant;
+      setEquipped((prev) => ({
+        ...prev,
+        shirt: undefined,
+      }));
+
+      setWalletItems((prev) => ({
+        ...prev,
+        [shirt]: prev[shirt] + 1,
+      }));
+    }
+
+    // If wearing dress, remove the pants
+    if (part === "dress" && equipped["pants"]) {
+      const pants = equipped["pants"] as BumpkinPant;
+      setEquipped((prev) => ({
+        ...prev,
+        pants: undefined,
+      }));
+      setWalletItems((prev) => ({
+        ...prev,
+        [pants]: prev[pants] + 1,
+      }));
+    }
+
+    // If wearing shirt or pants, remove the dress
+    if ((part === "shirt" || part === "pants") && equipped["dress"]) {
+      const dress = equipped["dress"] as BumpkinDress;
+      setEquipped((prev) => ({
+        ...prev,
+        dress: undefined,
+      }));
+      setWalletItems((prev) => ({
+        ...prev,
+        [dress]: prev[dress] + 1,
       }));
     }
   };
@@ -190,9 +234,8 @@ export const Equip: React.FC = () => {
     !equipped.background ||
     !equipped.body ||
     !equipped.hair ||
-    !equipped.shirt ||
+    (!equipped.dress && !(equipped.shirt && equipped.pants)) ||
     !equipped.shoes ||
-    !equipped.pants ||
     !equipped.tool;
 
   const makeBannerText = () => {

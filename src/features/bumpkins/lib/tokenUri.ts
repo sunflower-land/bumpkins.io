@@ -16,6 +16,7 @@ import {
   BumpkinOnesie,
   BumpkinSuit,
   BumpkinWings,
+  BumpkinDress,
 } from "../types/Items";
 
 const VERSION = "v1";
@@ -109,6 +110,9 @@ export function interpretTokenUri(tokenUri: string) {
     }),
     ...(ids[Slots.Wings] && {
       wings: getItemName<BumpkinWings>(ids[Slots.Wings]),
+    }),
+    ...(ids[Slots.Dress] && {
+      dress: getItemName<BumpkinDress>(ids[Slots.Dress]),
     }),
   };
 

@@ -1,5 +1,11 @@
 import { DETAILS } from "../types/ItemDetails";
-import { BumpkinItem, Equipped, ITEM_NAMES, Wallet } from "../types/Items";
+import {
+  BumpkinDress,
+  BumpkinItem,
+  Equipped,
+  ITEM_NAMES,
+  Wallet,
+} from "../types/Items";
 
 export function interpretWearableIds(wearableIds: number[]): Wallet {
   const wallet: Wallet = {
@@ -79,5 +85,6 @@ export function getWalletEquipped(
     suit: getEquipped(wallet.suit, equipped.suit),
     onesie: getEquipped(wallet.onesie, equipped.onesie),
     wings: getEquipped(wallet.wings, equipped.wings),
+    dress: getEquipped(wallet.dress as BumpkinDress[], equipped.dress),
   };
 }
