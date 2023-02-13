@@ -4,7 +4,12 @@ import { DynamicNFT } from "features/bumpkins/components/DynamicNFT";
 import sfl from "assets/logos/sunflower_land.png";
 
 import { Link } from "react-router-dom";
-import { Equipped, ITEM_IDS } from "features/bumpkins/types/Items";
+import {
+  BumpkinPant,
+  BumpkinShirt,
+  Equipped,
+  ITEM_IDS,
+} from "features/bumpkins/types/Items";
 import { IMAGES } from "features/bumpkins/types/Images";
 import { getKeys } from "src/metadata/items";
 
@@ -152,24 +157,24 @@ export const Landing: React.FC = () => {
                   </div>
                 </Link>
                 <Link
-                  to={`/collection/${ITEM_IDS[equipped.shirt]}`}
+                  to={`/collection/${ITEM_IDS[equipped.shirt as BumpkinShirt]}`}
                   className=" bg-white rounded z-20 relative top-2  shadow-4xl"
                 >
                   <div className=" bg-white rounded z-20 p-2 shadow-xl">
                     <img
-                      src={IMAGES[equipped.shirt].shopImage}
+                      src={IMAGES[equipped.shirt as BumpkinShirt].shopImage}
                       className="w-6 h-auto ml-1"
                       style={{ imageRendering: "pixelated" }}
                     />
                   </div>
                 </Link>
                 <Link
-                  to={`/collection/${ITEM_IDS[equipped.pants]}`}
+                  to={`/collection/${ITEM_IDS[equipped.pants as BumpkinPant]}`}
                   className=" bg-white rounded z-20 relative top-4"
                 >
                   <div className=" bg-white rounded z-20 p-2 shadow-xl">
                     <img
-                      src={IMAGES[equipped.pants].shopImage}
+                      src={IMAGES[equipped.pants as BumpkinPant].shopImage}
                       className="w-6 h-auto ml-1"
                       style={{ imageRendering: "pixelated" }}
                     />

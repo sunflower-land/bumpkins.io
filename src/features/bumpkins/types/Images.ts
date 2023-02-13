@@ -105,6 +105,11 @@ import reindeer from "src/assets/bumpkins/shop/suit/reindeer.png";
 import angelWings from "src/assets/bumpkins/shop/wings/angel_wings.png";
 import devilWings from "src/assets/bumpkins/shop/wings/devil_wings.png";
 
+import cupidDress from "src/assets/bumpkins/shop/dress/cupid_dress.png";
+import loveQuiver from "src/assets/bumpkins/shop/wings/cupid_quiver.png";
+import cupidSandals from "src/assets/bumpkins/shop/shoes/cupid_sandals.png";
+import cupidHair from "src/assets/bumpkins/shop/hair/golden_curly_hair.png";
+
 type ItemImages = {
   shopImage: string;
 };
@@ -382,5 +387,17 @@ export const IMAGES: Record<BumpkinItem, ItemImages> = {
   },
   "Pirate Scimitar": {
     shopImage: pirateScimitar,
+  },
+  "Cupid Dress": {
+    shopImage: cupidDress,
+  },
+  "Cupid Hair": {
+    shopImage: cupidHair,
+  },
+  "Cupid Sandals": {
+    shopImage: cupidSandals,
+  },
+  "Love Quiver": {
+    shopImage: loveQuiver,
   },
 };

@@ -17,13 +17,15 @@ export function interpretWearableIds(wearableIds: number[]): Wallet {
     onesie: [],
     suit: [],
     wings: [],
+    dress: [],
   };
 
   return wearableIds.reduce((wallet, id) => {
-    const item = ITEM_NAMES[id];
+    const item = ITEM_NAMES[id] as BumpkinItem;
     const part = DETAILS[item].part;
 
-    const items = [...wallet[part], item];
+    const ids = wallet[part] as BumpkinItem[];
+    const items = [...ids, item];
 
     return { ...wallet, [part]: items };
   }, wallet);

@@ -426,4 +426,24 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "The Pirate's scimitar is sharp enough to slice through the seven seas and sail with ease.",
     part: "tool",
   },
+  "Cupid Hair": {
+    description:
+      "A whimsical headpiece that resembles the iconic wings and bow of Cupid, the Roman god of love.",
+    part: "hair",
+  },
+  "Cupid Dress": {
+    description:
+      "A stunning piece of attire that perfectly captures the essence of Cupid. The dress is made from a soft, flowing fabric that drapes gracefully over the wearer's body.",
+    part: "dress",
+  },
+  "Cupid Sandals": {
+    description:
+      "A pair of stylish footwear that adds the finishing touch to the Cupid ensemble",
+    part: "shoes",
+  },
+  "Love Quiver": {
+    description:
+      "A unique item that holds all of Cupid's arrows. The Love Quiver is a symbol of Cupid's power and is a must-have for any character who wants to embody the spirit of the Roman god of love. ",
+    part: "wings",
+  },
 };

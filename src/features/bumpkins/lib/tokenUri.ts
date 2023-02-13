@@ -35,6 +35,7 @@ enum Slots {
   Onesie = 11,
   Suit = 12,
   Wings = 13,
+  Dress = 14,
 }
 
 export function tokenUriBuilder(parts: Equipped) {
@@ -43,8 +44,8 @@ export function tokenUriBuilder(parts: Equipped) {
   ids[Slots.Background] = ITEM_IDS[parts.background];
   ids[Slots.Body] = ITEM_IDS[parts.body];
   ids[Slots.Hair] = ITEM_IDS[parts.hair];
-  ids[Slots.Shirt] = ITEM_IDS[parts.shirt];
-  ids[Slots.Pants] = ITEM_IDS[parts.pants];
+  ids[Slots.Shirt] = parts.shirt ? ITEM_IDS[parts.shirt] : 0;
+  ids[Slots.Pants] = parts.pants ? ITEM_IDS[parts.pants] : 0;
   ids[Slots.Shoes] = ITEM_IDS[parts.shoes];
   ids[Slots.Tool] = ITEM_IDS[parts.tool];
   ids[Slots.Hat] = parts.hat ? ITEM_IDS[parts.hat] : 0;
@@ -56,6 +57,7 @@ export function tokenUriBuilder(parts: Equipped) {
   ids[Slots.Suit] = parts.suit ? ITEM_IDS[parts.suit] : 0;
   ids[Slots.Onesie] = parts.onesie ? ITEM_IDS[parts.onesie] : 0;
   ids[Slots.Wings] = parts.wings ? ITEM_IDS[parts.wings] : 0;
+  ids[Slots.Dress] = parts.dress ? ITEM_IDS[parts.dress] : 0;
 
   // Trim off trailing 0s
   const lastPartIndex = [...ids].reverse().findIndex(Boolean);
