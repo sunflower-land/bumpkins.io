@@ -46,9 +46,9 @@ export const SFT: React.FC = () => {
               }}
             >
               <div className="flex-shrink-0 text-center mr-8 shadow-lg">
-                <div className="h-32 w-44 flex items-center justify-center bg-purple-300 rounded-t-3xl">
+                <div className="h-32 w-44 overflow-hidden flex items-center justify-center bg-purple-300 rounded-t-3xl">
                   <img
-                    className="h-16 pixelate"
+                    className="w-full pixelate"
                     src={IMAGES["Fancy Top"].shopImage}
                     alt=""
                   />
@@ -82,9 +82,9 @@ export const SFT: React.FC = () => {
               }}
             >
               <div className="flex-shrink-0 text-center mr-8  shadow-lg">
-                <div className="h-32 w-44 flex items-center justify-center bg-blue-300 rounded-t-3xl relative">
+                <div className="h-32 w-44 overflow-hidden flex items-center justify-center bg-blue-300 rounded-t-3xl relative">
                   <img
-                    className="h-16 pixelate"
+                    className="w-full pixelate"
                     src={IMAGES["Chef Apron"].shopImage}
                     alt=""
                   />
@@ -115,9 +115,9 @@ export const SFT: React.FC = () => {
               }}
             >
               <div className="flex-shrink-0 text-center mr-8  shadow-lg">
-                <div className="h-32 w-44 flex items-center justify-center bg-purple-300 rounded-t-3xl">
+                <div className="h-32 w-44 overflow-hidden flex items-center justify-center bg-purple-300 rounded-t-3xl">
                   <img
-                    className="h-16 pixelate"
+                    className="w-full pixelate"
                     src={IMAGES["Sunflower Shield"].shopImage}
                     alt=""
                   />

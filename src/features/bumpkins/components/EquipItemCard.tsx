@@ -72,7 +72,7 @@ export const EquipItemCard: React.FC<Props> = ({
 
     return (
       <img
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-6 md:p-8 mb-1 h-24 md:h-36 object-contain"
+        className="absolute w-full h-full object-contain"
         src={images?.shopImage}
         alt=""
         style={{

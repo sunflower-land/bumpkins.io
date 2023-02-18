@@ -9,8 +9,8 @@ import { NotFound } from "components/NotFound";
 import { useMachine } from "@xstate/react";
 import { itemDetailMachine } from "../lib/itemDetailMachine";
 import sunflowerLandIcon from "assets/logos/sunflower_land.png";
-
 import brownBackground from "assets/images/brown_background.png";
+
 import { DynamicNFT } from "features/bumpkins/components/DynamicNFT";
 import { PrimaryButton } from "components/PrimaryButton";
 import { DateTime } from "luxon";
@@ -142,10 +142,10 @@ export const ItemDetails: React.FC = () => {
                   <div className="hidden md:flex flex-col justify-start md:justify-center w-20 space-y-2">
                     <button
                       onClick={() => handleImageClick("shopImage")}
-                      className="w-20 h-20 px-1 rounded-4xl border-2 border-gray-100 flex justify-center items-center"
+                      className="w-20 h-20 rounded-4xl overflow-hidden border-2 border-gray-100 flex justify-center items-center"
                     >
                       <img
-                        className="w-1/3"
+                        className="w-full"
                         style={{ imageRendering: "pixelated" }}
                         src={IMAGES[name].shopImage}
                         alt=""
@@ -172,7 +172,7 @@ export const ItemDetails: React.FC = () => {
                           src={IMAGES[name].shopImage}
                           alt={name}
                           className={classNames(
-                            "absolute h-1/2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover",
+                            "absolute h-full w-full object-cover top-0",
                             {
                               "bumpkin-background": part === "background",
                               "mouth-eyes-shoes": part === "shoes",
@@ -198,7 +198,7 @@ export const ItemDetails: React.FC = () => {
                       className="w-20 h-20 lg:w-1/4 lg:h-auto px-1 mb-1 md:mb-0 rounded-4xl border-2 border-gray-100 flex justify-center items-center"
                     >
                       <img
-                        className="w-1/3"
+                        className="w-full"
                         style={{ imageRendering: "pixelated" }}
                         src={IMAGES[name].shopImage}
                         alt=""

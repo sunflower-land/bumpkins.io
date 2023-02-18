@@ -446,4 +446,38 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "A unique item that holds all of Cupid's arrows. The Love Quiver is a symbol of Cupid's power and is a must-have for any character who wants to embody the spirit of the Roman god of love. ",
     part: "wings",
   },
+  "Bear Onesie": {
+    description:
+      "A cozy and cute outfit that will make you feel like a cuddly and playful bear. Perfect for parties!",
+    part: "onesie",
+  },
+  "Bumpkin Puppet": {
+    description:
+      "Gather around the Puppet Master as they tell the origins of Sunflower Land.",
+    part: "tool",
+  },
+  "Goblin Puppet": {
+    description:
+      "Gather around the Puppet Master as they tell the origins of Goblins and their struggles.",
+    part: "tool",
+  },
+  "Frog Onesie": {
+    description:
+      "This what happens when you kiss the frog! You turn into a magical amphibian.",
+    part: "onesie",
+  },
+  "Hawaiian Shirt": {
+    description:
+      "A must have for Bumpkins with a laid-back and tropical vibe. Perfect for beach parties.",
+    part: "shirt",
+  },
+  "SFL Office Background": {
+    description:
+      "Immerse yourself in the office of the game designers! Feel right at home during live streams.",
+    part: "background",
+  },
+  "Tiger Onesie": {
+    description: "Rarrrrrrgh!",
+    part: "onesie",
+  },
 };

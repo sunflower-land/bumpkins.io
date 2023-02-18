@@ -124,13 +124,10 @@ export const UpcomingDrops: React.FC = () => {
                 <img
                   src={IMAGES[nextItem.name].shopImage}
                   alt={nextItem.name}
-                  className={classNames(
-                    "absolute h-1/2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover",
-                    {
-                      "bumpkin-background": nextItem.part === "background",
-                      "mouth-eyes-shoes": nextItem.part === "shoes",
-                    }
-                  )}
+                  className={classNames("absolute h-full w-full object-cover", {
+                    "bumpkin-background": nextItem.part === "background",
+                    "mouth-eyes-shoes": nextItem.part === "shoes",
+                  })}
                   style={{
                     imageRendering: "pixelated",
                   }}

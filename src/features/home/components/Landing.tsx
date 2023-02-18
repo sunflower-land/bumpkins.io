@@ -15,7 +15,7 @@ import { getKeys } from "src/metadata/items";
 
 const SHOWCASE: Equipped[] = [
   {
-    body: "Dark Brown Farmer Potion",
+    body: "Light Brown Farmer Potion",
     shirt: "Red Farmer Shirt",
     pants: "Farmer Overalls",
     hair: "Explorer Hair",
@@ -24,43 +24,61 @@ const SHOWCASE: Equipped[] = [
     background: "Farm Background",
   },
   {
-    body: "Beige Farmer Potion",
-    shirt: "Yellow Farmer Shirt",
-    pants: "Lumberjack Overalls",
-    hair: "Rancher Hair",
-    shoes: "Brown Boots",
-    tool: "Axe",
-    background: "Forest Background",
-  },
-  {
-    body: "Goblin Potion",
-    shirt: "SFL T-Shirt",
-    pants: "Brown Suspenders",
-    hair: "Sun Spots",
-    shoes: "Brown Boots",
-    tool: "Sword",
+    body: "Light Brown Farmer Potion",
+    shirt: "Red Farmer Shirt",
+    pants: "Farmer Overalls",
+    hair: "White Long Hair",
+    shoes: "Black Farmer Boots",
+    tool: "Parsnip",
     background: "Farm Background",
   },
-
-  {
-    body: "Beige Farmer Potion",
-    shirt: "Blue Farmer Shirt",
-    pants: "Farmer Overalls",
-    hair: "Basic Hair",
-    shoes: "Black Farmer Boots",
-    tool: "Farmer Pitchfork",
-    background: "Seashore Background",
-  },
-
   {
     body: "Light Brown Farmer Potion",
     shirt: "Fancy Top",
     pants: "Fancy Pants",
-    hair: "Buzz Cut",
+    hair: "White Long Hair",
     shoes: "Black Farmer Boots",
-    tool: "Sword",
-    secondaryTool: "Sunflower Shield",
+    tool: "Parsnip",
     background: "Farm Background",
+  },
+  {
+    body: "Light Brown Farmer Potion",
+    shirt: "Fancy Top",
+    pants: "Fancy Pants",
+    hair: "White Long Hair",
+    shoes: "Black Farmer Boots",
+    tool: "Pirate Scimitar",
+    background: "Farm Background",
+    onesie: "Shark Onesie",
+  },
+  {
+    body: "Light Brown Farmer Potion",
+    shirt: "Fancy Top",
+    pants: "Fancy Pants",
+    hair: "White Long Hair",
+    shoes: "Black Farmer Boots",
+    tool: "Pirate Scimitar",
+    background: "Seashore Background",
+    onesie: "Shark Onesie",
+  },
+  {
+    body: "Light Brown Farmer Potion",
+    shirt: "Hawaiian Shirt",
+    pants: "Pirate Pants",
+    hair: "White Long Hair",
+    shoes: "Black Farmer Boots",
+    tool: "Axe",
+    background: "Seashore Background",
+  },
+  {
+    body: "Light Brown Farmer Potion",
+    shirt: "Hawaiian Shirt",
+    pants: "Brown Suspenders",
+    onesie: "Frog Onesie",
+    hair: "White Long Hair",
+    shoes: "Black Farmer Boots",
+    tool: "Axe",
+    background: "Seashore Background",
   },
 ];
 
@@ -77,7 +95,7 @@ export const Landing: React.FC = () => {
 
         return previous + 1;
       });
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
@@ -148,10 +166,10 @@ export const Landing: React.FC = () => {
                   to={`/collection/${ITEM_IDS[equipped.hair]}`}
                   className=" bg-white rounded z-20 mb-2"
                 >
-                  <div className=" bg-white rounded z-20 p-2 shadow-xl">
+                  <div className=" bg-white rounded z-20  overflow-hidden shadow-xl">
                     <img
                       src={IMAGES[equipped.hair].shopImage}
-                      className="w-6 h-auto ml-1"
+                      className="w-12 h-auto"
                       style={{ imageRendering: "pixelated" }}
                     />
                   </div>
@@ -160,10 +178,10 @@ export const Landing: React.FC = () => {
                   to={`/collection/${ITEM_IDS[equipped.shirt as BumpkinShirt]}`}
                   className=" bg-white rounded z-20 relative top-2  shadow-4xl"
                 >
-                  <div className=" bg-white rounded z-20 p-2 shadow-xl">
+                  <div className=" bg-white overflow-hidden rounded z-20 shadow-xl">
                     <img
                       src={IMAGES[equipped.shirt as BumpkinShirt].shopImage}
-                      className="w-6 h-auto ml-1"
+                      className="w-12 h-auto"
                       style={{ imageRendering: "pixelated" }}
                     />
                   </div>
@@ -172,10 +190,10 @@ export const Landing: React.FC = () => {
                   to={`/collection/${ITEM_IDS[equipped.pants as BumpkinPant]}`}
                   className=" bg-white rounded z-20 relative top-4"
                 >
-                  <div className=" bg-white rounded z-20 p-2 shadow-xl">
+                  <div className=" bg-white overflow-hidden rounded z-20shadow-xl">
                     <img
                       src={IMAGES[equipped.pants as BumpkinPant].shopImage}
-                      className="w-6 h-auto ml-1"
+                      className="w-12"
                       style={{ imageRendering: "pixelated" }}
                     />
                   </div>
