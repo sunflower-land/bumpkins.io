@@ -10,7 +10,7 @@ export const IMAGES: Record<BumpkinItem, ItemImages> = getKeys(ITEM_IDS).reduce(
   (acc, name) => ({
     ...acc,
     [name]: {
-      shopImage: `public/erc1155/images/${ITEM_IDS[name]}.png`,
+      shopImage: `src/assets/open-sea/images/${ITEM_IDS[name]}.png`,
     },
   }),
   {} as Record<BumpkinItem, ItemImages>

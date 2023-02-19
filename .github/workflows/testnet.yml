@@ -16,6 +16,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
+      - name: Move open sea images
+        run: cp -r src/assets/open-sea/ public/erc1155
+
       - name: Install Dependencies
         run: yarn install
 
