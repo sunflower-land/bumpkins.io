@@ -61,7 +61,7 @@ export const EquipItemCard: React.FC<Props> = ({
       return (
         <img
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mb-1 object-contain w-full"
-          src={images?.shopImage}
+          src={images}
           alt=""
           style={{
             imageRendering: "pixelated",
@@ -73,7 +73,7 @@ export const EquipItemCard: React.FC<Props> = ({
     return (
       <img
         className="absolute w-full h-full object-contain"
-        src={images?.shopImage}
+        src={images}
         alt=""
         style={{
           imageRendering: "pixelated",

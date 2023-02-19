@@ -86,7 +86,7 @@ export const Collection: React.FC = () => {
                 return (
                   <ItemCard
                     key={i}
-                    image={IMAGES[item.name].shopImage}
+                    image={IMAGES[item.name]}
                     name={item.name}
                     id={ITEM_IDS[item.name]}
                     part={item.part}

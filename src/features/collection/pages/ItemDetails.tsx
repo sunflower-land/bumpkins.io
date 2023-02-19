@@ -147,7 +147,7 @@ export const ItemDetails: React.FC = () => {
                       <img
                         className="w-full"
                         style={{ imageRendering: "pixelated" }}
-                        src={IMAGES[name].shopImage}
+                        src={IMAGES[name]}
                         alt=""
                       />
                     </button>
@@ -169,7 +169,7 @@ export const ItemDetails: React.FC = () => {
                       />
                       {mainImage === "shopImage" && (
                         <img
-                          src={IMAGES[name].shopImage}
+                          src={IMAGES[name]}
                           alt={name}
                           className={classNames(
                             "absolute h-full w-full object-cover top-0",
@@ -200,7 +200,7 @@ export const ItemDetails: React.FC = () => {
                       <img
                         className="w-full"
                         style={{ imageRendering: "pixelated" }}
-                        src={IMAGES[name].shopImage}
+                        src={IMAGES[name]}
                         alt=""
                       />
                     </button>

@@ -168,7 +168,7 @@ export const Landing: React.FC = () => {
                 >
                   <div className=" bg-white rounded z-20  overflow-hidden shadow-xl">
                     <img
-                      src={IMAGES[equipped.hair].shopImage}
+                      src={IMAGES[equipped.hair]}
                       className="w-12 h-auto"
                       style={{ imageRendering: "pixelated" }}
                     />
@@ -180,7 +180,7 @@ export const Landing: React.FC = () => {
                 >
                   <div className=" bg-white overflow-hidden rounded z-20 shadow-xl">
                     <img
-                      src={IMAGES[equipped.shirt as BumpkinShirt].shopImage}
+                      src={IMAGES[equipped.shirt as BumpkinShirt]}
                       className="w-12 h-auto"
                       style={{ imageRendering: "pixelated" }}
                     />
@@ -192,7 +192,7 @@ export const Landing: React.FC = () => {
                 >
                   <div className=" bg-white overflow-hidden rounded z-20shadow-xl">
                     <img
-                      src={IMAGES[equipped.pants as BumpkinPant].shopImage}
+                      src={IMAGES[equipped.pants as BumpkinPant]}
                       className="w-12"
                       style={{ imageRendering: "pixelated" }}
                     />

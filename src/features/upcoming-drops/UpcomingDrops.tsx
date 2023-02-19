@@ -122,7 +122,7 @@ export const UpcomingDrops: React.FC = () => {
             <div className="relative flex flex-col lg:flex-row mb-10">
               <div className="relative card-background rounded-lg overflow-hidden w-full lg:w-1/2 mb-6 available-item-shadow h-80 md:h-112">
                 <img
-                  src={IMAGES[nextItem.name].shopImage}
+                  src={IMAGES[nextItem.name]}
                   alt={nextItem.name}
                   className={classNames("absolute h-full w-full object-cover", {
                     "bumpkin-background": nextItem.part === "background",
@@ -221,7 +221,7 @@ export const UpcomingDrops: React.FC = () => {
                   id={ITEM_IDS[item.name]}
                   key={item.name}
                   name={item.name}
-                  image={IMAGES[item.name].shopImage}
+                  image={IMAGES[item.name]}
                   part={item.part}
                 >
                   <div className="flex flex-col items-start px-1 pt-1 h-[100px] md:h-[110px] justify-between">

@@ -49,7 +49,7 @@ export const SFT: React.FC = () => {
                 <div className="h-32 w-44 overflow-hidden flex items-center justify-center bg-purple-300 rounded-t-3xl">
                   <img
                     className="w-full pixelate"
-                    src={IMAGES["Fancy Top"].shopImage}
+                    src={IMAGES["Fancy Top"]}
                     alt=""
                   />
                 </div>
@@ -85,7 +85,7 @@ export const SFT: React.FC = () => {
                 <div className="h-32 w-44 overflow-hidden flex items-center justify-center bg-blue-300 rounded-t-3xl relative">
                   <img
                     className="w-full pixelate"
-                    src={IMAGES["Chef Apron"].shopImage}
+                    src={IMAGES["Chef Apron"]}
                     alt=""
                   />
                   <img
@@ -118,7 +118,7 @@ export const SFT: React.FC = () => {
                 <div className="h-32 w-44 overflow-hidden flex items-center justify-center bg-purple-300 rounded-t-3xl">
                   <img
                     className="w-full pixelate"
-                    src={IMAGES["Sunflower Shield"].shopImage}
+                    src={IMAGES["Sunflower Shield"]}
                     alt=""
                   />
                 </div>
