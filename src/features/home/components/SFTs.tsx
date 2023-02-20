@@ -38,7 +38,8 @@ export const SFT: React.FC = () => {
 
         <div className="flex flex-wrap md:flex-nowrap items-center justify-center -mx-4">
           <div className="w-full flex flex-wrap px-4">
-            <div
+            <Link
+              to={`/collection/${ITEM_IDS["Fancy Top"]}`}
               className="flex items-center mb-8"
               style={{
                 maxWidth: "26rem",
@@ -57,6 +58,7 @@ export const SFT: React.FC = () => {
                     Fancy Top
                   </span>
                 </div>
+              </div>
               <div>
                 <h3 className="mb-4 text-lg font-heading font-medium">
                   Limited drops
@@ -71,7 +73,7 @@ export const SFT: React.FC = () => {
                   </Link>
                 </p>
               </div>
-            </div>
+            </Link>
             <Link
               to={`/collection/${ITEM_IDS["Chef Apron"]}`}
               className="flex items-center mb-8"
