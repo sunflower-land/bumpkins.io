@@ -14,7 +14,7 @@ import { sequence } from "0xsequence";
 import { SEQUENCE_CONNECT_OPTIONS } from "./sequence";
 
 const WALLET_PROVIDER_KEY = "walletProvider";
-type Wallet = "METAMASK" | "WALLET_CONNECT" | "SEQUENCE";
+export type Wallet = "METAMASK" | "WALLET_CONNECT" | "SEQUENCE";
 
 export interface Context {
   errorCode?: keyof typeof ERRORS;
@@ -246,10 +246,16 @@ export const authMachine = createMachine<
               target: "connectedToWallet",
             },
           ],
-          onError: {
-            target: "unauthorised",
-            actions: "assignErrorMessage",
-          },
+          onError: [
+            {
+              target: "wrongChain",
+              cond: (_, event) => event.data.message === ERRORS.WRONG_CHAIN,
+            },
+            {
+              target: "unauthorised",
+              actions: "assignErrorMessage",
+            },
+          ],
         },
       },
       connectedToWallet: {
@@ -286,7 +292,6 @@ export const authMachine = createMachine<
           ],
         },
       },
-      error: {},
       connected: {
         on: {
           SIGN: {
@@ -343,9 +348,19 @@ export const authMachine = createMachine<
               sflBalance: (_context, event) => event.data.sflBalance,
             }),
           },
-          onError: {
-            target: "idle",
-          },
+          onError: [
+            {
+              target: "#loadingOnChain",
+              cond: () => !web3.isAlchemy,
+              actions: (context) => {
+                web3.overrideProvider(context.wallet!, context.provider);
+              },
+            },
+            {
+              target: "#unauthorised",
+              actions: "assignErrorMessage",
+            },
+          ],
         },
       },
       authorised: {

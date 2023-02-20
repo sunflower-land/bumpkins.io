@@ -137,7 +137,7 @@ export const Auth: React.FC = () => {
                   Metamask
                 </button>
                 <button
-                  className="h-12 w-full justify-center items-center px-7 flex text-lg leading-3 text-white font-medium tracking-tighter font-heading text-center bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl"
+                  className="h-12 w-full whitespace-nowrap justify-center items-center px-7 flex text-lg leading-3 text-white font-medium tracking-tighter font-heading text-center bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl"
                   onClick={() => send("CONNECT_TO_WALLET_CONNECT")}
                 >
                   Wallet Connect

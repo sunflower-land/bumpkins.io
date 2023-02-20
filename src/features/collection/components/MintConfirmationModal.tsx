@@ -159,10 +159,10 @@ export const MintConfirmationModal: React.FC = () => {
                     )}
                     <div className="mb-3">
                       <button
-                        onClick={handleGoToCollection}
+                        onClick={handleBack}
                         className="items-center w-full justify-center flex py-5 px-7 text-lg leading-3 text-white font-medium tracking-tighter font-heading text-center bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl"
                       >
-                        Back to Collection
+                        Close
                       </button>
                     </div>
                   </div>
