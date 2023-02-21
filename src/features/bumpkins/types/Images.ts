@@ -1,5 +1,4 @@
-import { BumpkinItem, ITEM_IDS } from "features/bumpkins/types/Items";
-import { getKeys } from "src/metadata/items";
+import { BumpkinItem } from "features/bumpkins/types/Items";
 
 import BeigeFarmerPotion from "assets/open-sea/images/1.png";
 import DarkBrownFarmerPotion from "assets/open-sea/images/2.png";
