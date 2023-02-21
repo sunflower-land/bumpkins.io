@@ -2,6 +2,8 @@ import { ERRORS } from "lib/errors";
 import Web3 from "web3";
 import { CONFIG } from "./config";
 import { parseMetamaskError } from "./web3/utils";
+import { createAlchemyWeb3 } from "@alch/alchemy-web3";
+import { Wallet } from "features/auth/lib/authMachine";
 
 /**
  * A wrapper of Web3 which handles retries and other common errors.
@@ -106,6 +108,30 @@ export class BumpkinWeb3 {
     const isConnected = await this.web3?.eth.net.isListening();
 
     return isConnected;
+  }
+
+  public isAlchemy = false;
+
+  public async overrideProvider(wallet: Wallet, provider: any) {
+    this.isAlchemy = true;
+
+    if (CONFIG.ALCHEMY_RPC) {
+      console.log("Provider overridden");
+
+      let web3;
+
+      if (wallet === "METAMASK") {
+        web3 = createAlchemyWeb3(CONFIG.ALCHEMY_RPC);
+      } else {
+        web3 = createAlchemyWeb3(CONFIG.ALCHEMY_RPC, {
+          writeProvider: provider,
+        });
+      }
+
+      this.web3 = new Web3(web3 as any);
+
+      await this.initialiseContracts();
+    }
   }
 
   public async signTransaction(nonce: number, account = this.account) {

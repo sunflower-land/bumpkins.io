@@ -26,9 +26,16 @@ type OnChainData = {
 };
 
 export async function fetchOnChainData(): Promise<OnChainData> {
-  const onChainBumpkins = await loadBumpkins();
-  const sflBalance = await getSFLBalance();
-  const sunflowerLandAccounts = await loadFarm();
+  const onChainBumpkinsFn = loadBumpkins();
+  const sflBalanceFn = getSFLBalance();
+  const sunflowerLandAccountsFN = loadFarm();
+
+  const [onChainBumpkins, sflBalance, sunflowerLandAccounts] =
+    await Promise.all([
+      onChainBumpkinsFn,
+      sflBalanceFn,
+      sunflowerLandAccountsFN,
+    ]);
 
   const sunflowerLandAccount = sunflowerLandAccounts[0] && {
     tokenId: sunflowerLandAccounts[0].tokenId,
