@@ -66,8 +66,7 @@ export const MintConfirmationModal: React.FC = () => {
   const handleApprove = async () => {
     send({
       type: "APPROVE",
-      // TODO item data is not working
-      sfl: 500,
+      sfl: 5000000,
     });
   };
 
