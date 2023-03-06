@@ -17,7 +17,6 @@ export interface Context {
 
 type ApproveEvent = {
   type: "APPROVE";
-  sfl: number;
 };
 
 type MintEvent = {
@@ -86,8 +85,7 @@ export const mintItemMachine = createMachine<
       invoke: {
         src: async (_, event) => {
           try {
-            const { sfl } = event as ApproveEvent;
-            await approveSFL(sfl);
+            await approveSFL();
 
             return { success: true };
           } catch (error) {

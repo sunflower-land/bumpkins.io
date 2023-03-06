@@ -7,6 +7,8 @@ import ABI from "./abis/SunflowerLandToken.json";
 import { SunflowerLandToken } from "./types/SunflowerLandToken";
 
 const address = CONFIG.TOKEN_CONTRACT;
+export const INFINITY =
+  "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 
 export async function getSFLBalance() {
   const contract = new web3.eth.Contract(
@@ -21,7 +23,7 @@ export async function getSFLBalance() {
   return balance;
 }
 
-export async function approveSFL(amount: number) {
+export async function approveSFL() {
   const contract = new web3.eth.Contract(
     ABI as AbiItem[],
     address as string
@@ -29,11 +31,9 @@ export async function approveSFL(amount: number) {
 
   const gasPrice = await estimateGasPrice(web3.provider);
 
-  const wei = Web3.utils.toWei(amount.toString());
-
   return new Promise((resolve, reject) => {
     contract.methods
-      .approve(CONFIG.BUMPKIN_SHOP_CONTRACT, wei)
+      .approve(CONFIG.BUMPKIN_SHOP_CONTRACT, INFINITY)
       .send({ from: web3.myAccount as string, gasPrice })
       .on("error", function (error: any) {
         const parsed = parseMetamaskError(error);

@@ -66,17 +66,11 @@ export const MintConfirmationModal: React.FC = () => {
   const handleApprove = async () => {
     send({
       type: "APPROVE",
-      // TODO item data is not working
-      sfl: 500,
     });
   };
 
   const handleBack = () => {
     navigate(-1);
-  };
-
-  const handleGoToCollection = () => {
-    navigate("/collection");
   };
 
   const errorCode = mintMachineState.context.errorCode;
