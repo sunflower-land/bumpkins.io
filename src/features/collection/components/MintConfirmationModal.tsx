@@ -66,16 +66,11 @@ export const MintConfirmationModal: React.FC = () => {
   const handleApprove = async () => {
     send({
       type: "APPROVE",
-      sfl: 5000000,
     });
   };
 
   const handleBack = () => {
     navigate(-1);
-  };
-
-  const handleGoToCollection = () => {
-    navigate("/collection");
   };
 
   const errorCode = mintMachineState.context.errorCode;
