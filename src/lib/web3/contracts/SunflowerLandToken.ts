@@ -7,7 +7,7 @@ import ABI from "./abis/SunflowerLandToken.json";
 import { SunflowerLandToken } from "./types/SunflowerLandToken";
 
 const address = CONFIG.TOKEN_CONTRACT;
-const INFINITY =
+export const INFINITY =
   "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 
 export async function getSFLBalance() {

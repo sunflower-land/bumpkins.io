@@ -48,7 +48,7 @@ export const MintHints: React.FC<{ sfl: number }> = ({ sfl }) => {
   const approve = async () => {
     try {
       setState("approving");
-      await approveSFL(sfl);
+      await approveSFL();
       setState("approved");
     } catch {
       setState("unapproved");
