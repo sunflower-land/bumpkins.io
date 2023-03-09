@@ -65,17 +65,3 @@ export async function createBumpkin({
       });
   });
 }
-
-/*
- * Bumpkin details contract
- */
-export async function hasMinted(sunflowerLandAccountId: string) {
-  const contract = new web3.provider.eth.Contract(
-    BumpkinMinterABI as AbiItem[],
-    address as string
-  ) as unknown as IBumpkinMinter;
-
-  return contract.methods
-    .freeBumpkinMintedAt(Number(sunflowerLandAccountId))
-    .call({ from: web3.myAccount as string });
-}
