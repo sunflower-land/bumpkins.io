@@ -106,8 +106,8 @@ import BeachSarong from "assets/open-sea/images/108.png";
 import LifeguardHat from "assets/open-sea/images/109.png";
 import LifeguardPants from "assets/open-sea/images/110.png";
 import LifeguardShirt from "assets/open-sea/images/111.png";
-import TropicalSarong from "assets/open-sea/images/112.png";
-import SleepingOtter from "assets/open-sea/images/113.png";
+import TropicalSarong from "assets/open-sea/images/113.png";
+import SleepingOtter from "assets/open-sea/images/112.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
