@@ -4,11 +4,7 @@ import { web3 } from "lib/web3";
 import { CONFIG } from "lib/config";
 import { createMachine, Interpreter, assign } from "xstate";
 import { hasValidSession, login, Token } from "../actions/auth/login";
-import {
-  Bumpkin,
-  fetchOnChainData,
-  SunflowerLandAccount,
-} from "./fetchOnChainData";
+import { Bumpkin, fetchOnChainData } from "./fetchOnChainData";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import { sequence } from "0xsequence";
 import { SEQUENCE_CONNECT_OPTIONS } from "./sequence";
@@ -22,7 +18,6 @@ export interface Context {
   jwt?: string;
   user?: Token;
   bumpkins?: Bumpkin[];
-  sunflowerLandAccount?: SunflowerLandAccount;
   sflBalance?: number;
   wallet?: Wallet;
   provider?: any;
@@ -331,20 +326,16 @@ export const authMachine = createMachine<
         id: "loadingOnChain",
         invoke: {
           src: async () => {
-            const { bumpkins, sflBalance, sunflowerLandAccount } =
-              await fetchOnChainData();
+            const { bumpkins, sflBalance } = await fetchOnChainData();
             return {
               bumpkins,
               sflBalance,
-              sunflowerLandAccount,
             };
           },
           onDone: {
             target: "authorised",
             actions: assign<Context, any>({
               bumpkins: (_context, event) => event.data.bumpkins,
-              sunflowerLandAccount: (_context, event) =>
-                event.data.sunflowerLandAccount,
               sflBalance: (_context, event) => event.data.sflBalance,
             }),
           },
@@ -372,8 +363,6 @@ export const authMachine = createMachine<
           data: {
             jwt: (context: Context) => context.jwt,
             bumpkins: (context: Context) => context.bumpkins,
-            sunflowerLandAccount: (context: Context) =>
-              context.sunflowerLandAccount,
           },
           onDone: {
             target: "loadingOnChain",

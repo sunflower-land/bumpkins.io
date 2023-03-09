@@ -9,7 +9,6 @@ const API_URL = CONFIG.API_URL;
 
 type Options = {
   token: string;
-  farmId: number;
 };
 
 type Response = {
@@ -24,7 +23,7 @@ type Response = {
   signature: string;
 };
 
-export async function mintBumpkin({ token, farmId }: Options) {
+export async function mintBumpkin({ token }: Options) {
   const user = decodeToken(token);
 
   const response = await window.fetch(
@@ -36,7 +35,7 @@ export async function mintBumpkin({ token, farmId }: Options) {
         Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify({
-        farmId,
+        farmId: 0,
       }),
     }
   );

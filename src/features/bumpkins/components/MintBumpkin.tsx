@@ -72,28 +72,17 @@ export const MintBumpkin: React.FC = () => {
     <section className="relative py-24 2xl:py-44 2xl:pb-48 font-heading font-medium bg-white rounded-t-10xl overflow-hidden">
       <div className="relative container px-4 mx-auto z-10">
         <div className="text-center max-w-2xl mx-auto flex flex-col justify-center items-center">
-          {authState.context.sunflowerLandAccount?.canMintFreeBumpkin ? (
-            <>
-              <h2 className="mb-1 font-heading text-9xl md:text-10xl xl:text-11xl leading-tight">
-                Mint a free Bumpkin
-              </h2>
-              <span className="text-gray-400 italic mb-8">
-                You are eligible for a free Bumpkin (usually $5 USD)
-              </span>
-            </>
-          ) : (
-            <>
-              <h2 className="mb-1 font-heading text-9xl md:text-10xl xl:text-11xl leading-tight">
-                Mint a Bumpkin
-              </h2>
-              <h2 className="mb-1 font-heading text-6xl md:text-7xl xl:text-8xl leading-tight">
-                {`$${BUMPKIN_USD_PRICE} USD*`}
-              </h2>
-              <span className="text-gray-400 italic mb-8">
-                *Mint fee is paid in MATIC
-              </span>
-            </>
-          )}
+          <>
+            <h2 className="mb-1 font-heading text-9xl md:text-10xl xl:text-11xl leading-tight">
+              Mint a Bumpkin
+            </h2>
+            <h2 className="mb-1 font-heading text-6xl md:text-7xl xl:text-8xl leading-tight">
+              {`$${BUMPKIN_USD_PRICE} USD*`}
+            </h2>
+            <span className="text-gray-400 italic mb-8">
+              *Mint fee is paid in MATIC
+            </span>
+          </>
           <img
             src={treasure}
             className="m-auto w-20 mb-10"

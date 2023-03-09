@@ -1,7 +1,4 @@
-import {
-  Bumpkin,
-  SunflowerLandAccount,
-} from "features/auth/lib/fetchOnChainData";
+import { Bumpkin } from "features/auth/lib/fetchOnChainData";
 import { Context } from "features/auth/lib/Provider";
 import { CONFIG } from "lib/config";
 import { ERRORS } from "lib/errors";
@@ -16,7 +13,6 @@ export interface Context {
   bumpkins: Bumpkin[];
   errorCode?: keyof typeof ERRORS;
   bumpkinPrice: number;
-  sunflowerLandAccount?: SunflowerLandAccount;
 }
 
 type EquipEvent = {
@@ -73,11 +69,7 @@ export const bumpkinMachine = createMachine<
   states: {
     loading: {
       invoke: {
-        src: async (context) => {
-          if (context.sunflowerLandAccount?.canMintFreeBumpkin) {
-            return { price: 0 };
-          }
-
+        src: async () => {
           // Await Bumpkin Contracts
           const usdMatic = await loadUSDCPrice();
 
@@ -113,15 +105,9 @@ export const bumpkinMachine = createMachine<
       id: "minting",
       invoke: {
         src: async (context) => {
-          let farmId = 0;
-
-          if (context.sunflowerLandAccount?.canMintFreeBumpkin) {
-            farmId = Number(context.sunflowerLandAccount.tokenId);
-          }
           // Await Bumpkin Contracts
           const { bumpkins } = await mintBumpkin({
             token: context.jwt,
-            farmId,
           });
 
           return {
@@ -132,16 +118,6 @@ export const bumpkinMachine = createMachine<
           target: "minted",
           actions: assign<Context, any>({
             bumpkins: (_context, event) => event.data.bumpkins,
-            sunflowerLandAccount: (context) => {
-              if (context.sunflowerLandAccount?.canMintFreeBumpkin) {
-                return {
-                  ...context.sunflowerLandAccount,
-                  canMintFreeBumpkin: false,
-                };
-              }
-
-              return context.sunflowerLandAccount;
-            },
           }),
         },
         onError: {
