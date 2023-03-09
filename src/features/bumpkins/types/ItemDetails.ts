@@ -480,4 +480,34 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "Rarrrrrrgh!",
     part: "onesie",
   },
+  "Lifeguard Hat": {
+    description:
+      "Stay cool and protected under the scorching sun with the Lifeguard Hat!",
+    part: "hat",
+  },
+  "Lifeguard Shirt": {
+    description:
+      "Stand out as a guardian of the water in our Lifeguard Shirt! The bold and recognizable 'LIFEGUARD' print on the front and back of the shirt ensures that you'll be easily spotted in an emergency situation.",
+    part: "shirt",
+  },
+  "Lifeguard Pants": {
+    description:
+      "Stay agile and ready to jump into action with our Lifeguard Pants! With multiple pockets, you can easily store your lifeguarding essentials like a whistle, sunscreen, and gloves. Whether you're patrolling the beach, pool, or waterpark, our Lifeguard Pants are the perfect addition to your lifeguarding gear.",
+    part: "pants",
+  },
+  "Beach Sarong": {
+    description:
+      "Perfect for a day in the sun or a sunset stroll along the beach, our Beach Sarong is an essential addition to your beach bag.",
+    part: "dress",
+  },
+  "Tropical Sarong": {
+    description:
+      "Bring the beauty of the tropics to your beach or pool day with our Tropical Sarong!",
+    part: "dress",
+  },
+  "Sleeping Otter": {
+    description:
+      "This cute and cuddly otter loves nothing more than curling up on your head for a nap. A must-have for Project Dignity supporters",
+    part: "hat",
+  },
 };

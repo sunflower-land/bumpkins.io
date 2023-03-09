@@ -102,6 +102,12 @@ import HawaiianShirt from "assets/open-sea/images/104.png";
 import BearOnesie from "assets/open-sea/images/105.png";
 import FrogOnesie from "assets/open-sea/images/106.png";
 import TigerOnesie from "assets/open-sea/images/107.png";
+import BeachSarong from "assets/open-sea/images/108.png";
+import LifeguardHat from "assets/open-sea/images/109.png";
+import LifeguardPants from "assets/open-sea/images/110.png";
+import LifeguardShirt from "assets/open-sea/images/111.png";
+import TropicalSarong from "assets/open-sea/images/112.png";
+import SleepingOtter from "assets/open-sea/images/113.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -206,4 +212,10 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Bear Onesie": BearOnesie,
   "Frog Onesie": FrogOnesie,
   "Tiger Onesie": TigerOnesie,
+  "Beach Sarong": BeachSarong,
+  "Lifeguard Hat": LifeguardHat,
+  "Lifeguard Pants": LifeguardPants,
+  "Lifeguard Shirt": LifeguardShirt,
+  "Sleeping Otter": SleepingOtter,
+  "Tropical Sarong": TropicalSarong,
 };
