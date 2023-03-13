@@ -53,10 +53,7 @@ function generateMarkdownString(item: Metadata) {
 function generateMetadata(items: Metadata[]) {
   items.forEach((item) => {
     const image = `${BUMPKINS_SITE_URL}/erc1155/images/${item.id}.png`;
-    const filePath = path.join(
-      __dirname,
-      `../../public/erc1155/${item.id}.json`
-    );
+    const filePath = path.join(__dirname, `../assets/open-sea/${item.id}.json`);
     const markdown = generateMarkdownString(item);
 
     const json: MetadataObject = {
