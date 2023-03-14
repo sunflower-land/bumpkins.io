@@ -510,4 +510,14 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "This cute and cuddly otter loves nothing more than curling up on your head for a nap. A must-have for Project Dignity supporters",
     part: "hat",
   },
+  "Sequence Hat": {
+    description:
+      "Introducing the ultimate collectible hat for all crypto enthusiasts and bumpkins alike, created in collaboration with Sequence, a leading crypto wallet provider. Available through special events.",
+    part: "hat",
+  },
+  "Sequence Shirt": {
+    description:
+      "The ultimate wearable for those who want to show their love for crypto and the Sequence platform. Available through special events.",
+    part: "shirt",
+  },
 };

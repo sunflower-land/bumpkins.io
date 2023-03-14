@@ -22,7 +22,13 @@ const SFL_DOCS_URL = "https://docs.sunflower-land.com/getting-started/about";
 const TERMS_URL = "https://docs.bumpkins.io/support/terms-of-service";
 const IMAGE_PATH = "https://bumpkins.io/";
 
-const markdownSections = ["name", "description", "supply", "docs", "designer"];
+const markdownSections = [
+  "name",
+  "description",
+  "bumpkins.io",
+  "docs",
+  "designer",
+];
 
 function generateMarkdownString(item: Metadata) {
   return markdownSections.reduce((markdown, section) => {
@@ -33,8 +39,8 @@ function generateMarkdownString(item: Metadata) {
       case "description":
         markdown += `\r\n\r\n${item[section]}`;
         break;
-      case "supply":
-        markdown += `\r\n\r\n### Supply\r\n\r\n${item.supply ?? "Coming soon"}`;
+      case "bumpkins.io":
+        markdown += `\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT`;
         break;
       case "docs":
         markdown += `\r\n\r\n### About\r\n\r\n${blurb}\r\n[Bumpkins](${BUMPKINS_DOCS_URL})\r\n[Bumpkins Terms and Conditions](${TERMS_URL})\r\n[Sunflower Land](${SFL_DOCS_URL})`;
