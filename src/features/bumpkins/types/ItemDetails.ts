@@ -520,4 +520,9 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "The ultimate wearable for those who want to show their love for crypto and the Sequence platform. Available through special events.",
     part: "shirt",
   },
+  "St Patricks Hat": {
+    description:
+      "Top o' the mornin' to ya, me friend! A special event item found at Bumpkin parties during the festive season",
+    part: "hat",
+  },
 };

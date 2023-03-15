@@ -110,6 +110,7 @@ import TropicalSarong from "assets/open-sea/images/113.png";
 import SleepingOtter from "assets/open-sea/images/112.png";
 import SequenceHat from "assets/open-sea/images/114.png";
 import SequenceShirt from "assets/open-sea/images/115.png";
+import StPatricksHat from "assets/open-sea/images/116.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -222,4 +223,5 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Tropical Sarong": TropicalSarong,
   "Sequence Hat": SequenceHat,
   "Sequence Shirt": SequenceShirt,
+  "St Patricks Hat": StPatricksHat,
 };
