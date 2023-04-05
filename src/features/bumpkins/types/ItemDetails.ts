@@ -525,4 +525,9 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "Top o' the mornin' to ya, me friend! A special event item found at Bumpkin parties during the festive season",
     part: "hat",
   },
+  "Bunny Onesie": {
+    description:
+      "A charming and adorable ensemble that will transform you into a lovable and bouncy bunny. Ideal for gatherings and celebrations!",
+    part: "onesie",
+  },
 };
