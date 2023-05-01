@@ -525,4 +525,9 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "Top o' the mornin' to ya, me friend! A special event item found at Bumpkin parties during the festive season",
     part: "hat",
   },
+  "Polkastarter Shirt": {
+    part: "shirt",
+    description:
+      "Show your love for gaming with this exclusive Polkastart Shirt. Available from special events.",
+  },
 };
