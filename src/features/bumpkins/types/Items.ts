@@ -262,7 +262,8 @@ export const ITEM_IDS: Record<BumpkinItem, number> = {
   "Sequence Shirt": 115,
   "St Patricks Hat": 116,
   "Bunny Onesie": 117,
-  "Polkastarter Shirt": 118,
+  // TODO - unhappy brown farmer face - 118
+  "Polkastarter Shirt": 119,
 };
 
 // The reverse of above
