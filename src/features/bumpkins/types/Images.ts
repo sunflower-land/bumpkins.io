@@ -227,5 +227,6 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Sequence Shirt": SequenceShirt,
   "St Patricks Hat": StPatricksHat,
   "Polkastarter Shirt": PolkastarterShirt,
+  "Light Brown Worried Farmer Potion": LightBrownFarmerPotion,
   "Bunny Onesie": BunnyOnesie,
 };

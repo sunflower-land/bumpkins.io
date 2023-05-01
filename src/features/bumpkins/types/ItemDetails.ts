@@ -536,4 +536,8 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description:
       "Show your love for gaming with this exclusive Polkastart Shirt. Available from special events.",
   },
+  "Light Brown Worried Farmer Potion": {
+    part: "body",
+    description: "?",
+  },
 };

@@ -152,6 +152,7 @@ async function loadItems(): Promise<Shop> {
       const isCommon = item.releases.length === 1 && !item.releases[0].endDate;
       const price = isCommon ? Number(item.releases[0].price) : undefined;
 
+      console.log({ item });
       return {
         totalMinted: supply[index] ? Number(supply[index]) : undefined,
         name: item.name,
