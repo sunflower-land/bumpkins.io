@@ -540,4 +540,123 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     part: "body",
     description: "?",
   },
+  "Beach Trunks": {
+    description:
+      "Get ready to catch some rays and make a splash with these beach trunks that are perfect for a day out by the water.",
+    part: "pants",
+  },
+  "Club Polo": {
+    description:
+      "Look sharp and stylish at the farmers market with this fancy club polo that's sure to turn heads and make you stand out.",
+    part: "shirt",
+  },
+  "Dawn Breaker Background": {
+    description:
+      "Set the mood and create an atmosphere of peace and tranquility with this stunning dawn breaker background that will transport you to a serene and beautiful place.",
+    part: "background",
+  },
+  "Dawn Lamp": {
+    description:
+      "Light up your life and your farm with this sturdy and reliable dawn lamp that's perfect for early mornings and late nights.",
+    part: "tool",
+  },
+  "Eggplant Onesie": {
+    description:
+      "Keep cozy and comfortable in the eggplant fields with this cute and snuggly eggplant onesie that's perfect for lazy afternoons and chilly evenings.",
+    part: "onesie",
+  },
+  "Fox Hat": {
+    description:
+      "Get wild and free with this furry and playful fox hat that's perfect for exploring the great outdoors and going on exciting adventures.",
+    part: "hat",
+  },
+  "Grave Diggers Shovel": {
+    description:
+      "Dig up some spooky and exciting surprises with this creepy and cool grave diggers shovel that's perfect for Halloween and other fun events.",
+    part: "tool",
+  },
+  "Infected Potion": {
+    description:
+      "Mix things up and add a little bit of excitement to your farming routine with this strange and mysterious infected potion that's sure to surprise and delight.",
+    part: "body",
+  },
+  "Mushroom Hat": {
+    description:
+      "Get in touch with nature and feel like a whimsical woodland creature with this adorable and charming mushroom hat that's perfect for exploring the woods and foraging for mushrooms.",
+    part: "hat",
+  },
+  "Mushroom Lamp": {
+    description:
+      "Set the mood and create a magical atmosphere on your farm with this enchanting and delightful mushroom lamp that will transport you to a world of wonder and whimsy.",
+    part: "tool",
+  },
+  "Mushroom Lights Background": {
+    description:
+      "Add a touch of magic and mystery to your farm with this mystical and otherworldly mushroom lights background that's perfect for creating an atmosphere of enchantment and wonder.",
+    part: "background",
+  },
+  "Mushroom Pants": {
+    description:
+      "Keep it practical and stylish with these sturdy and reliable mushroom pants that are perfect for exploring the woods and foraging for mushrooms.",
+    part: "pants",
+  },
+  "Mushroom Shield": {
+    description:
+      "Protect yourself from danger and look cool doing it with this sturdy and reliable mushroom shield that's perfect for fending off pests and predators.",
+    part: "secondaryTool",
+  },
+  "Mushroom Shoes": {
+    description:
+      "Keep your feet dry and comfy with these adorable and charming mushroom shoes that are perfect for exploring the woods and foraging for mushrooms.",
+    part: "shoes",
+  },
+  "Mushroom Sweater": {
+    description:
+      "Keep warm and stylish with this cozy and comfortable mushroom sweater that's perfect for chilly nights and lazy afternoons.",
+    part: "shirt",
+  },
+  "Rash Vest": {
+    description:
+      "Get ready for some fun in the sun with this stylish and practical rash vest that's perfect for staying safe and comfortable while you're out on the water.",
+    part: "shirt",
+  },
+  "Squid Hat": {
+    description:
+      "Get in touch with your inner sea creature with this fun and playful squid hat that's perfect for going on aquatic adventures and exploring the deep blue sea.",
+    part: "hat",
+  },
+  "Striped Red Shirt": {
+    description:
+      "Keep it simple and stylish with this classic and timeless striped red shirt that's perfect for any occasion.",
+    part: "shirt",
+  },
+  "Striped Yellow Shirt": {
+    description:
+      "Add a pop of color and excitement to your wardrobe with this vibrant and cheerful striped yellow shirt that's sure to brighten up your day.",
+    part: "shirt",
+  },
+  "Summer Top": {
+    description:
+      "Keep cool and comfortable during the hot summer months with this cute and stylish summer top that's perfect for any occasion.",
+    part: "shirt",
+  },
+  "Sunburst Potion": {
+    description:
+      "Add a touch of magic and wonder to your farming routine with this exciting and mysterious sunburst potion that's sure to surprise and delight.",
+    part: "body",
+  },
+  "Water Gun": {
+    description:
+      "Get ready for some good old-fashioned fun in the sun with this playful and exciting water gun that's perfect for splashing around with your friends and family.",
+    part: "tool",
+  },
+  "Wavy Pants": {
+    description: "Add a touch of flair and style to your farming",
+    part: "pants",
+  },
+  "White Turtle Neck": {
+    description:
+      "When the winter winds are blowin' cold and fierce, this here white turtle neck keeps me warm and toasty, and it looks darn good too.",
+    part: "shirt",
+  },
 };
