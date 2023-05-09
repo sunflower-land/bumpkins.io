@@ -113,6 +113,30 @@ import SequenceShirt from "assets/open-sea/images/115.png";
 import StPatricksHat from "assets/open-sea/images/116.png";
 import PolkastarterShirt from "assets/open-sea/images/118.png";
 import BunnyOnesie from "assets/open-sea/images/117.png";
+import BeachTrunks from "assets/open-sea/images/120.png";
+import ClubPolo from "assets/open-sea/images/121.png";
+import DawnBreakerBackground from "assets/open-sea/images/122.png";
+import DawnLamp from "assets/open-sea/images/123.png";
+import EggplantOnesie from "assets/open-sea/images/124.png";
+import FoxHat from "assets/open-sea/images/125.png";
+import GraveDiggersShovel from "assets/open-sea/images/126.png";
+import InfectedPotion from "assets/open-sea/images/127.png";
+import MushroomHat from "assets/open-sea/images/128.png";
+import MushroomLamp from "assets/open-sea/images/129.png";
+import MushroomLightsBackground from "assets/open-sea/images/130.png";
+import MushroomPants from "assets/open-sea/images/131.png";
+import MushroomShield from "assets/open-sea/images/132.png";
+import MushroomShoes from "assets/open-sea/images/133.png";
+import MushroomSweater from "assets/open-sea/images/134.png";
+import RashVest from "assets/open-sea/images/135.png";
+import SquidHat from "assets/open-sea/images/136.png";
+import StripedRedShirt from "assets/open-sea/images/137.png";
+import StripedYellowShirt from "assets/open-sea/images/138.png";
+import SummerTop from "assets/open-sea/images/139.png";
+import SunburstPotion from "assets/open-sea/images/140.png";
+import WaterGun from "assets/open-sea/images/141.png";
+import WavyPants from "assets/open-sea/images/142.png";
+import WhiteTurtleNeck from "assets/open-sea/images/143.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -229,4 +253,28 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Polkastarter Shirt": PolkastarterShirt,
   "Light Brown Worried Farmer Potion": LightBrownFarmerPotion,
   "Bunny Onesie": BunnyOnesie,
+  "Beach Trunks": BeachTrunks,
+  "Club Polo": ClubPolo,
+  "Dawn Breaker Background": DawnBreakerBackground,
+  "Dawn Lamp": DawnLamp,
+  "Eggplant Onesie": EggplantOnesie,
+  "Fox Hat": FoxHat,
+  "Grave Diggers Shovel": GraveDiggersShovel,
+  "Infected Potion": InfectedPotion,
+  "Mushroom Hat": MushroomHat,
+  "Mushroom Lamp": MushroomLamp,
+  "Mushroom Lights Background": MushroomLightsBackground,
+  "Mushroom Pants": MushroomPants,
+  "Mushroom Shield": MushroomShield,
+  "Mushroom Shoes": MushroomShoes,
+  "Mushroom Sweater": MushroomSweater,
+  "Rash Vest": RashVest,
+  "Squid Hat": SquidHat,
+  "Striped Red Shirt": StripedRedShirt,
+  "Striped Yellow Shirt": StripedYellowShirt,
+  "Summer Top": SummerTop,
+  "Sunburst Potion": SunburstPotion,
+  "Water Gun": WaterGun,
+  "Wavy Pants": WavyPants,
+  "White Turtle Neck": WhiteTurtleNeck,
 };
