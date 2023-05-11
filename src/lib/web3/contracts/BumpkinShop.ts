@@ -1,4 +1,6 @@
+import { ethers } from "ethers";
 import { CONFIG } from "lib/config";
+import { ERRORS } from "lib/errors";
 import { web3 } from "lib/web3";
 import { AbiItem } from "web3-utils";
 import { parseMetamaskError, estimateGasPrice } from "../utils";
@@ -31,13 +33,31 @@ export async function mintItem({
   fee,
 }: MintItemArgs): Promise<any> {
   const gasPrice = await estimateGasPrice(web3.provider);
-  const contract = new web3.provider.eth.Contract(
-    ABI as AbiItem[],
-    address as string
-  ) as unknown as BumpkinShop;
+  const contract = new ethers.Contract(
+    address as string,
+    ABI,
+    web3.provider.getSigner()
+  );
+
+  try {
+    return await contract.mint(
+      itemId,
+      deadline,
+      price,
+      supply,
+      fee,
+      signature,
+      { from: web3.myAccount as string }
+    );
+  } catch (error) {
+    console.log(error);
+    const parsed = parseMetamaskError(error);
+
+    throw parsed;
+  }
 
   return new Promise((resolve, reject) => {
-    contract.methods
+    contract
       .mint(itemId, deadline, price, supply, fee, signature)
       .send({ from: web3.myAccount as string, gasPrice })
       .on("error", function (error: any) {
@@ -53,3 +73,26 @@ export async function mintItem({
       });
   });
 }
+
+// export async function mintItemRetry(
+//   args: MintItemArgs,
+//   retryCount = 0
+// ): Promise<any> {
+//   try {
+//     return await mintItem(args);
+//   } catch (e: any) {
+//     if (e.message === ERRORS.REJECTED_TRANSACTION) {
+//       throw e;
+//     }
+
+//     if (retryCount < 3) {
+//       console.log(e);
+//       console.log("retry");
+//       await new Promise((res) => setTimeout(res, 500));
+
+//       return mintItemRetry(args, retryCount + 1);
+//     }
+
+//     throw e;
+//   }
+// }

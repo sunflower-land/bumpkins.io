@@ -1,12 +1,15 @@
+import { ethers } from "ethers";
 import { ERRORS } from "lib/errors";
-import Web3 from "web3";
 
 const MINIMUM_GAS_PRICE = 40;
 
-export async function estimateGasPrice(web3: Web3, incr = 1) {
+export async function estimateGasPrice(
+  web3: ethers.providers.Web3Provider,
+  incr = 1
+) {
   const minimum = MINIMUM_GAS_PRICE * 1000000000;
   try {
-    const e = await web3.eth.getGasPrice();
+    const e = await web3.getGasPrice();
     let gasPrice = e ? Number(e) * incr : undefined;
     if (!gasPrice || gasPrice < minimum) {
       gasPrice = minimum;

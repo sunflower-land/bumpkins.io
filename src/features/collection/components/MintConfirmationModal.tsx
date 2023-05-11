@@ -14,8 +14,8 @@ import success from "assets/icons/accept.svg";
 import { Modal } from "features/components/Modal";
 import { Loading } from "components/Loading";
 import { getSFLBalance } from "lib/web3/contracts/SunflowerLandToken";
-import Web3 from "web3";
 import classNames from "classnames";
+import { formatUnits } from "ethers/lib/utils";
 
 interface LocationState {
   name: BumpkinItem;
@@ -42,7 +42,7 @@ export const MintConfirmationModal: React.FC = () => {
 
       authSend({
         type: "UPDATE_BALANCE",
-        balance: Number(Web3.utils.fromWei(sflBalance)),
+        balance: Number(formatUnits(sflBalance)),
       });
     };
 

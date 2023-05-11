@@ -51,9 +51,14 @@ export const mintItemMachine = createMachine<
       invoke: {
         src: async (context, event) => {
           await new Promise((res) => setTimeout(res, 300));
-          const allowance = await loadAllowance();
+          try {
+            const allowance = await loadAllowance();
 
-          return { allowance };
+            return { allowance };
+          } catch (error) {
+            console.log(error);
+            throw error;
+          }
         },
         onDone: [
           {

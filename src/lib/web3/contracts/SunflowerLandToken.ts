@@ -1,7 +1,7 @@
+import { BigNumber, ethers } from "ethers";
+import { formatUnits } from "ethers/lib/utils";
 import { CONFIG } from "lib/config";
 import { web3 } from "lib/web3";
-import Web3 from "web3";
-import { AbiItem } from "web3-utils";
 import { estimateGasPrice, parseMetamaskError } from "../utils";
 import ABI from "./abis/SunflowerLandToken.json";
 import { SunflowerLandToken } from "./types/SunflowerLandToken";
@@ -10,54 +10,76 @@ const address = CONFIG.TOKEN_CONTRACT;
 export const INFINITY =
   "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 
-export async function getSFLBalance() {
-  const contract = new web3.eth.Contract(
-    ABI as AbiItem[],
-    address as string
+export async function getSFLBalance(retryCount = 0): Promise<BigNumber> {
+  const contract = new ethers.Contract(
+    address as string,
+    ABI,
+    web3.provider
   ) as unknown as SunflowerLandToken;
 
-  const balance = await contract.methods
-    .balanceOf(web3.myAccount as string)
-    .call();
+  try {
+    const balance = await contract.balanceOf(web3.myAccount as string);
 
-  return balance;
+    return balance;
+  } catch (error) {
+    console.log(error);
+
+    if (retryCount < 3) {
+      await new Promise((res) => setTimeout(res, 1000));
+
+      return getSFLBalance(retryCount + 1);
+    }
+    throw error;
+  }
 }
 
 export async function approveSFL() {
-  const contract = new web3.eth.Contract(
-    ABI as AbiItem[],
-    address as string
+  const contract = new ethers.Contract(
+    address as string,
+    ABI,
+    web3.provider
   ) as unknown as SunflowerLandToken;
 
   const gasPrice = await estimateGasPrice(web3.provider);
 
-  return new Promise((resolve, reject) => {
-    contract.methods
-      .approve(CONFIG.BUMPKIN_SHOP_CONTRACT, INFINITY)
-      .send({ from: web3.myAccount as string, gasPrice })
-      .on("error", function (error: any) {
-        const parsed = parseMetamaskError(error);
+  try {
+    const receipt = await contract.approve(
+      CONFIG.BUMPKIN_SHOP_CONTRACT,
+      INFINITY,
+      { from: web3.myAccount as string, gasPrice }
+    );
 
-        reject(parsed);
-      })
-      .on("transactionHash", function (transactionHash: any) {
-        console.log({ transactionHash });
-      })
-      .on("receipt", function (receipt: any) {
-        resolve(receipt);
-      });
-  });
+    return receipt;
+  } catch (error) {
+    const parsed = parseMetamaskError(error);
+
+    throw parsed;
+  }
 }
 
-export async function loadAllowance() {
-  const contract = new web3.eth.Contract(
-    ABI as AbiItem[],
-    address as string
+export async function loadAllowance(retryCount = 0): Promise<number> {
+  const contract = new ethers.Contract(
+    address as string,
+    ABI,
+    web3.provider
   ) as unknown as SunflowerLandToken;
 
-  const allowance = await contract.methods
-    .allowance(web3.myAccount as string, CONFIG.BUMPKIN_SHOP_CONTRACT)
-    .call({ from: web3.myAccount as string });
+  try {
+    const allowance = await contract.allowance(
+      web3.myAccount as string,
+      CONFIG.BUMPKIN_SHOP_CONTRACT,
+      { from: web3.myAccount as string }
+    );
 
-  return Number(Web3.utils.fromWei(allowance));
+    return Number(formatUnits(allowance));
+  } catch (error) {
+    console.log(error);
+
+    if (retryCount < 3) {
+      await new Promise((res) => setTimeout(res, 1000));
+
+      return loadAllowance(retryCount + 1);
+    }
+    throw error;
+  }
 }
