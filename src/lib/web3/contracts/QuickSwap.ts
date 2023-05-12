@@ -1,6 +1,5 @@
-import { BigNumber, Contract, ethers } from "ethers";
+import { Contract, ethers } from "ethers";
 import { formatUnits } from "ethers/lib/utils";
-import { web3 } from "lib/web3";
 import ABI from "./abis/Pair.json";
 import { Contracts_Uniswap_sol_IUniswapV2Router02 } from "./types/UniswapRouter02";
 

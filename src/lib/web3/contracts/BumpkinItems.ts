@@ -2,7 +2,6 @@ import { ethers } from "ethers";
 import { IDS } from "features/bumpkins/types/Items";
 import { CONFIG } from "lib/config";
 import { web3 } from "lib/web3";
-import { AbiItem } from "web3-utils";
 import ABI from "./abis/BumpkinItems.json";
 import { BumpkinWearables } from "./types/BumpkinItems";
 

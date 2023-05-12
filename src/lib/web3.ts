@@ -80,7 +80,7 @@ export class BumpkinWeb3 {
       this.write = _provider;
       await this.loadAccount();
 
-      const chainId = (await this.write?.getNetwork()).chainId;
+      const chainId = (await this.write?.getNetwork())?.chainId;
 
       if (!(chainId === CONFIG.POLYGON_CHAIN_ID)) {
         throw new Error(ERRORS.WRONG_CHAIN);

@@ -1,7 +1,6 @@
 import { ethers } from "ethers";
 import { CONFIG } from "lib/config";
 import { web3 } from "lib/web3";
-import { AbiItem } from "web3-utils";
 import { estimateGasPrice, parseMetamaskError } from "../utils";
 import ABI from "./abis/BumpkinEquipper.json";
 import { BumpkinEquipper } from "./types/BumpkinEquipper";

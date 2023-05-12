@@ -2,10 +2,8 @@ import { ethers } from "ethers";
 import { CONFIG } from "lib/config";
 import { ERRORS } from "lib/errors";
 import { web3 } from "lib/web3";
-import { AbiItem } from "web3-utils";
 import { parseMetamaskError, estimateGasPrice } from "../utils";
 import ABI from "./abis/BumpkinShop.json";
-import { BumpkinShop } from "./types/BumpkinShop";
 
 const address = CONFIG.BUMPKIN_SHOP_CONTRACT;
 
