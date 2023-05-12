@@ -35,13 +35,13 @@ export async function createBumpkin({
   partIds: number[];
   farmId: number;
   tokenUri: string;
-}): Promise<string> {
-  const gasPrice = await estimateGasPrice(web3.provider);
+}) {
+  const gasPrice = await estimateGasPrice(web3.writeProvider);
 
   const contract = new ethers.Contract(
     address as string,
     BumpkinMinterABI,
-    web3.provider
+    web3.writeProvider.getSigner()
   ) as unknown as BumpkinMinter;
 
   try {
@@ -52,10 +52,10 @@ export async function createBumpkin({
       farmId,
       partIds,
       tokenUri,
-      { from: web3.myAccount as string, gasPrice }
+      { from: web3.myAccount as string, gasPrice, value: fee }
     );
 
-    return receipt.hash;
+    await receipt.wait();
   } catch (error) {
     const parsed = parseMetamaskError(error);
 

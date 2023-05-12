@@ -1,7 +1,7 @@
 import { BumpkinItem } from "features/bumpkins/types/Items";
 import { CONFIG } from "lib/config";
 import { ERRORS } from "lib/errors";
-import { mintItem as mint } from "lib/web3/contracts/BumpkinShop";
+import { mintItemRetry as mint } from "lib/web3/contracts/BumpkinShop";
 
 const API_URL = CONFIG.API_URL;
 

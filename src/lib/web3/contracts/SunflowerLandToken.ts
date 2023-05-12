@@ -14,7 +14,7 @@ export async function getSFLBalance(retryCount = 0): Promise<BigNumber> {
   const contract = new ethers.Contract(
     address as string,
     ABI,
-    web3.provider
+    web3.readProvider
   ) as unknown as SunflowerLandToken;
 
   try {
@@ -37,10 +37,10 @@ export async function approveSFL() {
   const contract = new ethers.Contract(
     address as string,
     ABI,
-    web3.provider
+    web3.writeProvider.getSigner()
   ) as unknown as SunflowerLandToken;
 
-  const gasPrice = await estimateGasPrice(web3.provider);
+  const gasPrice = await estimateGasPrice(web3.writeProvider);
 
   try {
     const receipt = await contract.approve(
@@ -49,7 +49,7 @@ export async function approveSFL() {
       { from: web3.myAccount as string, gasPrice }
     );
 
-    return receipt;
+    await receipt.wait();
   } catch (error) {
     const parsed = parseMetamaskError(error);
 
@@ -61,7 +61,7 @@ export async function loadAllowance(retryCount = 0): Promise<number> {
   const contract = new ethers.Contract(
     address as string,
     ABI,
-    web3.provider
+    web3.readProvider
   ) as unknown as SunflowerLandToken;
 
   try {

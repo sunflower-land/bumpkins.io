@@ -22,7 +22,7 @@ export async function loadBumpkins(): Promise<OnChainBumpkin[]> {
   const contract = new ethers.Contract(
     address as string,
     BumpkinDetailsABI,
-    web3.provider
+    web3.readProvider
   ) as unknown as BumpkinDetails;
 
   const response = await contract.loadBumpkins(web3.myAccount as string, {
@@ -40,7 +40,7 @@ export async function loadBumpkin(id: number): Promise<OnChainBumpkin> {
   const contract = new ethers.Contract(
     address as string,
     BumpkinDetailsABI,
-    web3.provider
+    web3.readProvider
   ) as unknown as BumpkinDetails;
 
   const response = await contract.getBumpkin(id, {

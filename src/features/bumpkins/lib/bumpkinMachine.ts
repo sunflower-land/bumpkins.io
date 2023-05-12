@@ -73,7 +73,7 @@ export const bumpkinMachine = createMachine<
           // Await Bumpkin Contracts
           const usdMatic = await loadUSDCPrice();
 
-          return { price: usdMatic * BUMPKIN_USD_PRICE };
+          return { price: Number(usdMatic) * BUMPKIN_USD_PRICE };
         },
         onDone: [
           {

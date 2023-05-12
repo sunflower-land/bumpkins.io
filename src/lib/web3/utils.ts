@@ -4,7 +4,7 @@ import { ERRORS } from "lib/errors";
 const MINIMUM_GAS_PRICE = 40;
 
 export async function estimateGasPrice(
-  web3: ethers.providers.Web3Provider,
+  web3: ethers.providers.JsonRpcProvider,
   incr = 1
 ) {
   const minimum = MINIMUM_GAS_PRICE * 1000000000;
@@ -21,12 +21,12 @@ export async function estimateGasPrice(
 }
 
 export function parseMetamaskError(error: any): Error {
-  if (error.code === 4001) {
+  if (error.code === "ACTION_REJECTED") {
     return new Error(ERRORS.REJECTED_TRANSACTION);
   }
 
-  if (error.code === -32603) {
-    return new Error(ERRORS.NETWORK_CONGESTED);
+  if (error.code === "UNPREDICTABLE_GAS_LIMIT") {
+    return new Error(ERRORS.UNPREDICTABLE_GAS_LIMIT);
   }
 
   return error;

@@ -23,7 +23,7 @@ export async function loadItems(wallet: string) {
   const contract = new ethers.Contract(
     address as string,
     ABI,
-    web3.provider
+    web3.readProvider
   ) as unknown as BumpkinWearables;
 
   const account = web3.myAccount as string;
@@ -34,14 +34,14 @@ export async function loadItems(wallet: string) {
 
 export async function loadSupply(
   ids: number[],
-  provider = web3.provider,
+  provider: ethers.providers.JsonRpcProvider = web3.readProvider,
   retryCount = 0
 ): Promise<string[]> {
   try {
     const contract = new ethers.Contract(
       address as string,
       ABI,
-      provider.getSigner()
+      provider
     ) as unknown as BumpkinWearables;
 
     return (await contract.totalSupplyBatch(ids)).map((supply) =>

@@ -62,6 +62,7 @@ export async function loadCurrentAndUpcomingDrops(): Promise<
 
   return upcomingItems;
 }
+
 const alchemyWeb3 = new ethers.providers.JsonRpcProvider(CONFIG.ALCHEMY_RPC);
 
 export async function loadTotalSupplyForCurrentItem(id: number) {

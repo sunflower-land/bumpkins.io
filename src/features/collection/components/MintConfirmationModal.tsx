@@ -17,6 +17,16 @@ import { getSFLBalance } from "lib/web3/contracts/SunflowerLandToken";
 import classNames from "classnames";
 import { formatUnits } from "ethers/lib/utils";
 
+const getErrorMessage = (errorCode?: keyof typeof ERRORS) => {
+  if (errorCode?.includes("UNPREDICTABLE_GAS_LIMIT"))
+    return "Cannot complete transaction. Network is congested.";
+
+  if (errorCode?.includes("REJECTED_TRANSACTION"))
+    return "Transaction Rejected.";
+
+  return "Transaction failed.";
+};
+
 interface LocationState {
   name: BumpkinItem;
   price: number;
@@ -298,7 +308,7 @@ export const MintConfirmationModal: React.FC = () => {
                   <div className="flex flex-col">
                     {mintMachineState.matches("error") && (
                       <span className="text-red-500 mt-1">
-                        {errorCode ? ERRORS[errorCode] : `Transaction failed`}
+                        {getErrorMessage(errorCode)}
                       </span>
                     )}
                     <a

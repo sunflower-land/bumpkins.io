@@ -14,15 +14,17 @@ export async function burnBumpkin(tokenId: string) {
   const contract = new ethers.Contract(
     address as string,
     BumpkinABI,
-    web3.provider
+    web3.writeProvider.getSigner()
   ) as unknown as Bumpkin;
 
-  await contract.transferFrom(
+  const receipt = await contract.transferFrom(
     web3.myAccount as string,
     "0x000000000000000000000000000000000000dead",
     tokenId,
     { from: web3.myAccount as string }
   );
+
+  await receipt.wait();
 
   console.log("Burnt?");
 }

@@ -13,7 +13,7 @@ export async function loadFarm() {
   const contract = new ethers.Contract(
     address as string,
     AccountABI,
-    web3.provider
+    web3.readProvider
   ) as unknown as SunflowerLand;
 
   return contract.getFarms(web3.myAccount as string, {
