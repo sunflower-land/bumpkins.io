@@ -7,6 +7,7 @@ export const ERRORS = {
   REJECTED_TRANSACTION: "REJECTED_TRANSACTION",
   BLOCKED: "BLOCKED",
   NETWORK_CONGESTED: "NETWORK_CONGESTED",
+  UNPREDICTABLE_GAS_LIMIT: "UNPREDICTABLE_GAS_LIMIT",
 
   // Blockchain session has changed - they are doing something sneaky refreshing the browser
   SESSION_EXPIRED: "SESSION_EXPIRED",

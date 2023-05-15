@@ -1,6 +1,6 @@
+import { ethers } from "ethers";
 import { CONFIG } from "lib/config";
 import { web3 } from "lib/web3";
-import { AbiItem } from "web3-utils";
 import { estimateGasPrice, parseMetamaskError } from "../utils";
 import ABI from "./abis/BumpkinEquipper.json";
 import { BumpkinEquipper } from "./types/BumpkinEquipper";
@@ -26,36 +26,31 @@ export async function equipBumpkin({
   unequipIds: number[];
   burnIds: number[];
   tokenURI: string;
-}): Promise<string> {
-  const gasPrice = await estimateGasPrice(web3.provider);
+}) {
+  const gasPrice = await estimateGasPrice(web3.writeProvider);
 
-  const contract = new web3.provider.eth.Contract(
-    ABI as AbiItem[],
-    address as string
+  const contract = new ethers.Contract(
+    address as string,
+    ABI,
+    web3.writeProvider.getSigner()
   ) as unknown as BumpkinEquipper;
 
-  return new Promise((resolve, reject) => {
-    contract.methods
-      .equipBumpkin(
-        signature,
-        deadline,
-        bumpkinId,
-        equipIds,
-        unequipIds,
-        burnIds,
-        tokenURI
-      )
-      .send({ from: web3.myAccount as string, gasPrice })
-      .on("error", function (error: any) {
-        const parsed = parseMetamaskError(error);
+  try {
+    const receipt = await contract.equipBumpkin(
+      signature,
+      deadline,
+      bumpkinId,
+      equipIds,
+      unequipIds,
+      burnIds,
+      tokenURI,
+      { from: web3.myAccount as string, gasPrice }
+    );
 
-        reject(parsed);
-      })
-      .on("transactionHash", function (transactionHash: any) {
-        console.log({ transactionHash });
-      })
-      .on("receipt", function (receipt: any) {
-        resolve(receipt);
-      });
-  });
+    await receipt.wait();
+  } catch (error) {
+    const parsed = parseMetamaskError(error);
+
+    throw parsed;
+  }
 }

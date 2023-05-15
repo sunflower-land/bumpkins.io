@@ -17,7 +17,7 @@ export default defineConfig({
   // Addresses web3 issue
   resolve: {
     alias: {
-      web3: "web3/dist/web3.min.js",
+      // web3: "web3/dist/web3.min.js",
       process: "process/browser",
       stream: "stream-browserify",
       zlib: "browserify-zlib",

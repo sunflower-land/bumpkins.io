@@ -1,9 +1,9 @@
+import { ethers } from "ethers";
 import { CONFIG } from "lib/config";
 import { web3 } from "lib/web3";
-import { AbiItem } from "web3-utils";
 import { estimateGasPrice, parseMetamaskError } from "../utils";
 import BumpkinMinterABI from "./abis/BumpkinMinter.json";
-import { IBumpkinMinter } from "./types/IBumpkinMinter";
+import { BumpkinMinter } from "./types/IBumpkinMinter";
 
 const address = CONFIG.BUMPKIN_MINTER_CONTRACT;
 export type OnChainBumpkin = {
@@ -35,33 +35,30 @@ export async function createBumpkin({
   partIds: number[];
   farmId: number;
   tokenUri: string;
-}): Promise<string> {
-  const gasPrice = await estimateGasPrice(web3.provider);
+}) {
+  const gasPrice = await estimateGasPrice(web3.writeProvider);
 
-  const contract = new web3.provider.eth.Contract(
-    BumpkinMinterABI as AbiItem[],
-    address as string
-  ) as unknown as IBumpkinMinter;
+  const contract = new ethers.Contract(
+    address as string,
+    BumpkinMinterABI,
+    web3.writeProvider.getSigner()
+  ) as unknown as BumpkinMinter;
 
-  return new Promise((resolve, reject) => {
-    contract.methods
-      .mintBumpkin(signature, deadline, fee, farmId, partIds, tokenUri)
-      .send({ from: web3.myAccount as string, gasPrice, value: fee })
-      .on("error", async function (error: any) {
-        const parsed = parseMetamaskError(error);
+  try {
+    const receipt = await contract.mintBumpkin(
+      signature,
+      deadline,
+      fee,
+      farmId,
+      partIds,
+      tokenUri,
+      { from: web3.myAccount as string, gasPrice, value: fee }
+    );
 
-        console.log({ parsed });
+    await receipt.wait();
+  } catch (error) {
+    const parsed = parseMetamaskError(error);
 
-        // In case it was a Blockchain timing issue
-        await new Promise((res) => setTimeout(res, 5 * 1000));
-
-        reject(parsed);
-      })
-      .on("transactionHash", function (transactionHash: any) {
-        console.log({ transactionHash });
-      })
-      .on("receipt", function (receipt: any) {
-        resolve(receipt);
-      });
-  });
+    throw parsed;
+  }
 }
