@@ -111,7 +111,7 @@ import SleepingOtter from "assets/open-sea/images/112.png";
 import SequenceHat from "assets/open-sea/images/114.png";
 import SequenceShirt from "assets/open-sea/images/115.png";
 import StPatricksHat from "assets/open-sea/images/116.png";
-import PolkastarterShirt from "assets/open-sea/images/118.png";
+import PolkastarterShirt from "assets/open-sea/images/119.png";
 import BunnyOnesie from "assets/open-sea/images/117.png";
 import BeachTrunks from "assets/open-sea/images/120.png";
 import ClubPolo from "assets/open-sea/images/121.png";
