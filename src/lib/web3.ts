@@ -1,15 +1,15 @@
 import { ERRORS } from "lib/errors";
-import Web3 from "web3";
 import { CONFIG } from "./config";
 import { parseMetamaskError } from "./web3/utils";
-import { createAlchemyWeb3 } from "@alch/alchemy-web3";
 import { Wallet } from "features/auth/lib/authMachine";
+import { ethers } from "ethers";
 
 /**
  * A wrapper of Web3 which handles retries and other common errors.
  */
 export class BumpkinWeb3 {
-  private web3: Web3 | null = null;
+  private write: ethers.providers.JsonRpcProvider | null = null;
+  private read: ethers.providers.JsonRpcProvider | null = null;
 
   private account: string | null = null;
 
@@ -38,7 +38,11 @@ export class BumpkinWeb3 {
       try {
         // Request account access if needed
         // await (window as any).ethereum.enable();
-        this.web3 = new Web3((window as any).ethereum);
+        const injectedProvider = new ethers.providers.Web3Provider(
+          (window as any).ethereum
+        );
+        this.read = injectedProvider;
+        this.write = injectedProvider;
       } catch (error) {
         // User denied account access...
         console.error("Error inside setupWeb3", error);
@@ -53,11 +57,11 @@ export class BumpkinWeb3 {
   }
 
   public async getAccount() {
-    if (!this.web3) {
+    if (!this.write) {
       throw new Error(ERRORS.NO_WEB3);
     }
 
-    const maticAccounts = await this.web3.eth.getAccounts();
+    const maticAccounts = await this.write.listAccounts();
     return maticAccounts[0];
   }
 
@@ -71,10 +75,12 @@ export class BumpkinWeb3 {
     try {
       // Smooth out the loading state
       await new Promise((res) => setTimeout(res, 1000));
-      this.web3 = new Web3(provider);
+      const _provider = new ethers.providers.Web3Provider(provider);
+      this.read = _provider;
+      this.write = _provider;
       await this.loadAccount();
 
-      const chainId = await this.web3?.eth.getChainId();
+      const chainId = (await this.write?.getNetwork())?.chainId;
 
       if (!(chainId === CONFIG.POLYGON_CHAIN_ID)) {
         throw new Error(ERRORS.WRONG_CHAIN);
@@ -99,15 +105,16 @@ export class BumpkinWeb3 {
   }
 
   public async connectedToPolygon() {
-    const chainId = await this.web3?.eth.getChainId();
+    const chainId = (await this.write?.getNetwork())?.chainId;
 
     return chainId === CONFIG.POLYGON_CHAIN_ID;
   }
 
   public async isWalletConnected() {
-    const isConnected = await this.web3?.eth.net.isListening();
+    const accounts = await this.write?.listAccounts();
+    if (accounts?.length) return true;
 
-    return isConnected;
+    return false;
   }
 
   public isAlchemy = false;
@@ -118,24 +125,14 @@ export class BumpkinWeb3 {
     if (CONFIG.ALCHEMY_RPC) {
       console.log("Provider overridden");
 
-      let web3;
-
-      if (wallet === "METAMASK") {
-        web3 = createAlchemyWeb3(CONFIG.ALCHEMY_RPC);
-      } else {
-        web3 = createAlchemyWeb3(CONFIG.ALCHEMY_RPC, {
-          writeProvider: provider,
-        });
-      }
-
-      this.web3 = new Web3(web3 as any);
+      this.read = new ethers.providers.JsonRpcProvider(CONFIG.ALCHEMY_RPC);
 
       await this.initialiseContracts();
     }
   }
 
   public async signTransaction(nonce: number, account = this.account) {
-    if (!this.web3) {
+    if (!this.write) {
       throw new Error(ERRORS.NO_WEB3);
     }
 
@@ -145,12 +142,7 @@ export class BumpkinWeb3 {
     });
 
     try {
-      const signature = await this.web3.eth.personal.sign(
-        message,
-        account as string,
-        // Empty password, handled by Metamask
-        ""
-      );
+      const signature = await this.write.getSigner().signMessage(message);
 
       return {
         signature,
@@ -204,7 +196,7 @@ export class BumpkinWeb3 {
   }
 
   public async checkDefaultNetwork() {
-    const chainId = await this.web3?.eth.getChainId();
+    const chainId = (await this.write?.getNetwork())?.chainId;
     return chainId === CONFIG.POLYGON_CHAIN_ID;
   }
 
@@ -250,8 +242,18 @@ export class BumpkinWeb3 {
     return this.account;
   }
 
-  public get provider(): Web3 {
-    return this.web3 as Web3;
+  private get publicRPC() {
+    return CONFIG.POLYGON_CHAIN_ID === 137
+      ? "https://rpc-mainnet.maticvigil.com"
+      : "https://rpc-mumbai.maticvigil.com";
+  }
+
+  public get readProvider(): ethers.providers.JsonRpcProvider {
+    return this.read ?? new ethers.providers.JsonRpcProvider(this.publicRPC);
+  }
+
+  public get writeProvider(): ethers.providers.JsonRpcProvider {
+    return this.write ?? new ethers.providers.JsonRpcProvider(this.publicRPC);
   }
 
   public async addTokenToMetamask() {
@@ -279,11 +281,12 @@ export class BumpkinWeb3 {
     }
   }
 
-  public get eth() {
-    return (
-      this.provider?.eth ?? new Web3("https://rpc-mumbai.maticvigil.com/").eth
-    );
-  }
+  // public get eth() {
+  //   return (
+  //     this.provider?.eth ??
+  //     new ethers.JsonRpcProvider("https://rpc-mumbai.maticvigil.com/").eth
+  //   );
+  // }
 }
 
 export const web3 = new BumpkinWeb3();

@@ -51,9 +51,14 @@ export const mintItemMachine = createMachine<
       invoke: {
         src: async (context, event) => {
           await new Promise((res) => setTimeout(res, 300));
-          const allowance = await loadAllowance();
+          try {
+            const allowance = await loadAllowance();
 
-          return { allowance };
+            return { allowance };
+          } catch (error) {
+            console.log(error);
+            throw error;
+          }
         },
         onDone: [
           {
@@ -117,30 +122,20 @@ export const mintItemMachine = createMachine<
     minting: {
       invoke: {
         src: async (_, event) => {
-          try {
-            const { jwt, itemName } = event as MintEvent;
-            await mintItem({
-              token: jwt,
-              item: itemName,
-            });
-
-            return { success: true };
-          } catch (error) {
-            return { success: false };
-          }
+          const { jwt, itemName } = event as MintEvent;
+          await mintItem({
+            token: jwt,
+            item: itemName,
+          });
         },
-        onDone: [
-          {
-            target: "minted",
-            cond: (_, event) => event.data.success,
-          },
-          { target: "error" },
-        ],
+        onDone: {
+          target: "minted",
+        },
         onError: {
           target: "error",
           actions: assign<Context, any>({
             errorCode: (_context, event) => {
-              return event.data.errorCode;
+              return event.data.message;
             },
           }),
         },

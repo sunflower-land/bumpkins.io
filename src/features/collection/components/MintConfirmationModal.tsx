@@ -14,8 +14,18 @@ import success from "assets/icons/accept.svg";
 import { Modal } from "features/components/Modal";
 import { Loading } from "components/Loading";
 import { getSFLBalance } from "lib/web3/contracts/SunflowerLandToken";
-import Web3 from "web3";
 import classNames from "classnames";
+import { formatUnits } from "ethers/lib/utils";
+
+const getErrorMessage = (errorCode?: keyof typeof ERRORS) => {
+  if (errorCode?.includes("UNPREDICTABLE_GAS_LIMIT"))
+    return "Cannot complete transaction. Network is congested.";
+
+  if (errorCode?.includes("REJECTED_TRANSACTION"))
+    return "Transaction Rejected.";
+
+  return "Transaction failed.";
+};
 
 interface LocationState {
   name: BumpkinItem;
@@ -42,7 +52,7 @@ export const MintConfirmationModal: React.FC = () => {
 
       authSend({
         type: "UPDATE_BALANCE",
-        balance: Number(Web3.utils.fromWei(sflBalance)),
+        balance: Number(formatUnits(sflBalance)),
       });
     };
 
@@ -298,7 +308,7 @@ export const MintConfirmationModal: React.FC = () => {
                   <div className="flex flex-col">
                     {mintMachineState.matches("error") && (
                       <span className="text-red-500 mt-1">
-                        {errorCode ? ERRORS[errorCode] : `Transaction failed`}
+                        {getErrorMessage(errorCode)}
                       </span>
                     )}
                     <a

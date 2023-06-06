@@ -56,7 +56,6 @@ export const BUMPKIN_ITEM_METADATA: Metadata[] = getKeys(DETAILS).reduce(
     const extraDetails =
       EXTRA_DETAILS[name as keyof typeof EXTRA_DETAILS] || {};
 
-    console.log({ name });
     const partAttribute = {
       trait_type: "Part",
       value: capitalizeFirstLetter(details.part),

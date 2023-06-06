@@ -4,8 +4,8 @@ import { DETAILS } from "features/bumpkins/types/ItemDetails";
 import { DateTime } from "luxon";
 import { fetchAllItems } from "features/collection/actions/items";
 import { BumpkinItemShopDetails } from "features/bumpkins/types/Shop";
-import Web3 from "web3";
 import { CONFIG } from "lib/config";
+import { ethers } from "ethers";
 
 export type Item = BumpkinItemShopDetails & {
   name: BumpkinItem;
@@ -62,7 +62,8 @@ export async function loadCurrentAndUpcomingDrops(): Promise<
 
   return upcomingItems;
 }
-const alchemyWeb3 = new Web3(CONFIG.ALCHEMY_RPC);
+
+const alchemyWeb3 = new ethers.providers.JsonRpcProvider(CONFIG.ALCHEMY_RPC);
 
 export async function loadTotalSupplyForCurrentItem(id: number) {
   const supply = await loadSupply([id], alchemyWeb3);

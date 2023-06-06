@@ -1,3 +1,4 @@
+import { formatUnits } from "ethers/lib/utils";
 import { IDS, ITEM_NAMES, WalletItems } from "features/bumpkins/types/Items";
 import { web3 } from "lib/web3";
 import {
@@ -6,7 +7,6 @@ import {
 } from "lib/web3/contracts/BumpkinDetails";
 import { loadItems } from "lib/web3/contracts/BumpkinItems";
 import { getSFLBalance } from "lib/web3/contracts/SunflowerLandToken";
-import Web3 from "web3";
 
 export type Bumpkin = OnChainBumpkin & {
   wearableIds: number[];
@@ -39,7 +39,7 @@ export async function fetchOnChainData(): Promise<OnChainData> {
 
   return {
     bumpkins: await Promise.all(bumpkins),
-    sflBalance: Number(Web3.utils.fromWei(sflBalance)),
+    sflBalance: Number(formatUnits(sflBalance)),
   };
 }
 
