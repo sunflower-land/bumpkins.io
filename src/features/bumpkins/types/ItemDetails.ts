@@ -659,4 +659,8 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "When the winter winds are blowin' cold and fierce, this here white turtle neck keeps me warm and toasty, and it looks darn good too.",
     part: "shirt",
   },
+  "Trial Tee": {
+    description: "A shirt only attained through special testing sessions.",
+    part: "shirt",
+  },
 };

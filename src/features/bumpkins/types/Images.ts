@@ -137,6 +137,7 @@ import SunburstPotion from "assets/open-sea/images/140.png";
 import WaterGun from "assets/open-sea/images/141.png";
 import WavyPants from "assets/open-sea/images/142.png";
 import WhiteTurtleNeck from "assets/open-sea/images/143.png";
+import TrialShirt from "assets/open-sea/images/144.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -277,4 +278,5 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Water Gun": WaterGun,
   "Wavy Pants": WavyPants,
   "White Turtle Neck": WhiteTurtleNeck,
+  "Trial Tee": TrialShirt,
 };
