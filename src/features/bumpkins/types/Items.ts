@@ -382,6 +382,14 @@ export type WalletItems = Record<BumpkinItem, number>;
 
 export const UNLIMITED_SUPPLY = 1000000;
 
+// The reverse of above
+export const BUMPKIN_ITEMS: Record<string, number> = Object.assign(
+  {},
+  ...Object.entries(ITEM_IDS).map(([a, b]) => ({ [b]: a }))
+);
+
+export const BUMPKIN_ITEMS_IDS = Object.values(ITEM_IDS);
+
 export const BUMPKIN_ITEM_PART: Record<BumpkinItem, keyof Wallet> = {
   "Beige Farmer Potion": "body",
   "Dark Brown Farmer Potion": "body",
