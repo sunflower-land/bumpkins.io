@@ -663,4 +663,34 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "A shirt only attained through special testing sessions.",
     part: "shirt",
   },
+  "Auction Megaphone": {
+    description:
+      "Amp up the bidding frenzy with this booming piece of equipment. Nothing says 'sold!' quite like the Auction Megaphone.",
+    part: "tool",
+  },
+  "Auctioneer Slacks": {
+    description:
+      "Crafted for comfort and style, these slacks ensure you're never out of place, whether in the auction house or the cornfield.",
+    part: "pants",
+  },
+  "Bidder's Brocade": {
+    description:
+      "Elegance meets business with this blazer, your partner in turning any bid into a winning one.",
+    part: "shirt",
+  },
+  "Harry's Hat": {
+    description:
+      "From the sun-drenched wheat fields to the auction's spotlight, this hat's a symbol of Harry's dedication to his craft.",
+    part: "hat",
+  },
+  "Leather Shoes": {
+    description:
+      "No auctioneer's ensemble is complete without these sturdy, yet stylish, leather shoes. They're made for walkin', and that's just what they'll do.",
+    part: "shoes",
+  },
+  "Tangerine Hair": {
+    description:
+      "Stand out from the crowd with Harry's vibrant tangerine hair, spiked to perfection and crowned with a mustache of authority.",
+    part: "hair",
+  },
 };

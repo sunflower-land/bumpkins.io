@@ -138,6 +138,12 @@ import WaterGun from "assets/open-sea/images/141.png";
 import WavyPants from "assets/open-sea/images/142.png";
 import WhiteTurtleNeck from "assets/open-sea/images/143.png";
 import TrialShirt from "assets/open-sea/images/144.png";
+import Megaphone from "assets/open-sea/images/145.png";
+import AuctioneerSlacks from "assets/open-sea/images/146.png";
+import BiddersBrocade from "assets/open-sea/images/147.png";
+import HarrysHat from "assets/open-sea/images/148.png";
+import LeatherShoes from "assets/open-sea/images/149.png";
+import TangerineHair from "assets/open-sea/images/150.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -279,4 +285,10 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Wavy Pants": WavyPants,
   "White Turtle Neck": WhiteTurtleNeck,
   "Trial Tee": TrialShirt,
+  "Auction Megaphone": Megaphone,
+  "Auctioneer Slacks": AuctioneerSlacks,
+  "Bidder's Brocade": BiddersBrocade,
+  "Harry's Hat": HarrysHat,
+  "Leather Shoes": LeatherShoes,
+  "Tangerine Hair": TangerineHair,
 };
