@@ -284,41 +284,13 @@ export const Equip: React.FC = () => {
         <div className="h-14 overflow-hidden w-full sticky top-0 z-20">
           <div
             className={classNames(
-              "h-14 w-full bg-blue-500 flex items-center justify-between px-4",
-              {
-                "opacity-100": hasChanges,
-                "opacity-0": !hasChanges,
-                "bg-orange-600": bodyChanged,
-                "pointer-events-none": !hasChanges,
-              }
+              "h-14 w-full bg-blue-500 flex items-center justify-between px-4"
             )}
           >
-            <p className="text-white text-sm">{makeBannerText()}</p>
-
-            {!missingRequiredItems && (
-              <button
-                className={classNames(
-                  "h-9 px-2 md:px-3 items-center text-sm justify-center flex leading-3 tracking-tighter font-heading text-center bg-white hover:bg-blue-200 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl text-blue-500 border border-blue-500 hover:border-transparent",
-                  {
-                    "text-orange-500 border-orange-500 focus:ring-orange-500 hover:bg-orange-200":
-                      bodyChanged,
-                  }
-                )}
-                onClick={save}
-                disabled={
-                  bumpkinState.matches("equipping") || missingRequiredItems
-                }
-              >
-                {bumpkinState.matches("equipping") ? (
-                  <>
-                    <LoadingSpinner size={5} />
-                    Saving...
-                  </>
-                ) : (
-                  "Save to blockchain"
-                )}
-              </button>
-            )}
+            <p className="text-white text-sm">
+              Bumpkins have been moved into Sunflower Land. To change clothing,
+              please deposit them onto your farm first.
+            </p>
           </div>
         </div>
         <div className="relative container mb-4 mx-auto flex flex-col mt-3 md:mt-6 transition-transform duration-300">

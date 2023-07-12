@@ -115,26 +115,6 @@ export const EquipItemCard: React.FC<Props> = ({
               Equipped
             </span>
           )}
-          {!equipped && details.part === "body" && (
-            <PotionButton
-              title="Drink Potion"
-              onClick={() => onEquip(details?.part, name)}
-            />
-          )}
-          {!equipped && details.part !== "body" && (
-            <PrimaryButton
-              size="sm"
-              title="Add to NFT"
-              onClick={() => onEquip(details?.part, name)}
-            />
-          )}
-          {equipped && !REQUIRED_PARTS.includes(details.part) && (
-            <PrimaryButton
-              size="sm"
-              title="Remove from NFT"
-              onClick={() => onUnequip(details?.part, name)}
-            />
-          )}
         </div>
       </div>
     </div>
