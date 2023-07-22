@@ -693,4 +693,60 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "Stand out from the crowd with Harry's vibrant tangerine hair, spiked to perfection and crowned with a mustache of authority.",
     part: "hair",
   },
+  "Witching Wardrobe": {
+    description:
+      "Step into the realm of style and elegance with the bewitching Witching Wardrobe wearable.",
+    part: "dress",
+  },
+  "Witch's Broom": {
+    description:
+      "Take flight on the wings of magic with the Witches Broom wearable.",
+    part: "tool",
+  },
+  "Infernal Bumpkin Potion": {
+    description: "Unleash your infernal charm with the Infernal Bumpkin potion",
+    part: "body",
+  },
+  "Infernal Goblin Potion": {
+    description: "Unleash your infernal charm with the Infernal Goblin potion",
+    part: "body",
+  },
+  "Imp Costume": {
+    description:
+      "Transform into a playful and charismatic imp with the Imp Costume wearable. ",
+    part: "onesie",
+  },
+  "Ox Costume": {
+    description:
+      "Embrace the strength and resilience of the ox with the Ox Suit wearable.",
+    part: "onesie",
+  },
+  "Luna's Hat": {
+    description:
+      "Unleash your culinary prowess with Luna's Hat, a whimsical accessory that enhances your cooking speed.",
+    part: "hat",
+    boosts: ["50% Cooking Speed"],
+  },
+  "Infernal Pitchfork": {
+    description:
+      "Embrace the power of the Infernal Pitchfork and witness the land yield a bountiful harvest. (Does not stack with criticals).",
+    part: "tool",
+    boosts: ["+3 Crops"],
+  },
+  "Infernal Horns": {
+    description:
+      "Tap into your inner infernal power with the Infernal Horns wearable. ",
+    part: "hat",
+  },
+  Cattlegrim: {
+    description:
+      "Harness the extraordinary abilities of the Cattlegrim and witness your animal produce soar to new heights.",
+    part: "hat",
+    boosts: ["+0.25 Animal Produce"],
+  },
+  "Crumple Crown": {
+    description:
+      "Crown yourself with the illustrious Crumple Crown, an exclusive wearable that exudes elegance and refinement.",
+    part: "hat",
+  },
 };

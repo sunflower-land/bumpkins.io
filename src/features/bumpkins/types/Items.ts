@@ -20,7 +20,9 @@ export type BumpkinBody =
   | "Pirate Potion"
   | "Light Brown Worried Farmer Potion"
   | "Sunburst Potion"
-  | "Infected Potion";
+  | "Infected Potion"
+  | "Infernal Bumpkin Potion"
+  | "Infernal Goblin Potion";
 
 export type BumpkinHair =
   | "Basic Hair"
@@ -91,7 +93,9 @@ export type BumpkinTool =
   | "Dawn Lamp"
   | "Water Gun"
   | "Grave Diggers Shovel"
-  | "Auction Megaphone";
+  | "Auction Megaphone"
+  | "Witch's Broom"
+  | "Infernal Pitchfork";
 
 export type BumpkinShoe =
   | "Black Farmer Boots"
@@ -127,7 +131,11 @@ export type BumpkinHat =
   | "Squid Hat"
   | "Fox Hat"
   | "Mushroom Hat"
-  | "Harry's Hat";
+  | "Harry's Hat"
+  | "Luna's Hat"
+  | "Infernal Horns"
+  | "Cattlegrim"
+  | "Crumple Crown";
 
 export type BumpkinPant =
   | "Farmer Overalls"
@@ -146,7 +154,12 @@ export type BumpkinPant =
   | "Mushroom Pants"
   | "Auctioneer Slacks";
 
-export type BumpkinDress = "Cupid Dress" | "Beach Sarong" | "Tropical Sarong";
+export type BumpkinDress =
+  | "Cupid Dress"
+  | "Beach Sarong"
+  | "Tropical Sarong"
+  | "Witching Wardrobe";
+
 export type BumpkinSecondaryTool =
   | "Sunflower Shield"
   | "Crab Claw"
@@ -160,12 +173,15 @@ export type BumpkinOnesie =
   | "Tiger Onesie"
   | "Frog Onesie"
   | "Bunny Onesie"
-  | "Eggplant Onesie";
+  | "Eggplant Onesie"
+  | "Imp Costume"
+  | "Ox Costume";
 
 // Goes over clothes
 export type BumpkinSuit = "Reindeer Suit";
 
 export type BumpkinWings = "Angel Wings" | "Devil Wings" | "Love Quiver";
+
 export type BumpkinItem =
   | BumpkinBody
   | BumpkinHair
@@ -329,6 +345,17 @@ export const ITEM_IDS: Record<BumpkinItem, number> = {
   "Harry's Hat": 148,
   "Leather Shoes": 149,
   "Tangerine Hair": 150,
+  "Witching Wardrobe": 155,
+  "Witch's Broom": 156,
+  "Infernal Bumpkin Potion": 157,
+  "Infernal Goblin Potion": 158,
+  "Imp Costume": 159,
+  "Ox Costume": 160,
+  "Luna's Hat": 161,
+  "Infernal Pitchfork": 162,
+  "Infernal Horns": 163,
+  Cattlegrim: 164,
+  "Crumple Crown": 165,
 };
 
 // The reverse of above
@@ -480,7 +507,7 @@ export const BUMPKIN_ITEM_PART: Record<BumpkinItem, keyof Wallet> = {
   "Pirate General Coat": "coat",
   "Pirate Pants": "pants",
   "Pirate Leather Polo": "shirt",
-  "Crab Claw": "tool",
+  "Crab Claw": "secondaryTool",
   "Pirate Scimitar": "tool",
   "Cupid Hair": "hair",
   "Cupid Dress": "dress",
@@ -536,6 +563,17 @@ export const BUMPKIN_ITEM_PART: Record<BumpkinItem, keyof Wallet> = {
   "Harry's Hat": "hat",
   "Leather Shoes": "shoes",
   "Tangerine Hair": "hair",
+  "Witching Wardrobe": "dress",
+  "Witch's Broom": "tool",
+  "Infernal Bumpkin Potion": "body",
+  "Infernal Goblin Potion": "body",
+  "Imp Costume": "onesie",
+  "Ox Costume": "onesie",
+  "Luna's Hat": "hat",
+  "Infernal Pitchfork": "tool",
+  "Infernal Horns": "hat",
+  Cattlegrim: "hat",
+  "Crumple Crown": "hat",
 };
 
 export const BUMPKIN_ITEM_BUFF: Partial<Record<BumpkinItem, string>> = {
@@ -545,4 +583,10 @@ export const BUMPKIN_ITEM_BUFF: Partial<Record<BumpkinItem, string>> = {
   "Devil Wings": "Instant Crops",
   "Eggplant Onesie": "+0.1 Eggplant",
   "Golden Spatula": "+10% EXP",
+  "Mushroom Hat": "+0.1 Mushrooms",
+  Parsnip: "+20% Parsnip",
+  "Sunflower Amulet": "+10% Sunflower",
+  "Carrot Amulet": "-20% Carrot growth time",
+  "Beetroot Amulet": "+20% Beetroot",
+  "Green Amulet": "Chance for 10x crops",
 };
