@@ -24,7 +24,6 @@ import {
   CATEGORY_PARTS,
 } from "features/collection/actions/items";
 import { DETAILS } from "../types/ItemDetails";
-import { LoadingSpinner } from "components/LoadingSpinner";
 import { PrimaryButton } from "components/PrimaryButton";
 import { fetchWalletItems } from "features/auth/lib/fetchOnChainData";
 import { Loading } from "components/Loading";
