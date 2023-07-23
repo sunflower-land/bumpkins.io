@@ -144,6 +144,17 @@ import BiddersBrocade from "assets/open-sea/images/147.png";
 import HarrysHat from "assets/open-sea/images/148.png";
 import LeatherShoes from "assets/open-sea/images/149.png";
 import TangerineHair from "assets/open-sea/images/150.png";
+import WitchingWardrobe from "assets/open-sea/images/155.png";
+import WitchesBroom from "assets/open-sea/images/156.png";
+import InfernalBumpkinPotion from "assets/open-sea/images/157.png";
+import InfernalGoblinPotion from "assets/open-sea/images/158.png";
+import ImpCostume from "assets/open-sea/images/159.png";
+import OxCostume from "assets/open-sea/images/160.png";
+import LunasHat from "assets/open-sea/images/161.png";
+import InfernalPitchfork from "assets/open-sea/images/162.png";
+import InfernalHorns from "assets/open-sea/images/163.png";
+import Cattlegrim from "assets/open-sea/images/164.png";
+import CrumpleCrown from "assets/open-sea/images/165.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -291,4 +302,15 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Harry's Hat": HarrysHat,
   "Leather Shoes": LeatherShoes,
   "Tangerine Hair": TangerineHair,
+  "Witching Wardrobe": WitchingWardrobe,
+  "Witch's Broom": WitchesBroom,
+  "Infernal Bumpkin Potion": InfernalBumpkinPotion,
+  "Infernal Goblin Potion": InfernalGoblinPotion,
+  "Imp Costume": ImpCostume,
+  "Ox Costume": OxCostume,
+  "Luna's Hat": LunasHat,
+  "Infernal Pitchfork": InfernalPitchfork,
+  "Infernal Horns": InfernalHorns,
+  Cattlegrim: Cattlegrim,
+  "Crumple Crown": CrumpleCrown,
 };
