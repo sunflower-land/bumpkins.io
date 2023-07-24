@@ -1,5 +1,6 @@
 import { BumpkinItem } from "features/bumpkins/types/Items";
 
+import unknown from "assets/open-sea/images/bg.png";
 import BeigeFarmerPotion from "assets/open-sea/images/1.png";
 import DarkBrownFarmerPotion from "assets/open-sea/images/2.png";
 import LightBrownFarmerPotion from "assets/open-sea/images/3.png";
@@ -144,6 +145,7 @@ import BiddersBrocade from "assets/open-sea/images/147.png";
 import HarrysHat from "assets/open-sea/images/148.png";
 import LeatherShoes from "assets/open-sea/images/149.png";
 import TangerineHair from "assets/open-sea/images/150.png";
+import strawHat from "assets/open-sea/images/151.png";
 import WitchingWardrobe from "assets/open-sea/images/155.png";
 import WitchesBroom from "assets/open-sea/images/156.png";
 import InfernalBumpkinPotion from "assets/open-sea/images/157.png";
@@ -155,6 +157,44 @@ import InfernalPitchfork from "assets/open-sea/images/162.png";
 import InfernalHorns from "assets/open-sea/images/163.png";
 import Cattlegrim from "assets/open-sea/images/164.png";
 import CrumpleCrown from "assets/open-sea/images/165.png";
+import MerchBucketHat from "assets/open-sea/images/166.png";
+import MerchCoffeeMug from "assets/open-sea/images/167.png";
+import DawnBreakerTee from "assets/open-sea/images/168.png";
+import MerchTee from "assets/open-sea/images/169.png";
+import MerchHoodie from "assets/open-sea/images/170.png";
+import BirthdayHat from "assets/open-sea/images/171.png";
+import DoubleHarvestCap from "assets/open-sea/images/172.png";
+import StreamerHelmet from "assets/open-sea/images/173.png";
+import CornOnesie from "assets/open-sea/images/174.png";
+import CrowWings from "assets/open-sea/images/175.png";
+import WitchesEveTee from "assets/open-sea/images/176.png";
+import WiseBeard from "assets/open-sea/images/177.png";
+import PumpkinHat from "assets/open-sea/images/178.png";
+import WiseBook from "assets/open-sea/images/179.png";
+import WiseHair from "assets/open-sea/images/180.png";
+import WiseRobes from "assets/open-sea/images/181.png";
+import WiseSlacks from "assets/open-sea/images/182.png";
+import WiseStaff from "assets/open-sea/images/183.png";
+import GreyedGlory from "assets/open-sea/images/184.png";
+import TatteredJacket from "assets/open-sea/images/185.png";
+import HoaryChin from "assets/open-sea/images/186.png";
+import TatteredSlacks from "assets/open-sea/images/187.png";
+import OldShoes from "assets/open-sea/images/188.png";
+import BatWings from "assets/open-sea/images/189.png";
+import GothicTwilight from "assets/open-sea/images/190.png";
+import DarkEnchantmentGown from "assets/open-sea/images/191.png";
+import GothHair from "assets/open-sea/images/192.png";
+import PalePotion from "assets/open-sea/images/193.png";
+import StretchedJeans from "assets/open-sea/images/194.png";
+import SkullShirt from "assets/open-sea/images/195.png";
+import VictorianHat from "assets/open-sea/images/196.png";
+import BoaterHat from "assets/open-sea/images/197.png";
+import AntiqueDress from "assets/open-sea/images/198.png";
+import CrimsonSkirt from "assets/open-sea/images/199.png";
+import ChicGalaBlouse from "assets/open-sea/images/200.png";
+import AshPonytail from "assets/open-sea/images/201.png";
+import PinkPonytail from "assets/open-sea/images/202.png";
+import SilverStreaks from "assets/open-sea/images/203.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -313,4 +353,46 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Infernal Horns": InfernalHorns,
   Cattlegrim: Cattlegrim,
   "Crumple Crown": CrumpleCrown,
+  "Merch Bucket Hat": MerchBucketHat,
+  "Merch Coffee Mug": MerchCoffeeMug,
+  "Dawn Breaker Tee": DawnBreakerTee,
+  "Merch Tee": MerchTee,
+  "Merch Hoodie": MerchHoodie,
+  "Birthday Hat": BirthdayHat,
+  "Double Harvest Cap": DoubleHarvestCap,
+  "Streamer Helmet": StreamerHelmet,
+  "Corn Onesie": CornOnesie,
+  "Crow Wings": CrowWings,
+  "Witches' Eve Tee": WitchesEveTee,
+  "Wise Beard": WiseBeard,
+  "Pumpkin Hat": PumpkinHat,
+  "Wise Book": WiseBook,
+  "Wise Hair": WiseHair,
+  "Wise Robes": WiseRobes,
+  "Wise Slacks": WiseSlacks,
+  "Wise Staff": WiseStaff,
+  "Greyed Glory": GreyedGlory,
+  "Tattered Jacket": TatteredJacket,
+  "Hoary Chin": HoaryChin,
+  "Tattered Slacks": TatteredSlacks,
+  "Old Shoes": OldShoes,
+  "Bat Wings": BatWings,
+  "Gothic Twilight": GothicTwilight,
+  "Dark Enchantment Gown": DarkEnchantmentGown,
+  "Goth Hair": GothHair,
+  "Pale Potion": PalePotion,
+  "Stretched Jeans": StretchedJeans,
+  "Skull Shirt": SkullShirt,
+  "Victorian Hat": VictorianHat,
+  "Boater Hat": BoaterHat,
+  "Antique Dress": AntiqueDress,
+  "Crimson Skirt": CrimsonSkirt,
+  "Chic Gala Blouse": ChicGalaBlouse,
+  "Ash Ponytail": AshPonytail,
+  "Pink Ponytail": PinkPonytail,
+  "Silver Streaks": SilverStreaks,
+  "Straw Hat": strawHat,
+  "Traveller's Backpack": unknown,
+  "Traveller's Pants": unknown,
+  "Traveller's Shirt": unknown,
 };

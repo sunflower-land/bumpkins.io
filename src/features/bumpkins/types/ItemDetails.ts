@@ -749,4 +749,174 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "Crown yourself with the illustrious Crumple Crown, an exclusive wearable that exudes elegance and refinement.",
     part: "hat",
   },
+
+  "Merch Bucket Hat": {
+    description: "A stylish bucket hat featuring the Sunflower Land logo.",
+    part: "hat",
+  },
+  "Merch Coffee Mug": {
+    description: "A Sunflower Land coffee mug to keep you caffeinated.",
+    part: "tool",
+  },
+  "Dawn Breaker Tee": {
+    description: "Show your love for Sunflower Land with this exclusive tee.",
+    part: "shirt",
+  },
+  "Merch Tee": {
+    description: "Official Sunflower Land merchandise tee.",
+    part: "shirt",
+  },
+  "Merch Hoodie": {
+    description: "Stay cozy with this Sunflower Land hoodie.",
+    part: "shirt",
+  },
+  "Birthday Hat": {
+    description: "Celebrate with this festive birthday hat.",
+    part: "hat",
+  },
+  "Double Harvest Cap": {
+    description: "Double the harvest, double the fun.",
+    part: "hat",
+  },
+  "Streamer Helmet": {
+    description: "Stream your adventures with this stylish helmet.",
+    part: "hat",
+  },
+  "Corn Onesie": {
+    description: "Transform into a cornstalk in this comfy onesie.",
+    part: "onesie",
+  },
+  "Crow Wings": {
+    description: "Fly high with these crow-like wings.",
+    part: "wings",
+  },
+  "Witches' Eve Tee": {
+    description: "Celebrate Witches' Eve with this special tee.",
+    part: "shirt",
+  },
+  "Wise Beard": {
+    description: "Show your wisdom with this majestic beard.",
+    part: "beard",
+  },
+  "Pumpkin Hat": {
+    description: "Get into the spirit of autumn with this pumpkin hat.",
+    part: "hat",
+  },
+  "Wise Book": {
+    description: "Carry your knowledge with this ancient tome.",
+    part: "secondaryTool",
+  },
+  "Wise Hair": {
+    description: "Hair that exudes wisdom and experience.",
+    part: "hair",
+  },
+  "Wise Robes": {
+    description: "Robes worn by the wisest of Bumpkins.",
+    part: "shirt",
+  },
+  "Wise Slacks": {
+    description: "Stylish and comfortable slacks for the wise Bumpkin.",
+    part: "pants",
+  },
+  "Wise Staff": {
+    description: "Channel your inner wisdom with this magical staff.",
+    part: "tool",
+  },
+  "Greyed Glory": {
+    description: "Grey hair that adds a touch of maturity.",
+    part: "hair",
+  },
+  "Tattered Jacket": {
+    description: "A worn-out jacket with a story to tell.",
+    part: "shirt",
+  },
+  "Hoary Chin": {
+    description: "A beard that shows the passage of time.",
+    part: "beard",
+  },
+  "Tattered Slacks": {
+    description: "Slacks that have seen their fair share of adventures.",
+    part: "pants",
+  },
+  "Old Shoes": {
+    description: "Sturdy shoes that have stood the test of time.",
+    part: "shoes",
+  },
+  "Bat Wings": {
+    description: "Wings that evoke the spirit of the night.",
+    part: "wings",
+  },
+  "Gothic Twilight": {
+    description: "A dress that captures the essence of twilight.",
+    part: "dress",
+  },
+  "Dark Enchantment Gown": {
+    description: "A gown that exudes a mysterious enchantment.",
+    part: "dress",
+  },
+  "Goth Hair": {
+    description: "Hair that embraces the darkness of the night.",
+    part: "hair",
+  },
+  "Pale Potion": {
+    description: "A potion that gives your Bumpkin a pale appearance.",
+    part: "body",
+  },
+  "Stretched Jeans": {
+    description: "Jeans perfect for a laid-back and casual look.",
+    part: "pants",
+  },
+  "Skull Shirt": {
+    description: "A shirt adorned with skulls for a daring style.",
+    part: "shirt",
+  },
+  "Victorian Hat": {
+    description: "A hat inspired by the elegance of the Victorian era.",
+    part: "hat",
+  },
+  "Boater Hat": {
+    description: "A classic boater hat for a stylish look.",
+    part: "hat",
+  },
+  "Antique Dress": {
+    description: "A dress that embodies vintage charm.",
+    part: "dress",
+  },
+  "Crimson Skirt": {
+    description: "A skirt in a vibrant crimson shade.",
+    part: "pants",
+  },
+  "Chic Gala Blouse": {
+    description: "A blouse that's perfect for a gala event.",
+    part: "shirt",
+  },
+  "Ash Ponytail": {
+    description: "A ponytail with a subtle ash-gray hue.",
+    part: "hair",
+  },
+  "Pink Ponytail": {
+    description: "A playful ponytail in a delightful pink color.",
+    part: "hair",
+  },
+  "Silver Streaks": {
+    description: "Streaks of silver add a touch of sophistication.",
+    part: "hair",
+  },
+  "Straw Hat": {
+    description: "A classic and timeless straw hat for a sunny day.",
+    part: "hat",
+  },
+  "Traveller's Backpack": {
+    description:
+      "A functional and stylish backpack for the adventurous Bumpkin.",
+    part: "wings",
+  },
+  "Traveller's Pants": {
+    description: "Comfortable pants that are essential for any journey.",
+    part: "pants",
+  },
+  "Traveller's Shirt": {
+    description: "A versatile shirt that suits any traveler's wardrobe.",
+    part: "shirt",
+  },
 };
