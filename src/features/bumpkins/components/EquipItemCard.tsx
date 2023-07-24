@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BumpkinItem, BumpkinPart, ITEM_IDS } from "../types/Items";
 import { DETAILS } from "../types/ItemDetails";
-import { PrimaryButton } from "components/PrimaryButton";
 import collectionIcon from "assets/logos/sunflower_land.png";
 import { IMAGES } from "../types/Images";
 import classNames from "classnames";
