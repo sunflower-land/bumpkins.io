@@ -195,6 +195,10 @@ import ChicGalaBlouse from "assets/open-sea/images/200.png";
 import AshPonytail from "assets/open-sea/images/201.png";
 import PinkPonytail from "assets/open-sea/images/202.png";
 import SilverStreaks from "assets/open-sea/images/203.png";
+import BrownRancherHair from "assets/open-sea/images/204.png";
+import ParsnipHorns from "assets/open-sea/images/205.png";
+import PotatoSuit from "assets/open-sea/images/206.png";
+import WhaleHat from "assets/open-sea/images/207.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -395,4 +399,8 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Traveller's Backpack": unknown,
   "Traveller's Pants": unknown,
   "Traveller's Shirt": unknown,
+  "Brown Rancher Hair": BrownRancherHair,
+  "Parsnip Horns": ParsnipHorns,
+  "Potato Suit": PotatoSuit,
+  "Whale Hat": WhaleHat,
 };

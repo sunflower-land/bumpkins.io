@@ -919,4 +919,24 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "A versatile shirt that suits any traveler's wardrobe.",
     part: "shirt",
   },
+  "Potato Suit": {
+    description:
+      "A quirky and amusing potato-themed suit for those who love a good laugh.",
+    part: "suit",
+  },
+  "Parsnip Horns": {
+    description:
+      "A unique set of parsnip-shaped horns that adds a touch of whimsy to any outfit.",
+    part: "hat",
+  },
+  "Brown Rancher Hair": {
+    description:
+      "A rugged and tousled hairstyle inspired by the hardworking ranchers of the countryside.",
+    part: "hair",
+  },
+  "Whale Hat": {
+    description:
+      "A fun and charming hat shaped like a friendly whale, perfect for ocean enthusiasts.",
+    part: "hat",
+  },
 };
