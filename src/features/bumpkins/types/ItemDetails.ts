@@ -939,4 +939,18 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "A fun and charming hat shaped like a friendly whale, perfect for ocean enthusiasts.",
     part: "hat",
   },
+  "Pumpkin Shirt": {
+    description:
+      "A cute shirt with a pumpkin design, perfect for fall festivities.",
+    part: "shirt",
+  },
+  Halo: {
+    description:
+      "A glowing halo that gives a celestial aura to its wearer. A symbol of a moderator",
+    part: "hat",
+  },
+  Kama: {
+    description: "A dark mysterious farming sickle.",
+    part: "tool",
+  },
 };

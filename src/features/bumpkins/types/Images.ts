@@ -199,6 +199,9 @@ import BrownRancherHair from "assets/open-sea/images/204.png";
 import ParsnipHorns from "assets/open-sea/images/205.png";
 import PotatoSuit from "assets/open-sea/images/206.png";
 import WhaleHat from "assets/open-sea/images/207.png";
+import PumpkinShirt from "assets/open-sea/images/208.png";
+import Halo from "assets/open-sea/images/209.png";
+import Kama from "assets/open-sea/images/210.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -403,4 +406,7 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Parsnip Horns": ParsnipHorns,
   "Potato Suit": PotatoSuit,
   "Whale Hat": WhaleHat,
+  "Pumpkin Shirt": PumpkinShirt,
+  Halo: Halo,
+  Kama: Kama,
 };
