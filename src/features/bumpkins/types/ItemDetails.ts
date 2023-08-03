@@ -953,4 +953,8 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "A dark mysterious farming sickle.",
     part: "tool",
   },
+  "Grey Merch Hoodie": {
+    description: "Stay cozy with this Sunflower Land grey hoodie.",
+    part: "shirt",
+  },
 };
