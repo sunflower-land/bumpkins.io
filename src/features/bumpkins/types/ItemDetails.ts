@@ -957,4 +957,12 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "Stay cozy with this Sunflower Land grey hoodie.",
     part: "shirt",
   },
+  "Unicorn Horn": {
+    description: "Neiiiiigh. A magestical horn from the Crypto Unicorns collab",
+    part: "hat",
+  },
+  "Unicorn Hat": {
+    description: "Is that blossom? Fit right in with this rare unicorn hat",
+    part: "hat",
+  },
 };
