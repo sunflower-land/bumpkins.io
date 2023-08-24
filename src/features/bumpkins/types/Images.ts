@@ -205,6 +205,7 @@ import Kama from "assets/open-sea/images/210.png";
 import GreyMerchHoodie from "assets/open-sea/images/211.png";
 import UnicornHorn from "assets/open-sea/images/212.png";
 import UnicornHat from "assets/open-sea/images/213.png";
+import FeatherHat from "assets/open-sea/images/214.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -415,4 +416,5 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Grey Merch Hoodie": GreyMerchHoodie,
   "Unicorn Horn": UnicornHorn,
   "Unicorn Hat": UnicornHat,
+  "Feather Hat": FeatherHat,
 };

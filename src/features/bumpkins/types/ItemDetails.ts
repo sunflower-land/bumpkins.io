@@ -965,4 +965,9 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "Is that blossom? Fit right in with this rare unicorn hat",
     part: "hat",
   },
+  "Feather Hat": {
+    description:
+      "A beautiful rare green feather hat - a special event giveaway",
+    part: "hat",
+  },
 };
