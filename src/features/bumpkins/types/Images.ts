@@ -207,6 +207,7 @@ import UnicornHorn from "assets/open-sea/images/212.png";
 import UnicornHat from "assets/open-sea/images/213.png";
 import FeatherHat from "assets/open-sea/images/214.png";
 import ValoriaWreath from "assets/open-sea/images/215.png";
+import EarnAllianceSombrero from "assets/open-sea/images/216.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -419,4 +420,5 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Unicorn Hat": UnicornHat,
   "Feather Hat": FeatherHat,
   "Valoria Wreath": ValoriaWreath,
+  "Earn Alliance Sombrero": EarnAllianceSombrero,
 };
