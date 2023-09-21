@@ -179,6 +179,15 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
       },
     ],
   },
+  "Corn Onesie": {
+    boosts: [
+      {
+        display_type: "boost_number",
+        trait_type: "Increase Corn Yield",
+        value: 0.1,
+      },
+    ],
+  },
 };
 
 function capitalizeFirstLetter(string: string) {
