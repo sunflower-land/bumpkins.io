@@ -1,11 +1,1 @@
-{
-  "name": "Skull Hat",
-  "description": "\r\n\r\n## Skull Hat\r\n\r\nThe most fierce warriors from the Goblin War can be seen wearing the skulls of their enemies!\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT\r\n\r\n### About\r\n\r\nBumpkins is a community driven customisable NFT project powered by Sunflower Land\r\n[Bumpkins](https://docs.bumpkins.io/getting-started/about)\r\n[Bumpkins Terms and Conditions](https://docs.bumpkins.io/support/terms-of-service)\r\n[Sunflower Land](https://docs.sunflower-land.com/getting-started/about)",
-  "image": "https://bumpkins.io/erc1155/images/79.png",
-  "attributes": [
-    { "trait_type": "Part", "value": "Hat" },
-    { "trait_type": "Boost", "value": "None" },
-    { "trait_type": "Tradable", "value": "Yes" }
-  ],
-  "external_url": "https://bumpkins.io"
-}
+{"name":"Skull Hat","description":"\r\n\r\n## Skull Hat\r\n\r\nThe most fierce warriors from the Goblin War can be seen wearing the skulls of their enemies!\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT\r\n\r\n### About\r\n\r\nBumpkins is a community driven customisable NFT project powered by Sunflower Land\r\n[Bumpkins](https://docs.bumpkins.io/getting-started/about)\r\n[Bumpkins Terms and Conditions](https://docs.bumpkins.io/support/terms-of-service)\r\n[Sunflower Land](https://docs.sunflower-land.com/getting-started/about)","image":"https://bumpkins.io/erc1155/images/79.png","attributes":[{"trait_type":"Part","value":"Hat"},{"trait_type":"Boost","value":"None"},{"trait_type":"Tradable","value":"Yes"}],"external_url":"https://bumpkins.io"}

@@ -1,11 +1,1 @@
-{
-  "name": "Rash Vest",
-  "description": "\r\n\r\n## Rash Vest\r\n\r\nGet ready for some fun in the sun with this stylish and practical rash vest that's perfect for staying safe and comfortable while you're out on the water.\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT\r\n\r\n### About\r\n\r\nBumpkins is a community driven customisable NFT project powered by Sunflower Land\r\n[Bumpkins](https://docs.bumpkins.io/getting-started/about)\r\n[Bumpkins Terms and Conditions](https://docs.bumpkins.io/support/terms-of-service)\r\n[Sunflower Land](https://docs.sunflower-land.com/getting-started/about)",
-  "image": "https://bumpkins.io/erc1155/images/135.png",
-  "attributes": [
-    { "trait_type": "Part", "value": "Shirt" },
-    { "trait_type": "Boost", "value": "None" },
-    { "trait_type": "Tradable", "value": "No" }
-  ],
-  "external_url": "https://bumpkins.io"
-}
+{"name":"Rash Vest","description":"\r\n\r\n## Rash Vest\r\n\r\nGet ready for some fun in the sun with this stylish and practical rash vest that's perfect for staying safe and comfortable while you're out on the water.\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT\r\n\r\n### About\r\n\r\nBumpkins is a community driven customisable NFT project powered by Sunflower Land\r\n[Bumpkins](https://docs.bumpkins.io/getting-started/about)\r\n[Bumpkins Terms and Conditions](https://docs.bumpkins.io/support/terms-of-service)\r\n[Sunflower Land](https://docs.sunflower-land.com/getting-started/about)","image":"https://bumpkins.io/erc1155/images/135.png","attributes":[{"trait_type":"Part","value":"Shirt"},{"trait_type":"Boost","value":"None"},{"trait_type":"Tradable","value":"No"}],"external_url":"https://bumpkins.io"}

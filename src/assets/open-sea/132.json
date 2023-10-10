@@ -1,11 +1,1 @@
-{
-  "name": "Mushroom Shield",
-  "description": "\r\n\r\n## Mushroom Shield\r\n\r\nProtect yourself from danger and look cool doing it with this sturdy and reliable mushroom shield that's perfect for fending off pests and predators.\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT\r\n\r\n### About\r\n\r\nBumpkins is a community driven customisable NFT project powered by Sunflower Land\r\n[Bumpkins](https://docs.bumpkins.io/getting-started/about)\r\n[Bumpkins Terms and Conditions](https://docs.bumpkins.io/support/terms-of-service)\r\n[Sunflower Land](https://docs.sunflower-land.com/getting-started/about)",
-  "image": "https://bumpkins.io/erc1155/images/132.png",
-  "attributes": [
-    { "trait_type": "Part", "value": "SecondaryTool" },
-    { "trait_type": "Boost", "value": "None" },
-    { "trait_type": "Tradable", "value": "No" }
-  ],
-  "external_url": "https://bumpkins.io"
-}
+{"name":"Mushroom Shield","description":"\r\n\r\n## Mushroom Shield\r\n\r\nProtect yourself from danger and look cool doing it with this sturdy and reliable mushroom shield that's perfect for fending off pests and predators.\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT\r\n\r\n### About\r\n\r\nBumpkins is a community driven customisable NFT project powered by Sunflower Land\r\n[Bumpkins](https://docs.bumpkins.io/getting-started/about)\r\n[Bumpkins Terms and Conditions](https://docs.bumpkins.io/support/terms-of-service)\r\n[Sunflower Land](https://docs.sunflower-land.com/getting-started/about)","image":"https://bumpkins.io/erc1155/images/132.png","attributes":[{"trait_type":"Part","value":"SecondaryTool"},{"trait_type":"Boost","value":"None"},{"trait_type":"Tradable","value":"No"}],"external_url":"https://bumpkins.io"}

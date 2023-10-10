@@ -1,11 +1,1 @@
-{
-  "name": "Parsnip Horns",
-  "description": "\r\n\r\n## Parsnip Horns\r\n\r\nA unique set of parsnip-shaped horns that adds a touch of whimsy to any outfit.\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT\r\n\r\n### About\r\n\r\nBumpkins is a community driven customisable NFT project powered by Sunflower Land\r\n[Bumpkins](https://docs.bumpkins.io/getting-started/about)\r\n[Bumpkins Terms and Conditions](https://docs.bumpkins.io/support/terms-of-service)\r\n[Sunflower Land](https://docs.sunflower-land.com/getting-started/about)",
-  "image": "https://bumpkins.io/erc1155/images/205.png",
-  "attributes": [
-    { "trait_type": "Part", "value": "Hat" },
-    { "trait_type": "Boost", "value": "None" },
-    { "trait_type": "Tradable", "value": "No" }
-  ],
-  "external_url": "https://bumpkins.io"
-}
+{"name":"Parsnip Horns","description":"\r\n\r\n## Parsnip Horns\r\n\r\nA unique set of parsnip-shaped horns that adds a touch of whimsy to any outfit.\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT\r\n\r\n### About\r\n\r\nBumpkins is a community driven customisable NFT project powered by Sunflower Land\r\n[Bumpkins](https://docs.bumpkins.io/getting-started/about)\r\n[Bumpkins Terms and Conditions](https://docs.bumpkins.io/support/terms-of-service)\r\n[Sunflower Land](https://docs.sunflower-land.com/getting-started/about)","image":"https://bumpkins.io/erc1155/images/205.png","attributes":[{"trait_type":"Part","value":"Hat"},{"trait_type":"Boost","value":"None"},{"trait_type":"Tradable","value":"No"}],"external_url":"https://bumpkins.io"}

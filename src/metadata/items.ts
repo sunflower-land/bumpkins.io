@@ -678,7 +678,12 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
   },
   "Pirate Potion": {
     boosts: [
-      { trait_type: "Boost", value: "None" },
+      {
+        display_type: "boost_number",
+        trait_type: "Free Chest per day in Treasure Island",
+        value: 1,
+      },
+      { trait_type: "Boost", value: "Other" },
       { trait_type: "Tradable", value: "Yes" },
     ],
   },
