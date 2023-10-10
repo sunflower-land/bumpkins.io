@@ -1,1 +1,11 @@
-{"name":"Witching Wardrobe","description":"\r\n\r\n## Witching Wardrobe\r\n\r\nStep into the realm of style and elegance with the bewitching Witching Wardrobe wearable.\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT\r\n\r\n### About\r\n\r\nBumpkins is a community driven customisable NFT project powered by Sunflower Land\r\n[Bumpkins](https://docs.bumpkins.io/getting-started/about)\r\n[Bumpkins Terms and Conditions](https://docs.bumpkins.io/support/terms-of-service)\r\n[Sunflower Land](https://docs.sunflower-land.com/getting-started/about)","image":"https://bumpkins.io/erc1155/images/155.png","attributes":[{"trait_type":"Part","value":"Dress"},{"value":"Tradeable"}],"external_url":"https://bumpkins.io"}
+{
+  "name": "Witching Wardrobe",
+  "description": "\r\n\r\n## Witching Wardrobe\r\n\r\nStep into the realm of style and elegance with the bewitching Witching Wardrobe wearable.\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT\r\n\r\n### About\r\n\r\nBumpkins is a community driven customisable NFT project powered by Sunflower Land\r\n[Bumpkins](https://docs.bumpkins.io/getting-started/about)\r\n[Bumpkins Terms and Conditions](https://docs.bumpkins.io/support/terms-of-service)\r\n[Sunflower Land](https://docs.sunflower-land.com/getting-started/about)",
+  "image": "https://bumpkins.io/erc1155/images/155.png",
+  "attributes": [
+    { "trait_type": "Part", "value": "Dress" },
+    { "trait_type": "Boost", "value": "None" },
+    { "trait_type": "Tradable", "value": "Yes" }
+  ],
+  "external_url": "https://bumpkins.io"
+}

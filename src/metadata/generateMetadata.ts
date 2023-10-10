@@ -68,7 +68,6 @@ function generateMetadata(items: Metadata[]) {
       image,
       attributes: [
         ...(item.attributes ? item.attributes : []),
-        ...(item.tradeable ? [{ value: "Tradeable" }] : []),
       ],
       external_url: BUMPKINS_SITE_URL,
     };

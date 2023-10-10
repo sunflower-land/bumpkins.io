@@ -1,1 +1,11 @@
-{"name":"Forest Background","description":"\r\n\r\n## Forest Background\r\n\r\nSome Bumpkins prefer the forest to the fields.\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT\r\n\r\n### About\r\n\r\nBumpkins is a community driven customisable NFT project powered by Sunflower Land\r\n[Bumpkins](https://docs.bumpkins.io/getting-started/about)\r\n[Bumpkins Terms and Conditions](https://docs.bumpkins.io/support/terms-of-service)\r\n[Sunflower Land](https://docs.sunflower-land.com/getting-started/about)","image":"https://bumpkins.io/erc1155/images/47.png","attributes":[{"trait_type":"Part","value":"Background"},{"value":"Tradeable"}],"external_url":"https://bumpkins.io"}
+{
+  "name": "Forest Background",
+  "description": "\r\n\r\n## Forest Background\r\n\r\nSome Bumpkins prefer the forest to the fields.\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT\r\n\r\n### About\r\n\r\nBumpkins is a community driven customisable NFT project powered by Sunflower Land\r\n[Bumpkins](https://docs.bumpkins.io/getting-started/about)\r\n[Bumpkins Terms and Conditions](https://docs.bumpkins.io/support/terms-of-service)\r\n[Sunflower Land](https://docs.sunflower-land.com/getting-started/about)",
+  "image": "https://bumpkins.io/erc1155/images/47.png",
+  "attributes": [
+    { "trait_type": "Part", "value": "Background" },
+    { "trait_type": "Boost", "value": "None" },
+    { "trait_type": "Tradable", "value": "Yes" }
+  ],
+  "external_url": "https://bumpkins.io"
+}

@@ -1,1 +1,11 @@
-{"name":"St Patricks Hat","description":"\r\n\r\n## St Patricks Hat\r\n\r\nTop o' the mornin' to ya, me friend! A special event item found at Bumpkin parties during the festive season\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT\r\n\r\n### About\r\n\r\nBumpkins is a community driven customisable NFT project powered by Sunflower Land\r\n[Bumpkins](https://docs.bumpkins.io/getting-started/about)\r\n[Bumpkins Terms and Conditions](https://docs.bumpkins.io/support/terms-of-service)\r\n[Sunflower Land](https://docs.sunflower-land.com/getting-started/about)","image":"https://bumpkins.io/erc1155/images/116.png","attributes":[{"trait_type":"Part","value":"Hat"},{"value":"Tradeable"}],"external_url":"https://bumpkins.io"}
+{
+  "name": "St Patricks Hat",
+  "description": "\r\n\r\n## St Patricks Hat\r\n\r\nTop o' the mornin' to ya, me friend! A special event item found at Bumpkin parties during the festive season\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT\r\n\r\n### About\r\n\r\nBumpkins is a community driven customisable NFT project powered by Sunflower Land\r\n[Bumpkins](https://docs.bumpkins.io/getting-started/about)\r\n[Bumpkins Terms and Conditions](https://docs.bumpkins.io/support/terms-of-service)\r\n[Sunflower Land](https://docs.sunflower-land.com/getting-started/about)",
+  "image": "https://bumpkins.io/erc1155/images/116.png",
+  "attributes": [
+    { "trait_type": "Part", "value": "Hat" },
+    { "trait_type": "Boost", "value": "None" },
+    { "trait_type": "Tradable", "value": "Yes" }
+  ],
+  "external_url": "https://bumpkins.io"
+}
