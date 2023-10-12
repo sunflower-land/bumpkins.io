@@ -714,12 +714,12 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
   "Imp Costume": {
     description:
       "Transform into a playful and charismatic imp with the Imp Costume wearable. ",
-    part: "onesie",
+    part: "suit",
   },
   "Ox Costume": {
     description:
       "Embrace the strength and resilience of the ox with the Ox Suit wearable.",
-    part: "onesie",
+    part: "suit",
   },
   "Luna's Hat": {
     description:
