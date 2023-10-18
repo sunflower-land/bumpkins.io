@@ -208,6 +208,31 @@ import UnicornHat from "assets/open-sea/images/213.png";
 import FeatherHat from "assets/open-sea/images/214.png";
 import ValoriaWreath from "assets/open-sea/images/215.png";
 import EarnAllianceSombrero from "assets/open-sea/images/216.png";
+import FreshCatchVest from "assets/open-sea/images/217.png";
+import FishProVest from "assets/open-sea/images/218.png";
+import ReelFishingVest from "assets/open-sea/images/219.png";
+import ClownShirt from "assets/open-sea/images/220.png";
+import LuminousAnglerfishTopper from "assets/open-sea/images/221.png";
+import AbyssalAnglerHat from "assets/open-sea/images/222.png";
+import Harpoon from "assets/open-sea/images/223.png";
+import AncientRod from "assets/open-sea/images/224.png";
+import FishingHat from "assets/open-sea/images/225.png";
+import Trident from "assets/open-sea/images/226.png";
+import InfernalRod from "assets/open-sea/images/227.png";
+import BucketOWorms from "assets/open-sea/images/228.png";
+import CoconutMask from "assets/open-sea/images/229.png";
+import CrabTrap from "assets/open-sea/images/230.png";
+import SeasideTankTop from "assets/open-sea/images/231.png";
+import FishTrap from "assets/open-sea/images/232.png";
+import FishingPants from "assets/open-sea/images/233.png";
+import AnglerWaders from "assets/open-sea/images/234.png";
+import FishingSpear from "assets/open-sea/images/235.png";
+import FlipFlops from "assets/open-sea/images/236.png";
+import Wellies from "assets/open-sea/images/237.png";
+import SawFish from "assets/open-sea/images/238.png";
+import SkinningKnife from "assets/open-sea/images/239.png";
+import SunflowerRod from "assets/open-sea/images/240.png";
+import TackleBox from "assets/open-sea/images/241.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -421,4 +446,29 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Feather Hat": FeatherHat,
   "Valoria Wreath": ValoriaWreath,
   "Earn Alliance Sombrero": EarnAllianceSombrero,
+  "Fresh Catch Vest": FreshCatchVest,
+  "Fish Pro Vest": FishProVest,
+  "Reel Fishing Vest": ReelFishingVest,
+  "Clown Shirt": ClownShirt,
+  "Luminous Anglerfish Topper": LuminousAnglerfishTopper,
+  "Abyssal Angler Hat": AbyssalAnglerHat,
+  Harpoon: Harpoon,
+  "Ancient Rod": AncientRod,
+  "Fishing Hat": FishingHat,
+  Trident: Trident,
+  "Bucket O' Worms": BucketOWorms,
+  "Coconut Mask": CoconutMask,
+  "Crab Trap": CrabTrap,
+  "Seaside Tank Top": SeasideTankTop,
+  "Fish Trap": FishTrap,
+  "Fishing Pants": FishingPants,
+  "Angler Waders": AnglerWaders,
+  "Fishing Spear": FishingSpear,
+  "Flip Flops": FlipFlops,
+  Wellies: Wellies,
+  "Saw Fish": SawFish,
+  "Skinning Knife": SkinningKnife,
+  "Sunflower Rod": SunflowerRod,
+  "Tackle Box": TackleBox,
+  "Infernal Rod": InfernalRod,
 };

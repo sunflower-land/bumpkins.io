@@ -978,4 +978,104 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "A sombrero from the Earn Alliance!",
     part: "hat",
   },
+  "Fresh Catch Vest": {
+    description: "?",
+    part: "coat",
+  },
+  "Fish Pro Vest": {
+    description: "?",
+    part: "coat",
+  },
+  "Reel Fishing Vest": {
+    description: "?",
+    part: "coat",
+  },
+  "Clown Shirt": {
+    description: "?",
+    part: "shirt",
+  },
+  "Luminous Anglerfish Topper": {
+    description: "?",
+    part: "hat",
+  },
+  "Abyssal Angler Hat": {
+    description: "?",
+    part: "hat",
+  },
+  Harpoon: {
+    description: "?",
+    part: "tool",
+  },
+  "Ancient Rod": {
+    description: "?",
+    part: "tool",
+  },
+  "Fishing Hat": {
+    description: "?",
+    part: "hat",
+  },
+  Trident: {
+    description: "?",
+    part: "tool",
+  },
+  "Bucket O' Worms": {
+    description: "?",
+    part: "secondaryTool",
+  },
+  "Coconut Mask": {
+    description: "?",
+    part: "hat",
+  },
+  "Crab Trap": {
+    description: "?",
+    part: "secondaryTool",
+  },
+  "Seaside Tank Top": {
+    description: "?",
+    part: "shirt",
+  },
+  "Fish Trap": {
+    description: "?",
+    part: "secondaryTool",
+  },
+  "Fishing Pants": {
+    description: "?",
+    part: "pants",
+  },
+  "Angler Waders": {
+    description: "?",
+    part: "pants",
+  },
+  "Fishing Spear": {
+    description: "?",
+    part: "tool",
+  },
+  "Flip Flops": {
+    description: "?",
+    part: "shoes",
+  },
+  Wellies: {
+    description: "?",
+    part: "shoes",
+  },
+  "Saw Fish": {
+    description: "?",
+    part: "tool",
+  },
+  "Skinning Knife": {
+    description: "?",
+    part: "tool",
+  },
+  "Sunflower Rod": {
+    description: "?",
+    part: "tool",
+  },
+  "Tackle Box": {
+    description: "?",
+    part: "tool",
+  },
+  "Infernal Rod": {
+    description: "?",
+    part: "tool",
+  },
 };
