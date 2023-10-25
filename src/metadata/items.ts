@@ -110,7 +110,7 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
     boosts: [
       {
         display_type: "boost_percentage",
-        trait_type: "Increase EXP gains",
+        trait_type: "Increase XP gains",
         value: 10,
       },
       { trait_type: "Boost", value: "Food & XP" },
