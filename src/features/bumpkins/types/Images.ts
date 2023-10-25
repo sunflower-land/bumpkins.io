@@ -471,4 +471,6 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Sunflower Rod": SunflowerRod,
   "Tackle Box": TackleBox,
   "Infernal Rod": InfernalRod,
+  "Mermaid Potion": unknown,
+  "Squirrel Monkey Potion": unknown,
 };

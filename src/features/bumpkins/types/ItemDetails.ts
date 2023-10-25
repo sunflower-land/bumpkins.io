@@ -1078,4 +1078,12 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "?",
     part: "tool",
   },
+  "Mermaid Potion": {
+    description: "?",
+    part: "body",
+  },
+  "Squirrel Monkey Potion": {
+    description: "?",
+    part: "body",
+  },
 };
