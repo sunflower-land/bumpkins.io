@@ -93,7 +93,8 @@ export type BumpkinShirt =
   | "Pumpkin Shirt"
   | "Grey Merch Hoodie"
   | "Clown Shirt"
-  | "Seaside Tank Top";
+  | "Seaside Tank Top"
+  | "Tiki Armor";
 
 export type BumpkinCoat =
   | "Chef Apron"
@@ -194,7 +195,10 @@ export type BumpkinHat =
   | "Luminous Anglerfish Topper"
   | "Abyssal Angler Hat"
   | "Fishing Hat"
-  | "Coconut Mask";
+  | "Coconut Mask"
+  | "Koi Fish Hat"
+  | "Normal Fish Hat"
+  | "Tiki Mask";
 
 export type BumpkinPant =
   | "Farmer Overalls"
@@ -218,7 +222,8 @@ export type BumpkinPant =
   | "Crimson Skirt"
   | "Tattered Slacks"
   | "Fishing Pants"
-  | "Angler Waders";
+  | "Angler Waders"
+  | "Tiki Pants";
 
 export type BumpkinDress =
   | "Cupid Dress"
@@ -249,7 +254,8 @@ export type BumpkinOnesie =
   | "Frog Onesie"
   | "Bunny Onesie"
   | "Eggplant Onesie"
-  | "Corn Onesie";
+  | "Corn Onesie"
+  | "Stockeye Salmon Onesie";
 
 // Goes over clothes
 export type BumpkinSuit =
@@ -525,6 +531,12 @@ export const ITEM_IDS: Record<BumpkinItem, number> = {
   "Tackle Box": 241,
   "Mermaid Potion": 242,
   "Squirrel Monkey Potion": 243,
+  "Koi Fish Hat": 244,
+  "Normal Fish Hat": 245,
+  "Stockeye Salmon Onesie": 246,
+  "Tiki Armor": 247,
+  "Tiki Mask": 248,
+  "Tiki Pants": 249,
 };
 
 // The reverse of above
@@ -827,21 +839,10 @@ export const BUMPKIN_ITEM_PART: Record<BumpkinItem, keyof Wallet> = {
   "Infernal Rod": "tool",
   "Mermaid Potion": "body",
   "Squirrel Monkey Potion": "body",
-};
-
-export const BUMPKIN_ITEM_BUFF: Partial<Record<BumpkinItem, string>> = {
-  "Chef Apron": "+20% cake profit",
-  "Fruit Picker Apron": "+0.1 Apple, Orange & Blueberries",
-  "Angel Wings": "Instant Crops",
-  "Devil Wings": "Instant Crops",
-  "Eggplant Onesie": "+0.1 Eggplant",
-  "Golden Spatula": "+10% EXP",
-  "Mushroom Hat": "+0.1 Mushrooms",
-  Parsnip: "+20% Parsnip",
-  "Sunflower Amulet": "+10% Sunflower",
-  "Carrot Amulet": "-20% Carrot growth time",
-  "Beetroot Amulet": "+20% Beetroot",
-  "Green Amulet": "Chance for 10x crops",
-  "Luna's Hat": "-50% cooking time",
-  "Corn Onesie": "+0.1 Corn",
+  "Koi Fish Hat": "hat",
+  "Normal Fish Hat": "hat",
+  "Stockeye Salmon Onesie": "onesie",
+  "Tiki Armor": "shirt",
+  "Tiki Mask": "hat",
+  "Tiki Pants": "pants",
 };

@@ -1086,4 +1086,28 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "?",
     part: "body",
   },
+  "Koi Fish Hat": {
+    description: "?",
+    part: "hat",
+  },
+  "Normal Fish Hat": {
+    description: "?",
+    part: "hat",
+  },
+  "Stockeye Salmon Onesie": {
+    description: "?",
+    part: "onesie",
+  },
+  "Tiki Armor": {
+    description: "?",
+    part: "shirt",
+  },
+  "Tiki Mask": {
+    description: "?",
+    part: "hat",
+  },
+  "Tiki Pants": {
+    description: "?",
+    part: "pants",
+  },
 };

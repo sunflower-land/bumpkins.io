@@ -233,6 +233,12 @@ import SawFish from "assets/open-sea/images/238.png";
 import SkinningKnife from "assets/open-sea/images/239.png";
 import SunflowerRod from "assets/open-sea/images/240.png";
 import TackleBox from "assets/open-sea/images/241.png";
+import KoiFishHat from "assets/open-sea/images/244.png";
+import NormalFishHat from "assets/open-sea/images/245.png";
+import StockeyeSalmonOnesie from "assets/open-sea/images/246.png";
+import TikiArmor from "assets/open-sea/images/247.png";
+import TikiMask from "assets/open-sea/images/248.png";
+import TikiPants from "assets/open-sea/images/249.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -473,4 +479,10 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Infernal Rod": InfernalRod,
   "Mermaid Potion": unknown,
   "Squirrel Monkey Potion": unknown,
+  "Koi Fish Hat": KoiFishHat,
+  "Normal Fish Hat": NormalFishHat,
+  "Stockeye Salmon Onesie": StockeyeSalmonOnesie,
+  "Tiki Armor": TikiArmor,
+  "Tiki Mask": TikiMask,
+  "Tiki Pants": TikiPants,
 };
