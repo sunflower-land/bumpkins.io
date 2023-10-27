@@ -1399,27 +1399,87 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
   "Fish Pro Vest": {},
   "Reel Fishing Vest": {},
   "Clown Shirt": {},
-  "Luminous Anglerfish Topper": {},
+  "Luminous Anglerfish Topper": {
+    boosts: [
+      { trait_type: "Boost", value: "Food & XP" },
+      {
+        display_type: "boost_percentage",
+        value: 50,
+        trait_type: "Increase XP gains for Fish Products",
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
   "Abyssal Angler Hat": {},
   Harpoon: {},
   "Ancient Rod": {},
-  "Fishing Hat": {},
-  Trident: {},
-  "Bucket O' Worms": {},
+  "Fishing Hat": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  Trident: {
+    boosts: [
+      { trait_type: "Boost", value: "Fish" },
+      {
+        display_type: "boost_percentage",
+        value: 20,
+        trait_type: "Critical Hit Chance",
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Bucket O' Worms": {
+    boosts: [
+      { trait_type: "Boost", value: "Bait" },
+      {
+        display_type: "boost_number",
+        value: 1,
+        trait_type: "Increase Bait Yield",
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
   "Coconut Mask": {},
   "Crab Trap": {},
   "Seaside Tank Top": {},
   "Fish Trap": {},
   "Fishing Pants": {},
-  "Angler Waders": {},
+  "Angler Waders": {
+    boosts: [
+      { trait_type: "Boost", value: "Fish" },
+      {
+        display_type: "boost_number",
+        value: 10,
+        trait_type: "Increase Daily Fishing Attempts",
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
   "Fishing Spear": {},
   "Flip Flops": {},
   Wellies: {},
   "Saw Fish": {},
   "Skinning Knife": {},
-  "Sunflower Rod": {},
+  "Sunflower Rod": {
+    boosts: [
+      { trait_type: "Boost", value: "Fish" },
+      {
+        display_type: "boost_percentage",
+        value: 10,
+        trait_type: "Critical Hit Chance",
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
   "Tackle Box": {},
   "Infernal Rod": {},
+  "Koi Fish Hat": {},
+  "Stockeye Salmon Onesie": {},
+  "Tiki Armor": {},
+  "Tiki Mask": {},
+  "Tiki Pants": {},
 };
 
 function capitalizeFirstLetter(string: string) {
