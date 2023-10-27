@@ -979,103 +979,120 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     part: "hat",
   },
   "Fresh Catch Vest": {
-    description: "?",
+    description:
+      "A comfortable and practical vest for your fishing adventures.",
     part: "coat",
   },
   "Fish Pro Vest": {
-    description: "?",
+    description: "A vest designed for professional fishermen.",
     part: "coat",
   },
   "Reel Fishing Vest": {
-    description: "?",
+    description:
+      "A vest equipped with pockets and style to enhance your fishing experience.",
     part: "coat",
   },
   "Clown Shirt": {
-    description: "?",
+    description:
+      "A playful and colorful shirt that adds a touch of fun to your outfit.",
     part: "shirt",
   },
   "Luminous Anglerfish Topper": {
-    description: "?",
+    description: "A unique hat featuring the luminous anglerfish.",
     part: "hat",
   },
   "Abyssal Angler Hat": {
-    description: "?",
+    description: "A mysterious hat inspired by the depths of the ocean.",
     part: "hat",
   },
   Harpoon: {
-    description: "?",
+    description:
+      "A versatile tool designed for spearfishing and capturing larger fish.",
     part: "tool",
   },
   "Ancient Rod": {
-    description: "?",
+    description:
+      "A fishing rod with a classic design, perfect for those who appreciate tradition.",
     part: "tool",
   },
   "Fishing Hat": {
-    description: "?",
+    description:
+      "A practical and stylish hat that provides shade while fishing in the sun.",
     part: "hat",
   },
+  "Saw Fish": {
+    description:
+      "A unique and formidable fishing tool for cutting through tough materials.",
+    part: "tool",
+  },
   Trident: {
-    description: "?",
+    description: "A mythical fishing tool.",
     part: "tool",
   },
   "Bucket O' Worms": {
-    description: "?",
+    description:
+      "An essential secondary tool for bait, ensuring you're well-prepared for fishing.",
     part: "secondaryTool",
   },
   "Coconut Mask": {
-    description: "?",
+    description: "A fun and tropical-themed mask.",
     part: "hat",
   },
   "Crab Trap": {
-    description: "?",
+    description: "A decorative trap for catching crabs and other crustaceans.",
     part: "secondaryTool",
   },
   "Seaside Tank Top": {
-    description: "?",
+    description:
+      "A comfortable and casual tank top, ideal for a day by the water.",
     part: "shirt",
   },
   "Fish Trap": {
-    description: "?",
+    description: "An decorative trap for catching fish.",
     part: "secondaryTool",
   },
   "Fishing Pants": {
-    description: "?",
+    description:
+      "Durable and comfortable pants designed for a full day of fishing.",
     part: "pants",
   },
   "Angler Waders": {
-    description: "?",
+    description:
+      "Waders that keep you dry and comfortable while fishing in water.",
     part: "pants",
   },
   "Fishing Spear": {
-    description: "?",
+    description:
+      "A specialized tool for spearfishing, adding excitement to your fishing adventures.",
     part: "tool",
   },
   "Flip Flops": {
-    description: "?",
+    description:
+      "Lightweight and easy-to-wear shoes for a relaxed day at the beach.",
     part: "shoes",
   },
   Wellies: {
-    description: "?",
+    description:
+      "Waterproof and practical shoes for wet and muddy fishing conditions.",
     part: "shoes",
   },
-  "Saw Fish": {
-    description: "?",
-    part: "tool",
-  },
   "Skinning Knife": {
-    description: "?",
+    description:
+      "A sharp and precise tool for cleaning and preparing your catch.",
     part: "tool",
   },
   "Sunflower Rod": {
-    description: "?",
+    description:
+      "A rod with a cheerful sunflower energy, perfect for sunny days by the water.",
     part: "tool",
   },
   "Tackle Box": {
-    description: "?",
+    description:
+      "An organized and spacious container for storing your fishing gear.",
     part: "tool",
   },
   "Infernal Rod": {
-    description: "?",
+    description: "A fiery and eye-catching fishing rod with a unique design.",
     part: "tool",
   },
   "Mermaid Potion": {
@@ -1087,27 +1104,32 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     part: "body",
   },
   "Koi Fish Hat": {
-    description: "?",
+    description:
+      "A hat inspired by the graceful and colorful koi fish, adding an elegant touch to your outfit.",
     part: "hat",
   },
   "Normal Fish Hat": {
-    description: "?",
+    description: "A classic fish-themed hat, perfect for fishing enthusiasts.",
     part: "hat",
   },
   "Stockeye Salmon Onesie": {
-    description: "?",
+    description:
+      "A cozy and fun onesie featuring the Stockeye Salmon, ideal for cold fishing trips.",
     part: "onesie",
   },
   "Tiki Armor": {
-    description: "?",
+    description:
+      "A set of stylish and protective armor with a island inspired design.",
     part: "shirt",
   },
   "Tiki Mask": {
-    description: "?",
+    description:
+      "A unique mask that adds a touch of mystery and style to your outfit.",
     part: "hat",
   },
   "Tiki Pants": {
-    description: "?",
+    description:
+      "Comfortable and fashionable island themed pants, perfect for a tropical adventure.",
     part: "pants",
   },
 };
