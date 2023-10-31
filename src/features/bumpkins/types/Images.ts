@@ -239,6 +239,7 @@ import StockeyeSalmonOnesie from "assets/open-sea/images/246.png";
 import TikiArmor from "assets/open-sea/images/247.png";
 import TikiMask from "assets/open-sea/images/248.png";
 import TikiPants from "assets/open-sea/images/249.png";
+import BananaAmulet from "assets/open-sea/images/250.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -485,4 +486,5 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Tiki Armor": TikiArmor,
   "Tiki Mask": TikiMask,
   "Tiki Pants": TikiPants,
+  "Banana Amulet": BananaAmulet,
 };
