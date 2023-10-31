@@ -1,0 +1,16 @@
+{
+  "name": "Banana Amulet",
+  "description": "\r\n\r\n## Banana Amulet\r\n\r\nGo bananas for this amulet! Legends whisper it grants its wearer a-peel-ing charm and a slip-free day.\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT\r\n\r\n### About\r\n\r\nBumpkins is a community driven customisable NFT project powered by Sunflower Land\r\n[Bumpkins](https://docs.bumpkins.io/getting-started/about)\r\n[Bumpkins Terms and Conditions](https://docs.bumpkins.io/support/terms-of-service)\r\n[Sunflower Land](https://docs.sunflower-land.com/getting-started/about)",
+  "image": "https://bumpkins.io/erc1155/images/250.png",
+  "attributes": [
+    { "trait_type": "Part", "value": "Necklace" },
+    {
+      "display_type": "boost_number",
+      "trait_type": "Increase Banana Yield",
+      "value": 0.5
+    },
+    { "trait_type": "Boost", "value": "Fruit" },
+    { "trait_type": "Tradable", "value": "Yes" }
+  ],
+  "external_url": "https://bumpkins.io"
+}

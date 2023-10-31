@@ -1480,6 +1480,17 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
   "Tiki Armor": {},
   "Tiki Mask": {},
   "Tiki Pants": {},
+  "Banana Amulet": {
+    boosts: [
+      {
+        display_type: "boost_number",
+        trait_type: "Increase Banana Yield",
+        value: +0.5,
+      },
+      { trait_type: "Boost", value: "Fruit" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
 };
 
 function capitalizeFirstLetter(string: string) {

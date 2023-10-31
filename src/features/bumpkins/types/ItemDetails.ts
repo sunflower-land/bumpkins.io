@@ -1132,4 +1132,9 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "Comfortable and fashionable island themed pants, perfect for a tropical adventure.",
     part: "pants",
   },
+  "Banana Amulet": {
+    description:
+      "Go bananas for this amulet! Legends whisper it grants its wearer a-peel-ing charm and a slip-free day.",
+    part: "necklace",
+  },
 };
