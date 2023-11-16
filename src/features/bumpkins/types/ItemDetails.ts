@@ -1137,4 +1137,49 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "Go bananas for this amulet! Legends whisper it grants its wearer a-peel-ing charm and a slip-free day.",
     part: "necklace",
   },
+  "Banana Onesie": {
+    description:
+      "Cute and cozy, embrace the essence of a banana in this adorable onesie.",
+    part: "onesie",
+  },
+  "Basic Dumbo": {
+    description:
+      "A simple and classic hat featuring the iconic tentacles of a lovable octopus.",
+    part: "hat",
+  },
+  "Companion Cap": {
+    description:
+      "A trusty cap that keeps you company on your virtual adventures.",
+    part: "hat",
+  },
+  "Dazzling Dumbo": {
+    description:
+      "Stand out with this dazzling hat that adds a touch of sparkle to your style.",
+    part: "hat",
+  },
+  "Deep Sea Helm": {
+    description:
+      "Dive into the depths with this nautical-inspired helm, perfect for underwater explorations.",
+    part: "hat",
+  },
+  "Gloomy Dumbo": {
+    description:
+      "Express your emotions with this somber hat, featuring the iconic tentacles of a certain melancholy octopus.",
+    part: "hat",
+  },
+  "Pickaxe Shark": {
+    description:
+      "Equip yourself with this trusty pickaxe fashioned like a shark, ready for farming adventures.",
+    part: "tool",
+  },
+  "Seedling Hat": {
+    description:
+      "Embrace the spirit of agriculture with this charming hat adorned with sprouting seedlings.",
+    part: "hat",
+  },
+  "Stormy Dumbo": {
+    description:
+      "Weather the storm in style with this hat featuring the turbulent tentacles of an octopus caught in a tempest.",
+    part: "hat",
+  },
 };

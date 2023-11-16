@@ -240,6 +240,15 @@ import TikiArmor from "assets/open-sea/images/247.png";
 import TikiMask from "assets/open-sea/images/248.png";
 import TikiPants from "assets/open-sea/images/249.png";
 import BananaAmulet from "assets/open-sea/images/250.png";
+import BananaOnesie from "assets/open-sea/images/251.png";
+import BasicDumbo from "assets/open-sea/images/252.png";
+import CompanionCap from "assets/open-sea/images/253.png";
+import DazzlingDumbo from "assets/open-sea/images/254.png";
+import DeepSeaHelm from "assets/open-sea/images/255.png";
+import GloomyDumbo from "assets/open-sea/images/256.png";
+import PickaxeShark from "assets/open-sea/images/257.png";
+import SeedlingHat from "assets/open-sea/images/258.png";
+import StormyDumbo from "assets/open-sea/images/259.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -487,4 +496,13 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Tiki Mask": TikiMask,
   "Tiki Pants": TikiPants,
   "Banana Amulet": BananaAmulet,
+  "Banana Onesie": BananaOnesie,
+  "Basic Dumbo": BasicDumbo,
+  "Companion Cap": CompanionCap,
+  "Dazzling Dumbo": DazzlingDumbo,
+  "Deep Sea Helm": DeepSeaHelm,
+  "Gloomy Dumbo": GloomyDumbo,
+  "Pickaxe Shark": PickaxeShark,
+  "Seedling Hat": SeedlingHat,
+  "Stormy Dumbo": StormyDumbo,
 };
