@@ -1494,6 +1494,12 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
   "Squirrel Monkey Potion": {},
   "Mermaid Potion": {},
   "Normal Fish Hat": {},
+  "Ugly Christmas Sweater": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
 };
 
 function capitalizeFirstLetter(string: string) {

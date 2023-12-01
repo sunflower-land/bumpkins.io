@@ -1182,4 +1182,8 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "Weather the storm in style with this hat featuring the turbulent tentacles of an octopus caught in a tempest.",
     part: "hat",
   },
+  "Ugly Christmas Sweater": {
+    description: "A whimsical holiday wearable from Earn Alliance",
+    part: "shirt",
+  },
 };
