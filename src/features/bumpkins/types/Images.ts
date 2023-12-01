@@ -249,6 +249,7 @@ import GloomyDumbo from "assets/open-sea/images/256.png";
 import PickaxeShark from "assets/open-sea/images/257.png";
 import SeedlingHat from "assets/open-sea/images/258.png";
 import StormyDumbo from "assets/open-sea/images/259.png";
+import UglyChristmasSweater from "assets/open-sea/images/260.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -505,4 +506,5 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Pickaxe Shark": PickaxeShark,
   "Seedling Hat": SeedlingHat,
   "Stormy Dumbo": StormyDumbo,
+  "Ugly Christmas Sweater": UglyChristmasSweater,
 };
