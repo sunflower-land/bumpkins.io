@@ -250,6 +250,13 @@ import PickaxeShark from "assets/open-sea/images/257.png";
 import SeedlingHat from "assets/open-sea/images/258.png";
 import StormyDumbo from "assets/open-sea/images/259.png";
 import UglyChristmasSweater from "assets/open-sea/images/260.png";
+import CandyCane from "assets/open-sea/images/261.png";
+import ElfHat from "assets/open-sea/images/262.png";
+import ElfPotion from "assets/open-sea/images/263.png";
+import ElfShoes from "assets/open-sea/images/264.png";
+import ElfSuit from "assets/open-sea/images/265.png";
+import SantaBeard from "assets/open-sea/images/266.png";
+import SantaSuit from "assets/open-sea/images/267.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -507,4 +514,11 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Seedling Hat": SeedlingHat,
   "Stormy Dumbo": StormyDumbo,
   "Ugly Christmas Sweater": UglyChristmasSweater,
+  "Candy Cane": CandyCane,
+  "Elf Hat": ElfHat,
+  "Elf Potion": ElfPotion,
+  "Elf Shoes": ElfShoes,
+  "Elf Suit": ElfSuit,
+  "Santa Beard": SantaBeard,
+  "Santa Suit": SantaSuit,
 };

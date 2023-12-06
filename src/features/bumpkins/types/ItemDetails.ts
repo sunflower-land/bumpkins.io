@@ -1186,4 +1186,32 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "A whimsical holiday wearable from Earn Alliance",
     part: "shirt",
   },
+  "Candy Cane": {
+    description: "A festive tool for spreading sweet holiday cheer.",
+    part: "tool",
+  },
+  "Elf Hat": {
+    description: "Get into the holiday spirit with this whimsical elf hat.",
+    part: "hat",
+  },
+  "Elf Potion": {
+    description: "Magical elixir to bring out your inner elf.",
+    part: "body",
+  },
+  "Elf Shoes": {
+    description: "Stylish footwear to complete your elfin look.",
+    part: "shoes",
+  },
+  "Elf Suit": {
+    description: "A complete elf outfit for festive occasions.",
+    part: "suit",
+  },
+  "Santa Beard": {
+    description: "Classic white beard to transform into the jolly old elf.",
+    part: "beard",
+  },
+  "Santa Suit": {
+    description: "The iconic red suit for spreading joy as Santa Claus.",
+    part: "suit",
+  },
 };
