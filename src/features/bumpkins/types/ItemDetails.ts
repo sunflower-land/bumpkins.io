@@ -1214,4 +1214,32 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "The iconic red suit for spreading joy as Santa Claus.",
     part: "suit",
   },
+  "Butterfly Wings": {
+    description: "Delicate and colorful wings to add a touch of enchantment.",
+    part: "wings",
+  },
+  "Cozy Hoodie": {
+    description:
+      "Warm and comfortable hoodie for a snug and stylish winter look.",
+    part: "shirt",
+  },
+  "New Years Tiara": {
+    description:
+      "Elegant tiara to sparkle and shine as you welcome the new year.",
+    part: "hat",
+  },
+  "Northern Lights Background": {
+    description:
+      "Mesmerizing background capturing the beauty of the northern lights.",
+    part: "background",
+  },
+  "Short Shorts": {
+    description: "Cool and trendy shorts for a casual and fashionable vibe.",
+    part: "pants",
+  },
+  "Winter Jacket": {
+    description:
+      "Insulated jacket to keep you warm and fashionable during winter.",
+    part: "shirt",
+  },
 };

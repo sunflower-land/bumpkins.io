@@ -258,6 +258,13 @@ import ElfSuit from "assets/open-sea/images/265.png";
 import SantaBeard from "assets/open-sea/images/266.png";
 import SantaSuit from "assets/open-sea/images/267.png";
 
+import ButterflyWings from "assets/open-sea/images/268.png";
+import CozyHoodie from "assets/open-sea/images/269.png";
+import NewYearsTiara from "assets/open-sea/images/270.png";
+import NorthernLightsBackground from "assets/open-sea/images/271.png";
+import ShortShorts from "assets/open-sea/images/272.png";
+import WinterJacket from "assets/open-sea/images/273.png";
+
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
   "Dark Brown Farmer Potion": DarkBrownFarmerPotion,
@@ -521,4 +528,10 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Elf Suit": ElfSuit,
   "Santa Beard": SantaBeard,
   "Santa Suit": SantaSuit,
+  "Butterfly Wings": ButterflyWings,
+  "Cozy Hoodie": CozyHoodie,
+  "New Years Tiara": NewYearsTiara,
+  "Northern Lights Background": NorthernLightsBackground,
+  "Short Shorts": ShortShorts,
+  "Winter Jacket": WinterJacket,
 };
