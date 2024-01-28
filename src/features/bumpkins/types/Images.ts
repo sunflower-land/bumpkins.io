@@ -266,6 +266,7 @@ import ShortShorts from "assets/open-sea/images/272.png";
 import WinterJacket from "assets/open-sea/images/273.png";
 
 import BeehiveStaff from "assets/open-sea/images/274.png";
+import BeeSmoker from "assets/open-sea/images/275.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -537,4 +538,5 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Short Shorts": ShortShorts,
   "Winter Jacket": WinterJacket,
   "Beehive Staff": BeehiveStaff,
+  "Bee Smoker": BeeSmoker,
 };

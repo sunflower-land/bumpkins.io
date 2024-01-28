@@ -1246,4 +1246,8 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "A staff that harnesses the power of bees.",
     part: "tool",
   },
+  "Bee Smoker": {
+    description: "A tool that calms bees.",
+    part: "tool",
+  },
 };
