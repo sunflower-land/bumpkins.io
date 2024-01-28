@@ -1242,4 +1242,8 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "Insulated jacket to keep you warm and fashionable during winter.",
     part: "shirt",
   },
+  "Beehive Staff": {
+    description: "A staff that harnesses the power of bees.",
+    part: "tool",
+  },
 };
