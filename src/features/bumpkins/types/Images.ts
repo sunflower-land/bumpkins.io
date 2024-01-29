@@ -274,6 +274,7 @@ import BeekeeperSuit from "assets/open-sea/images/279.png";
 import CrimstoneBoots from "assets/open-sea/images/280.png";
 import CrimstonePants from "assets/open-sea/images/281.png";
 import CrimstoneArmor from "assets/open-sea/images/282.png";
+import GardeningOveralls from "assets/open-sea/images/283.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -553,4 +554,5 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Crimstone Boots": CrimstoneBoots,
   "Crimstone Pants": CrimstonePants,
   "Crimstone Armor": CrimstoneArmor,
+  "Gardening Overalls": GardeningOveralls,
 };

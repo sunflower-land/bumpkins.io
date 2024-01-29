@@ -1278,4 +1278,8 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "A set of prestigious and protective armor.",
     part: "shirt",
   },
+  "Gardening Overalls": {
+    description: "Live and breathe the cottage core life.",
+    part: "pants",
+  },
 };
