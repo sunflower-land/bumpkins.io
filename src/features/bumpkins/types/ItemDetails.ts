@@ -1270,4 +1270,8 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "Leave a trail vibrant red hues with each step.",
     part: "shoes",
   },
+  "Crimstone Pants": {
+    description: "Exude wealth and power with these rare gem pants.",
+    part: "pants",
+  },
 };

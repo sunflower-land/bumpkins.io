@@ -272,6 +272,7 @@ import BeeWings from "assets/open-sea/images/277.png";
 import BeekeeperHat from "assets/open-sea/images/278.png";
 import BeekeeperSuit from "assets/open-sea/images/279.png";
 import CrimstoneBoots from "assets/open-sea/images/280.png";
+import CrimstonePants from "assets/open-sea/images/281.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -549,4 +550,5 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Beekeeper Hat": BeekeeperHat,
   "Beekeeper Suit": BeekeeperSuit,
   "Crimstone Boots": CrimstoneBoots,
+  "Crimstone Pants": CrimstonePants,
 };
