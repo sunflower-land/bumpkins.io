@@ -1282,4 +1282,12 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "Live and breathe the cottage core life.",
     part: "pants",
   },
+  "Crimstone Hammer": {
+    description: "Behold the mega Crimstone.",
+    part: "tool",
+  },
+  "Crimstone Amulet": {
+    description: "?",
+    part: "necklace",
+  },
 };
