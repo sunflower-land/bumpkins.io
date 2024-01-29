@@ -1503,6 +1503,7 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
   "Beehive Staff": {},
   "Bee Smoker": {},
   "Bee Suit": {},
+  "Bee Wings": {},
 };
 
 function capitalizeFirstLetter(string: string) {
