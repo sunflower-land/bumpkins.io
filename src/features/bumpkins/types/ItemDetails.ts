@@ -1258,4 +1258,8 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "Wings that shimmer with the iridescence of blooming flowers",
     part: "wings",
   },
+  "Beekeeper Hat": {
+    description: "A hat that protects you from bee stings.",
+    part: "hat",
+  },
 };
