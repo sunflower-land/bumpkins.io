@@ -1322,4 +1322,46 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "A bold accessory that captures the fierce yet fashionable spirit of the hornet.",
     part: "hat",
   },
+  "Flower Crown": {
+    description: "Crown yourself in petals, reign as the garden's royalty!",
+    part: "hat",
+  },
+  "Blue Monarch Dress": {
+    description: "Flutter into style with the Blue Monarch Dress.",
+    part: "dress",
+  },
+  "Green Monarch Dress": {
+    description:
+      "Transform into a forest butterfly with the Green Monarch Dress.",
+    part: "dress",
+  },
+  "Orange Monarch Dress": {
+    description: "Blaze with elegance in the Orange Monarch Dress.",
+    part: "dress",
+  },
+  "Blue Monarch Shirt": {
+    description: "Dress casually royal in the Blue Monarch Shirt.",
+    part: "shirt",
+  },
+  "Green Monarch Shirt": {
+    description: "Channel leafy monarch vibes with the Green Monarch Shirt.",
+    part: "shirt",
+  },
+  "Red Monarch Shirt": {
+    description: "Paint the town red in the Red Monarch Shirt.",
+    part: "shirt",
+  },
+  "Queen Bee Crown": {
+    description: "Rule the hive with the Queen Bee Crown – majestic buzz!",
+    part: "hat",
+  },
+  "Rose Dress": {
+    description: "Bloom into beauty with the Rose Dress.",
+    part: "dress",
+  },
+  "Blue Rose Dress": {
+    description:
+      "A blue bloom of elegance – the Blue Rose Dress whispers enchantment!",
+    part: "dress",
+  },
 };
