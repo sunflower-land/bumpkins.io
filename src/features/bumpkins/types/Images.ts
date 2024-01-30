@@ -265,6 +265,19 @@ import NorthernLightsBackground from "assets/open-sea/images/271.png";
 import ShortShorts from "assets/open-sea/images/272.png";
 import WinterJacket from "assets/open-sea/images/273.png";
 
+import BeehiveStaff from "assets/open-sea/images/274.png";
+import BeeSmoker from "assets/open-sea/images/275.png";
+import BeeSuit from "assets/open-sea/images/276.png";
+import BeeWings from "assets/open-sea/images/277.png";
+import BeekeeperHat from "assets/open-sea/images/278.png";
+import BeekeeperSuit from "assets/open-sea/images/279.png";
+import CrimstoneBoots from "assets/open-sea/images/280.png";
+import CrimstonePants from "assets/open-sea/images/281.png";
+import CrimstoneArmor from "assets/open-sea/images/282.png";
+import GardeningOveralls from "assets/open-sea/images/283.png";
+import CrimstoneHammer from "assets/open-sea/images/284.png";
+import CrimstoneAmulet from "assets/open-sea/images/285.png";
+
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
   "Dark Brown Farmer Potion": DarkBrownFarmerPotion,
@@ -534,4 +547,16 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Northern Lights Background": NorthernLightsBackground,
   "Short Shorts": ShortShorts,
   "Winter Jacket": WinterJacket,
+  "Beehive Staff": BeehiveStaff,
+  "Bee Smoker": BeeSmoker,
+  "Bee Suit": BeeSuit,
+  "Bee Wings": BeeWings,
+  "Beekeeper Hat": BeekeeperHat,
+  "Beekeeper Suit": BeekeeperSuit,
+  "Crimstone Boots": CrimstoneBoots,
+  "Crimstone Pants": CrimstonePants,
+  "Crimstone Armor": CrimstoneArmor,
+  "Gardening Overalls": GardeningOveralls,
+  "Crimstone Hammer": CrimstoneHammer,
+  "Crimstone Amulet": CrimstoneAmulet,
 };

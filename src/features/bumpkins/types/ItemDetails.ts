@@ -1242,4 +1242,52 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "Insulated jacket to keep you warm and fashionable during winter.",
     part: "shirt",
   },
+  "Beehive Staff": {
+    description: "A staff that harnesses the power of bees.",
+    part: "tool",
+  },
+  "Bee Smoker": {
+    description: "A tool that calms bees.",
+    part: "tool",
+  },
+  "Bee Suit": {
+    description: "Bee the best you can bee.",
+    part: "suit",
+  },
+  "Bee Wings": {
+    description: "Wings that shimmer with the iridescence of blooming flowers",
+    part: "wings",
+  },
+  "Beekeeper Hat": {
+    description: "A hat that protects you from bee stings.",
+    part: "hat",
+  },
+  "Beekeeper Suit": {
+    description: "A suit that protects you from bee stings.",
+    part: "suit",
+  },
+  "Crimstone Boots": {
+    description: "Leave a trail vibrant red hues with each step.",
+    part: "shoes",
+  },
+  "Crimstone Pants": {
+    description: "Exude wealth and power with these rare gem pants.",
+    part: "pants",
+  },
+  "Crimstone Armor": {
+    description: "A set of prestigious and protective armor.",
+    part: "shirt",
+  },
+  "Gardening Overalls": {
+    description: "Live and breathe the cottage core life.",
+    part: "pants",
+  },
+  "Crimstone Hammer": {
+    description: "Behold the mega Crimstone.",
+    part: "tool",
+  },
+  "Crimstone Amulet": {
+    description: "?",
+    part: "necklace",
+  },
 };

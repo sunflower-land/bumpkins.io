@@ -1500,6 +1500,18 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
       { trait_type: "Tradable", value: "Yes" },
     ],
   },
+  "Beehive Staff": {},
+  "Bee Smoker": {},
+  "Bee Suit": {},
+  "Bee Wings": {},
+  "Beekeeper Hat": {},
+  "Beekeeper Suit": {},
+  "Crimstone Boots": {},
+  "Crimstone Pants": {},
+  "Crimstone Armor": {},
+  "Gardening Overalls": {},
+  "Crimstone Hammer": {},
+  "Crimstone Amulet": {},
 };
 
 function capitalizeFirstLetter(string: string) {
