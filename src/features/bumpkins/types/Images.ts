@@ -277,6 +277,13 @@ import CrimstoneArmor from "assets/open-sea/images/282.png";
 import GardeningOveralls from "assets/open-sea/images/283.png";
 import CrimstoneHammer from "assets/open-sea/images/284.png";
 import CrimstoneAmulet from "assets/open-sea/images/285.png";
+import FullBloomShirt from "assets/open-sea/images/286.png";
+import BlueBlossomShirt from "assets/open-sea/images/287.png";
+import FairySandals from "assets/open-sea/images/288.png";
+import DaisyTee from "assets/open-sea/images/289.png";
+import PropellerHat from "assets/open-sea/images/290.png";
+import HoneycombShield from "assets/open-sea/images/291.png";
+import HornetMask from "assets/open-sea/images/292.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -559,4 +566,11 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Gardening Overalls": GardeningOveralls,
   "Crimstone Hammer": CrimstoneHammer,
   "Crimstone Amulet": CrimstoneAmulet,
+  "Full Bloom Shirt": FullBloomShirt,
+  "Blue Blossom Shirt": BlueBlossomShirt,
+  "Fairy Sandals": FairySandals,
+  "Daisy Tee": DaisyTee,
+  "Propeller Hat": PropellerHat,
+  "Honeycomb Shield": HoneycombShield,
+  "Hornet Mask": HornetMask,
 };

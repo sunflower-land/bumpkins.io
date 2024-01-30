@@ -1287,7 +1287,39 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     part: "tool",
   },
   "Crimstone Amulet": {
-    description: "?",
+    description: "Regenerate Crimstone with amazing speed.",
     part: "necklace",
+  },
+  "Full Bloom Shirt": {
+    description: "A floral masterpiece bursting with color and charm.",
+    part: "shirt",
+  },
+  "Blue Blossom Shirt": {
+    description:
+      "Adorn yourself in soothing hues and delicate floral patterns.",
+    part: "shirt",
+  },
+  "Fairy Sandals": {
+    description: "Ethereal footwear that adds a touch of magic to every step.",
+    part: "shoes",
+  },
+  "Daisy Tee": {
+    description:
+      "A simple tee perfect for a day filled with sunshine and smiles.",
+    part: "shirt",
+  },
+  "Propeller Hat": {
+    description:
+      "A whimsical accessory that adds a playful touch to your style.",
+    part: "hat",
+  },
+  "Honeycomb Shield": {
+    description: "A golden symphony of protection and style.",
+    part: "secondaryTool",
+  },
+  "Hornet Mask": {
+    description:
+      "A bold accessory that captures the fierce yet fashionable spirit of the hornet.",
+    part: "hat",
   },
 };
