@@ -277,6 +277,23 @@ import CrimstoneArmor from "assets/open-sea/images/282.png";
 import GardeningOveralls from "assets/open-sea/images/283.png";
 import CrimstoneHammer from "assets/open-sea/images/284.png";
 import CrimstoneAmulet from "assets/open-sea/images/285.png";
+import FullBloomShirt from "assets/open-sea/images/286.png";
+import BlueBlossomShirt from "assets/open-sea/images/287.png";
+import FairySandals from "assets/open-sea/images/288.png";
+import DaisyTee from "assets/open-sea/images/289.png";
+import PropellerHat from "assets/open-sea/images/290.png";
+import HoneycombShield from "assets/open-sea/images/291.png";
+import HornetMask from "assets/open-sea/images/292.png";
+import FlowerCrown from "assets/open-sea/images/293.png";
+import BlueMonarchDress from "assets/open-sea/images/294.png";
+import GreenMonarchDress from "assets/open-sea/images/295.png";
+import OrangeMonarchDress from "assets/open-sea/images/296.png";
+import BlueMonarchShirt from "assets/open-sea/images/297.png";
+import GreenMonarchShirt from "assets/open-sea/images/298.png";
+import RedMonarchShirt from "assets/open-sea/images/299.png";
+import QueenBeeCrown from "assets/open-sea/images/300.png";
+import RoseDress from "assets/open-sea/images/301.png";
+import BlueRoseDress from "assets/open-sea/images/302.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -559,4 +576,21 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Gardening Overalls": GardeningOveralls,
   "Crimstone Hammer": CrimstoneHammer,
   "Crimstone Amulet": CrimstoneAmulet,
+  "Full Bloom Shirt": FullBloomShirt,
+  "Blue Blossom Shirt": BlueBlossomShirt,
+  "Fairy Sandals": FairySandals,
+  "Daisy Tee": DaisyTee,
+  "Propeller Hat": PropellerHat,
+  "Honeycomb Shield": HoneycombShield,
+  "Hornet Mask": HornetMask,
+  "Flower Crown": FlowerCrown,
+  "Blue Monarch Dress": BlueMonarchDress,
+  "Green Monarch Dress": GreenMonarchDress,
+  "Orange Monarch Dress": OrangeMonarchDress,
+  "Blue Monarch Shirt": BlueMonarchShirt,
+  "Green Monarch Shirt": GreenMonarchShirt,
+  "Red Monarch Shirt": RedMonarchShirt,
+  "Queen Bee Crown": QueenBeeCrown,
+  "Rose Dress": RoseDress,
+  "Blue Rose Dress": BlueRoseDress,
 };
