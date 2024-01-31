@@ -1347,8 +1347,8 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "Channel leafy monarch vibes with the Green Monarch Shirt.",
     part: "shirt",
   },
-  "Red Monarch Shirt": {
-    description: "Paint the town red in the Red Monarch Shirt.",
+  "Orange Monarch Shirt": {
+    description: "Paint the town red in the Orange Monarch Shirt.",
     part: "shirt",
   },
   "Queen Bee Crown": {

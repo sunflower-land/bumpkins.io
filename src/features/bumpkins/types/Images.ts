@@ -589,7 +589,7 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Orange Monarch Dress": OrangeMonarchDress,
   "Blue Monarch Shirt": BlueMonarchShirt,
   "Green Monarch Shirt": GreenMonarchShirt,
-  "Red Monarch Shirt": RedMonarchShirt,
+  "Orange Monarch Shirt": RedMonarchShirt,
   "Queen Bee Crown": QueenBeeCrown,
   "Rose Dress": RoseDress,
   "Blue Rose Dress": BlueRoseDress,
