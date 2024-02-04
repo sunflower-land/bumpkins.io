@@ -33,7 +33,7 @@ export type Metadata = Details & {
   designer?: Designer;
 };
 
-export const EXTRA_DETAILS: Required<Record<BumpkinItem, Details>> = {
+export const EXTRA_DETAILS: Record<BumpkinItem, Details> = {
   "Chef Apron": {
     boosts: [
       {
