@@ -597,6 +597,6 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Rose Dress": RoseDress,
   "Blue Rose Dress": BlueRoseDress,
   "Chicken Hat": ChickenHat,
-  "Lunar Hat": LunarHat,
-  "Lunar Suit": LunarSuit,
+  "Lucky Red Hat": LunarHat,
+  "Lucky Red Suit": LunarSuit,
 };

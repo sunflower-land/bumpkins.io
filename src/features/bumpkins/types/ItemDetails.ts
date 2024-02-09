@@ -1368,11 +1368,11 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "What can a Bumpkin do with a lazy chicken?",
     part: "hat",
   },
-  "Lunar Hat": {
+  "Lucky Red Hat": {
     description: "A hat that captures the magic of the moon and stars.",
     part: "hat",
   },
-  "Lunar Suit": {
+  "Lucky Red Suit": {
     description:
       "A suit that exudes the celestial energy of the moon and stars.",
     part: "suit",
