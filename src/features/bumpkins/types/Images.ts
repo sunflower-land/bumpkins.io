@@ -294,6 +294,9 @@ import RedMonarchShirt from "assets/open-sea/images/299.png";
 import QueenBeeCrown from "assets/open-sea/images/300.png";
 import RoseDress from "assets/open-sea/images/301.png";
 import BlueRoseDress from "assets/open-sea/images/302.png";
+import ChickenHat from "assets/open-sea/images/303.png";
+import LunarHat from "assets/open-sea/images/304.png";
+import LunarSuit from "assets/open-sea/images/305.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -593,4 +596,7 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Queen Bee Crown": QueenBeeCrown,
   "Rose Dress": RoseDress,
   "Blue Rose Dress": BlueRoseDress,
+  "Chicken Hat": ChickenHat,
+  "Lunar Hat": LunarHat,
+  "Lunar Suit": LunarSuit,
 };

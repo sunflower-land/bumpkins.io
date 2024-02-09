@@ -1364,4 +1364,17 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "A blue bloom of elegance – the Blue Rose Dress whispers enchantment!",
     part: "dress",
   },
+  "Chicken Hat": {
+    description: "What can a Bumpkin do with a lazy chicken?",
+    part: "hat",
+  },
+  "Lunar Hat": {
+    description: "A hat that captures the magic of the moon and stars.",
+    part: "hat",
+  },
+  "Lunar Suit": {
+    description:
+      "A suit that exudes the celestial energy of the moon and stars.",
+    part: "suit",
+  },
 };
