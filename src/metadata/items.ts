@@ -2001,6 +2001,18 @@ export const EXTRA_DETAILS: Record<BumpkinItem, Details> = {
       { trait_type: "Tradable", value: "Yes" },
     ],
   },
+  "Lucky Red Hat": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Chicken Hat": {
+    boosts: [{ trait_type: "Boost", value: "None" }],
+  },
+  "Lucky Red Suit": {
+    boosts: [{ trait_type: "Boost", value: "None" }],
+  },
 };
 
 function capitalizeFirstLetter(string: string) {
