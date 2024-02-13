@@ -297,6 +297,8 @@ import BlueRoseDress from "assets/open-sea/images/302.png";
 import ChickenHat from "assets/open-sea/images/303.png";
 import LunarHat from "assets/open-sea/images/304.png";
 import LunarSuit from "assets/open-sea/images/305.png";
+import ValentineFields from "assets/open-sea/images/306.png";
+import LoveTopper from "assets/open-sea/images/307.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -599,4 +601,6 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Chicken Hat": ChickenHat,
   "Lucky Red Hat": LunarHat,
   "Lucky Red Suit": LunarSuit,
+  "Love's Topper": LoveTopper,
+  "Valentine's Field Background": ValentineFields,
 };

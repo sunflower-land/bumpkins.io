@@ -1377,4 +1377,12 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
       "A suit that exudes the celestial energy of the moon and stars.",
     part: "suit",
   },
+  "Love's Topper": {
+    description: "A hat that captures the essence of love and romance.",
+    part: "hat",
+  },
+  "Valentine's Field Background": {
+    description: "A background that captures the spirit of love and romance.",
+    part: "background",
+  },
 };
