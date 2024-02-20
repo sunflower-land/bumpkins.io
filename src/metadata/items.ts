@@ -2013,6 +2013,13 @@ export const EXTRA_DETAILS: Record<BumpkinItem, Details> = {
   "Lucky Red Suit": {
     boosts: [{ trait_type: "Boost", value: "None" }],
   },
+  "Love's Topper": {
+    boosts: [{ trait_type: "Boost", value: "None" }],
+  },
+
+  "Valentine's Field Background": {
+    boosts: [{ trait_type: "Boost", value: "None" }],
+  },
 };
 
 function capitalizeFirstLetter(string: string) {
