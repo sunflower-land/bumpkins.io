@@ -40,7 +40,7 @@ function generateMarkdownString(item: Metadata) {
         markdown += `\r\n\r\n${item[section]}`;
         break;
       case "bumpkins.io":
-        markdown += `\r\n\r\n### Bumpkins.io\r\n\r\nGo to bumpkins.io to equip this collectible to your Bumpkin NFT`;
+        markdown += `\r\n\r\n### Bumpkins.io\r\n\r\nDeposit this wearable in Sunflower Land to equip it on your Bumpkin`;
         break;
       case "docs":
         markdown += `\r\n\r\n### About\r\n\r\n${blurb}\r\n[Bumpkins](${BUMPKINS_DOCS_URL})\r\n[Bumpkins Terms and Conditions](${TERMS_URL})\r\n[Sunflower Land](${SFL_DOCS_URL})`;

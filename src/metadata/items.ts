@@ -33,7 +33,7 @@ export type Metadata = Details & {
   designer?: Designer;
 };
 
-export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
+export const EXTRA_DETAILS: Record<BumpkinItem, Details> = {
   "Chef Apron": {
     boosts: [
       {
@@ -810,7 +810,7 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
   "Lifeguard Shirt": {
     boosts: [
       { trait_type: "Boost", value: "None" },
-      { trait_type: "Tradable", value: "Yes" },
+      { trait_type: "Tradable", value: "No" },
     ],
   },
   "St Patricks Hat": {
@@ -1344,7 +1344,7 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
   "Unicorn Horn": {
     boosts: [
       { trait_type: "Boost", value: "None" },
-      { trait_type: "Tradable", value: "No" },
+      { trait_type: "Tradable", value: "Yes" },
     ],
   },
   "Feather Hat": {
@@ -1395,10 +1395,30 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
       { trait_type: "Tradable", value: "Yes" },
     ],
   },
-  "Fresh Catch Vest": {},
-  "Fish Pro Vest": {},
-  "Reel Fishing Vest": {},
-  "Clown Shirt": {},
+  "Fresh Catch Vest": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Fish Pro Vest": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Reel Fishing Vest": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Clown Shirt": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
   "Luminous Anglerfish Topper": {
     boosts: [
       { trait_type: "Boost", value: "Food & XP" },
@@ -1410,13 +1430,33 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
       { trait_type: "Tradable", value: "Yes" },
     ],
   },
-  "Abyssal Angler Hat": {},
-  Harpoon: {},
-  "Ancient Rod": {},
-  "Fishing Hat": {
+  "Abyssal Angler Hat": {
     boosts: [
       { trait_type: "Boost", value: "None" },
       { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  Harpoon: {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Ancient Rod": {
+    boosts: [
+      { trait_type: "Boost", value: "Fish" },
+      { trait_type: "Tradable", value: "Yes" },
+      {
+        display_type: "boost_number",
+        value: 1,
+        trait_type: "Cast Fish without Rod",
+      },
+    ],
+  },
+  "Fishing Hat": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
     ],
   },
   Trident: {
@@ -1425,9 +1465,14 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
       {
         display_type: "boost_percentage",
         value: 20,
-        trait_type: "Critical Hit Chance",
+        trait_type: "Fish Critical Hit Chance",
       },
-      { trait_type: "Tradable", value: "Yes" },
+      {
+        display_type: "boost_number",
+        value: 1,
+        trait_type: "Fish Critical Hit Amount",
+      },
+      { trait_type: "Tradable", value: "No" },
     ],
   },
   "Bucket O' Worms": {
@@ -1438,14 +1483,39 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
         value: 1,
         trait_type: "Increase Worm Yield",
       },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Coconut Mask": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Crab Trap": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Seaside Tank Top": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
       { trait_type: "Tradable", value: "Yes" },
     ],
   },
-  "Coconut Mask": {},
-  "Crab Trap": {},
-  "Seaside Tank Top": {},
-  "Fish Trap": {},
-  "Fishing Pants": {},
+  "Fish Trap": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Fishing Pants": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
   "Angler Waders": {
     boosts: [
       { trait_type: "Boost", value: "Fish" },
@@ -1457,29 +1527,94 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
       { trait_type: "Tradable", value: "Yes" },
     ],
   },
-  "Fishing Spear": {},
-  "Flip Flops": {},
-  Wellies: {},
-  "Saw Fish": {},
-  "Skinning Knife": {},
+  "Fishing Spear": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Flip Flops": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  Wellies: {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Saw Fish": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Skinning Knife": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
   "Sunflower Rod": {
     boosts: [
       { trait_type: "Boost", value: "Fish" },
       {
         display_type: "boost_percentage",
         value: 10,
-        trait_type: "Critical Hit Chance",
+        trait_type: "Fish Critical Hit Chance",
       },
+      {
+        display_type: "boost_number",
+        value: 1,
+        trait_type: "Fish Critical Hit Amount",
+      },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Tackle Box": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Infernal Rod": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Koi Fish Hat": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
       { trait_type: "Tradable", value: "Yes" },
     ],
   },
-  "Tackle Box": {},
-  "Infernal Rod": {},
-  "Koi Fish Hat": {},
-  "Stockeye Salmon Onesie": {},
-  "Tiki Armor": {},
-  "Tiki Mask": {},
-  "Tiki Pants": {},
+  "Stockeye Salmon Onesie": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Tiki Armor": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Tiki Mask": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Tiki Pants": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
   "Banana Amulet": {
     boosts: [
       {
@@ -1491,34 +1626,393 @@ export const EXTRA_DETAILS: Partial<Record<BumpkinItem, Details>> = {
       { trait_type: "Tradable", value: "Yes" },
     ],
   },
-  "Squirrel Monkey Potion": {},
-  "Mermaid Potion": {},
-  "Normal Fish Hat": {},
+  "Squirrel Monkey Potion": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Mermaid Potion": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Normal Fish Hat": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
   "Ugly Christmas Sweater": {
     boosts: [
       { trait_type: "Boost", value: "None" },
       { trait_type: "Tradable", value: "Yes" },
     ],
   },
-  "Beehive Staff": {},
-  "Bee Smoker": {},
-  "Bee Suit": {},
-  "Bee Wings": {},
-  "Beekeeper Hat": {},
-  "Beekeeper Suit": {},
-  "Crimstone Boots": {},
-  "Crimstone Pants": {},
-  "Crimstone Armor": {},
-  "Gardening Overalls": {},
-  "Crimstone Hammer": {},
-  "Crimstone Amulet": {},
-  "Full Bloom Shirt": {},
-  "Blue Blossom Shirt": {},
-  "Fairy Sandals": {},
-  "Daisy Tee": {},
-  "Propeller Hat": {},
-  "Honeycomb Shield": {},
-  "Hornet Mask": {},
+  "Beehive Staff": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Bee Smoker": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Bee Suit": {
+    boosts: [
+      { trait_type: "Boost", value: "Resource" },
+      {
+        display_type: "boost_number",
+        trait_type: "Increase Honey Yield",
+        value: 0.1,
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Bee Wings": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Beekeeper Hat": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Beekeeper Suit": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Crimstone Boots": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Crimstone Pants": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Crimstone Armor": {
+    boosts: [
+      { trait_type: "Boost", value: "Resource" },
+      {
+        display_type: "boost_number",
+        trait_type: "Increase Honey Yield",
+        value: 0.1,
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Gardening Overalls": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Crimstone Hammer": {
+    boosts: [
+      { trait_type: "Boost", value: "Resource" },
+      {
+        display_type: "boost_number",
+        trait_type: "Increase Crimstone Yield on 5th Mine",
+        value: 2,
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Crimstone Amulet": {
+    boosts: [
+      { trait_type: "Boost", value: "Resource" },
+      {
+        display_type: "boost_number",
+        trait_type: "Crimstone Cooldown Time",
+        value: -20,
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Full Bloom Shirt": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Blue Blossom Shirt": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Fairy Sandals": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Daisy Tee": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Propeller Hat": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Honeycomb Shield": {
+    boosts: [
+      { trait_type: "Boost", value: "Resource" },
+      {
+        display_type: "boost_number",
+        trait_type: "Increase Crimstone Yield",
+        value: 0.1,
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Hornet Mask": {
+    boosts: [
+      { trait_type: "Boost", value: "Resource" },
+      {
+        display_type: "boost_percentage",
+        trait_type: "Increase Chance of Bee Swarm",
+        value: 100,
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Elf Potion": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Cozy Hoodie": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Winter Jacket": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Blue Monarch Shirt": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Green Monarch Shirt": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Orange Monarch Shirt": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Short Shorts": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Blue Monarch Dress": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Green Monarch Dress": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Orange Monarch Dress": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Rose Dress": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Blue Rose Dress": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Pickaxe Shark": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Candy Cane": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Elf Shoes": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Elf Hat": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Seedling Hat": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Deep Sea Helm": {
+    boosts: [
+      { trait_type: "Boost", value: "Fish" },
+      {
+        display_type: "boost_percentage",
+        trait_type: "Increase Chance of Marine Marvels",
+        value: 200,
+      },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Companion Cap": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Dazzling Dumbo": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Basic Dumbo": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Stormy Dumbo": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Gloomy Dumbo": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "New Years Tiara": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Flower Crown": {
+    boosts: [
+      { trait_type: "Boost", value: "Flower" },
+      {
+        display_type: "boost_percentage",
+        trait_type: "Flower Growth Time",
+        value: -50,
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Queen Bee Crown": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Northern Lights Background": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Banana Onesie": {
+    boosts: [
+      { trait_type: "Boost", value: "Fruit" },
+      {
+        display_type: "boost_percentage",
+        trait_type: "Banana Growth Time",
+        value: -20,
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Santa Suit": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Elf Suit": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Butterfly Wings": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "No" },
+    ],
+  },
+  "Santa Beard": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Lucky Red Hat": {
+    boosts: [
+      { trait_type: "Boost", value: "None" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Chicken Hat": {
+    boosts: [{ trait_type: "Boost", value: "None" }],
+  },
+  "Lucky Red Suit": {
+    boosts: [{ trait_type: "Boost", value: "None" }],
+  },
 };
 
 function capitalizeFirstLetter(string: string) {
