@@ -981,16 +981,16 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
   "Fresh Catch Vest": {
     description:
       "A comfortable and practical vest for your fishing adventures.",
-    part: "coat",
+    part: "shirt",
   },
   "Fish Pro Vest": {
     description: "A vest designed for professional fishermen.",
-    part: "coat",
+    part: "shirt",
   },
   "Reel Fishing Vest": {
     description:
       "A vest equipped with pockets and style to enhance your fishing experience.",
-    part: "coat",
+    part: "shirt",
   },
   "Clown Shirt": {
     description:
