@@ -350,7 +350,7 @@ export const EXTRA_DETAILS: Record<BumpkinItem, Details> = {
       { trait_type: "Boost", value: "Resource" },
       {
         display_type: "boost_number",
-        trait_type: "Increase Honey Yield",
+        trait_type: "Increase Crimstone Yield",
         value: 0.1,
       },
       { trait_type: "Tradable", value: "Yes" },
