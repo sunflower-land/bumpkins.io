@@ -334,8 +334,7 @@ export type BumpkinWings =
   | "Crow Wings"
   | "Bat Wings"
   | "Butterfly Wings"
-  | "Bee Wings"
-  | "Butterfly Wings";
+  | "Bee Wings";
 
 export type BumpkinBeard = "Wise Beard" | "Hoary Chin" | "Santa Beard";
 
