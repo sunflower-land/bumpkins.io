@@ -299,6 +299,13 @@ import LunarHat from "assets/open-sea/images/304.png";
 import LunarSuit from "assets/open-sea/images/305.png";
 import ValentineFields from "assets/open-sea/images/306.png";
 import LoveTopper from "assets/open-sea/images/307.png";
+import OilCan from "assets/open-sea/images/308.png";
+import NonLaHat from "assets/open-sea/images/309.png";
+import OliveShield from "assets/open-sea/images/310.png";
+import PawShield from "assets/open-sea/images/311.png";
+import RoyalRobes from "assets/open-sea/images/312.png";
+import Crown from "assets/open-sea/images/313.png";
+import Pan from "assets/open-sea/images/314.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -603,4 +610,11 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Lucky Red Suit": LunarSuit,
   "Love's Topper": LoveTopper,
   "Valentine's Field Background": ValentineFields,
+  "Non La Hat": NonLaHat,
+  "Oil Can": OilCan,
+  "Olive Shield": OliveShield,
+  "Paw Shield": PawShield,
+  "Royal Robe": RoyalRobes,
+  Crown: Crown,
+  Pan: Pan,
 };

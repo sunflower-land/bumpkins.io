@@ -1234,6 +1234,69 @@ export const EXTRA_DETAILS: Record<BumpkinItem, Details> = {
   "Santa Beard": {
     boosts: [{ trait_type: "Tradable", value: "Yes" }],
   },
+
+  // Clash of Factions
+  "Non La Hat": {
+    boosts: [
+      { trait_type: "Boost", value: "Resource" },
+      {
+        display_type: "boost_number",
+        trait_type: "Increase Rice Yield",
+        value: +1,
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Oil Can": {
+    boosts: [
+      { trait_type: "Boost", value: "Resource" },
+      {
+        display_type: "boost_number",
+        trait_type: "Increase Oil Yield",
+        value: +2,
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Olive Shield": {
+    boosts: [
+      { trait_type: "Boost", value: "Resource" },
+      {
+        display_type: "boost_number",
+        trait_type: "Increase Olive Yield",
+        value: +1,
+      },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Paw Shield": {
+    boosts: [
+      {
+        display_type: "boost_percentage",
+        trait_type: "Increase Faction Pet feeding XP",
+        value: 25,
+      },
+      { trait_type: "Boost", value: "Faction Pet Feeding XP" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
+  "Royal Robe": {
+    boosts: [{ trait_type: "Tradable", value: "Yes" }],
+  },
+  Crown: {
+    boosts: [{ trait_type: "Tradable", value: "Yes" }],
+  },
+  Pan: {
+    boosts: [
+      {
+        display_type: "boost_percentage",
+        trait_type: "Increase XP gains",
+        value: 25,
+      },
+      { trait_type: "Boost", value: "Food & XP" },
+      { trait_type: "Tradable", value: "Yes" },
+    ],
+  },
 };
 
 function capitalizeFirstLetter(string: string) {
