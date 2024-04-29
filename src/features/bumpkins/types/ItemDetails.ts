@@ -1385,4 +1385,32 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "A background that captures the spirit of love and romance.",
     part: "background",
   },
+  "Non La Hat": {
+    description: "A traditional hat that adds a touch of elegance.",
+    part: "hat",
+  },
+  "Oil Can": {
+    description: "A tool for maintaining and repairing machinery.",
+    part: "tool",
+  },
+  "Olive Shield": {
+    description: "A shield that provides protection and style.",
+    part: "secondaryTool",
+  },
+  "Paw Shield": {
+    description: "A shield that embodies the spirit of the wild.",
+    part: "secondaryTool",
+  },
+  "Royal Robe": {
+    description: "A majestic cape that exudes regal elegance.",
+    part: "shirt",
+  },
+  Crown: {
+    description: "A crown that symbolizes power and authority.",
+    part: "hat",
+  },
+  Pan: {
+    description: "A versatile tool for cooking and baking.",
+    part: "tool",
+  },
 };
