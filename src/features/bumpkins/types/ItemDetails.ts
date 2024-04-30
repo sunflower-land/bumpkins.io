@@ -1073,7 +1073,7 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
   },
   Wellies: {
     description:
-      "Waterproof and practical shoes for wet and muddy fishing conditions.",
+      "Waterproof and practical shoes for everyday greenhouse gardening adventures.",
     part: "shoes",
   },
   "Skinning Knife": {
