@@ -306,6 +306,8 @@ import PawShield from "assets/open-sea/images/311.png";
 import RoyalRobes from "assets/open-sea/images/312.png";
 import Crown from "assets/open-sea/images/313.png";
 import Pan from "assets/open-sea/images/314.png";
+import SoybeanOnesie from "assets/open-sea/images/315.png";
+import GiftGiver from "assets/open-sea/images/316.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -617,4 +619,6 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Royal Robe": RoyalRobes,
   Crown: Crown,
   Pan: Pan,
+  "Gift Giver": GiftGiver,
+  "Soybean Onesie": SoybeanOnesie,
 };

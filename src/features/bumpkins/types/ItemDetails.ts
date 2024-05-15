@@ -1413,4 +1413,12 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "A versatile tool for cooking and baking.",
     part: "tool",
   },
+  "Gift Giver": {
+    description: "Wow, what a generous Bumpkin!",
+    part: "shirt",
+  },
+  "Soybean Onesie": {
+    description: "Soy soy soy!",
+    part: "onesie",
+  },
 };
