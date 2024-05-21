@@ -1421,4 +1421,16 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "Soy soy soy!",
     part: "onesie",
   },
+  "Olive Royalty Shirt": {
+    description: "A royal olive, the food of the rich.",
+    part: "shirt",
+  },
+  "Royal Scepter": {
+    description: "The scepter of the ruling family.",
+    part: "tool",
+  },
+  "Tofu Mask": {
+    description: "The vegan warrior",
+    part: "hat",
+  },
 };
