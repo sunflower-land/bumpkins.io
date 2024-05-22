@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { BumpkinItem, ITEM_IDS } from "features/bumpkins/types/Items";
 import { DETAILS } from "features/bumpkins/types/ItemDetails";
 
@@ -1273,10 +1274,10 @@ export const EXTRA_DETAILS: Record<BumpkinItem, Details> = {
     boosts: [
       {
         display_type: "boost_percentage",
-        trait_type: "Increase Faction Pet feeding XP",
-        value: 25,
+        trait_type: "Faction Pet Satiation",
+        value: +25,
       },
-      { trait_type: "Boost", value: "Faction Pet Feeding XP" },
+      { trait_type: "Boost", value: "Others" },
       { trait_type: "Tradable", value: "Yes" },
     ],
   },
