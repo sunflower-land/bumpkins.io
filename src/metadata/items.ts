@@ -1312,6 +1312,24 @@ export const EXTRA_DETAILS: Record<BumpkinItem, Details> = {
   "Tofu Mask": {
     boosts: [{ trait_type: "Tradable", value: "Yes" }],
   },
+  "Cap n Bells": {
+    boosts: [{ trait_type: "Tradable", value: "Yes" }],
+  },
+  "Knight Gambit": {
+    boosts: [{ trait_type: "Tradable", value: "Yes" }],
+  },
+  "Pixel Perfect Hoodie": {
+    boosts: [{ trait_type: "Tradable", value: "Yes" }],
+  },
+  "Queen's Crown": {
+    boosts: [{ trait_type: "Tradable", value: "Yes" }],
+  },
+  "Royal Dress": {
+    boosts: [{ trait_type: "Tradable", value: "Yes" }],
+  },
+  Motley: {
+    boosts: [{ trait_type: "Tradable", value: "Yes" }],
+  },
 };
 
 function capitalizeFirstLetter(string: string) {

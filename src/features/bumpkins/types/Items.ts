@@ -56,6 +56,7 @@ export type BumpkinHair =
   | "Brown Rancher Hair";
 
 export type BumpkinShirt =
+  | "Pixel Perfect Hoodie"
   | "Red Farmer Shirt"
   | "Yellow Farmer Shirt"
   | "Blue Farmer Shirt"
@@ -184,6 +185,9 @@ export type BumpkinNecklace =
   | "Crimstone Amulet";
 
 export type BumpkinHat =
+  | "Queen's Crown"
+  | "Knight Gambit"
+  | "Cap n Bells"
   | "Farmer Hat"
   | "Chef Hat"
   | "Warrior Helmet"
@@ -278,6 +282,7 @@ export type BumpkinPant =
   | "Crimstone Pants";
 
 export type BumpkinDress =
+  | "Royal Dress"
   | "Cupid Dress"
   | "Beach Sarong"
   | "Tropical Sarong"
@@ -321,6 +326,7 @@ export type BumpkinOnesie =
 
 // Goes over clothes
 export type BumpkinSuit =
+  | "Motley"
   | "Reindeer Suit"
   | "Imp Costume"
   | "Ox Costume"
@@ -676,6 +682,12 @@ export const ITEM_IDS: Record<BumpkinItem, number> = {
   "Olive Royalty Shirt": 317,
   "Royal Scepter": 318,
   "Tofu Mask": 319,
+  "Cap n Bells": 340,
+  "Knight Gambit": 341,
+  "Pixel Perfect Hoodie": 342,
+  "Queen's Crown": 343,
+  "Royal Dress": 344,
+  Motley: 345,
 };
 
 // The reverse of above
@@ -1054,4 +1066,10 @@ export const BUMPKIN_ITEM_PART: Record<BumpkinItem, keyof Wallet> = {
   "Olive Royalty Shirt": "shirt",
   "Royal Scepter": "tool",
   "Tofu Mask": "hat",
+  "Cap n Bells": "hat",
+  "Knight Gambit": "hat",
+  "Pixel Perfect Hoodie": "shirt",
+  "Queen's Crown": "hat",
+  "Royal Dress": "dress",
+  Motley: "suit",
 };

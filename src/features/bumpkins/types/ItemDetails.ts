@@ -1433,4 +1433,28 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "The vegan warrior",
     part: "hat",
   },
+  "Cap n Bells": {
+    description: "The fool's cap",
+    part: "hat",
+  },
+  "Knight Gambit": {
+    description: "Deception and chivalry in one.",
+    part: "hat",
+  },
+  "Pixel Perfect Hoodie": {
+    description: "The beautification of Sunflower Land.",
+    part: "shirt",
+  },
+  "Queen's Crown": {
+    description: "A symbol of hope and prosperity",
+    part: "hat",
+  },
+  "Royal Dress": {
+    description: "A dress fit for a queen.",
+    part: "dress",
+  },
+  Motley: {
+    description: "The traditional costume of a court room jester.",
+    part: "suit",
+  },
 };
