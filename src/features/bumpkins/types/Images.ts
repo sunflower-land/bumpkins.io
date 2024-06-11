@@ -314,9 +314,10 @@ import TofuMask from "assets/open-sea/images/319.png";
 import CapNBells from "assets/open-sea/images/340.png";
 import KnightGambit from "assets/open-sea/images/341.png";
 import PixelTee from "assets/open-sea/images/342.png";
-import QueensCornw from "assets/open-sea/images/343.png";
+import QueensCrown from "assets/open-sea/images/343.png";
 import RoyalDress from "assets/open-sea/images/344.png";
 import Motley from "assets/open-sea/images/345.png";
+import RoyalHair from "assets/open-sea/images/346.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -636,7 +637,8 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Cap n Bells": CapNBells,
   "Knight Gambit": KnightGambit,
   "Pixel Perfect Hoodie": PixelTee,
-  "Queen's Crown": QueenBeeCrown,
+  "Queen's Crown": QueensCrown,
   "Royal Dress": RoyalDress,
   Motley: Motley,
+  "Royal Braids": RoyalHair,
 };

@@ -1457,4 +1457,8 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "The traditional costume of a court room jester.",
     part: "suit",
   },
+  "Royal Braids": {
+    description: "A luxurious and expensive style of braids.",
+    part: "hair",
+  },
 };
