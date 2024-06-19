@@ -318,6 +318,26 @@ import QueensCrown from "assets/open-sea/images/343.png";
 import RoyalDress from "assets/open-sea/images/344.png";
 import Motley from "assets/open-sea/images/345.png";
 import RoyalHair from "assets/open-sea/images/346.png";
+import GoblinArmor from "assets/open-sea/images/320.png";
+import GoblinHelmet from "assets/open-sea/images/321.png";
+import GoblinPants from "assets/open-sea/images/322.png";
+import GoblinSabaton from "assets/open-sea/images/323.png";
+import GoblinAxe from "assets/open-sea/images/324.png";
+import NightshadeArmor from "assets/open-sea/images/325.png";
+import NightshadeHelmet from "assets/open-sea/images/326.png";
+import NightshadePants from "assets/open-sea/images/327.png";
+import NightshadeSabaton from "assets/open-sea/images/328.png";
+import NightshadeSword from "assets/open-sea/images/329.png";
+import BumpkinArmor from "assets/open-sea/images/330.png";
+import BumpkinHelmet from "assets/open-sea/images/331.png";
+import BumpkinSword from "assets/open-sea/images/332.png";
+import BumpkinPants from "assets/open-sea/images/333.png";
+import BumpkinSabaton from "assets/open-sea/images/334.png";
+import SunflorianArmor from "assets/open-sea/images/335.png";
+import SunflorianSword from "assets/open-sea/images/336.png";
+import SunflorianHelmet from "assets/open-sea/images/337.png";
+import SunflorianPants from "assets/open-sea/images/338.png";
+import SunflorianSabaton from "assets/open-sea/images/339.png";
 
 export const IMAGES: Record<BumpkinItem, string> = {
   "Beige Farmer Potion": BeigeFarmerPotion,
@@ -641,4 +661,24 @@ export const IMAGES: Record<BumpkinItem, string> = {
   "Royal Dress": RoyalDress,
   Motley: Motley,
   "Royal Braids": RoyalHair,
+  "Goblin Armor": GoblinArmor,
+  "Goblin Helmet": GoblinHelmet,
+  "Goblin Pants": GoblinPants,
+  "Goblin Sabaton": GoblinSabaton,
+  "Goblin Axe": GoblinAxe,
+  "Nightshade Armor": NightshadeArmor,
+  "Nightshade Helmet": NightshadeHelmet,
+  "Nightshade Pants": NightshadePants,
+  "Nightshade Sabaton": NightshadeSabaton,
+  "Nightshade Sword": NightshadeSword,
+  "Bumpkin Armor": BumpkinArmor,
+  "Bumpkin Helmet": BumpkinHelmet,
+  "Bumpkin Sword": BumpkinSword,
+  "Bumpkin Pants": BumpkinPants,
+  "Bumpkin Sabaton": BumpkinSabaton,
+  "Sunflorian Armor": SunflorianArmor,
+  "Sunflorian Sword": SunflorianSword,
+  "Sunflorian Helmet": SunflorianHelmet,
+  "Sunflorian Pants": SunflorianPants,
+  "Sunflorian Sabaton": SunflorianSabaton,
 };
