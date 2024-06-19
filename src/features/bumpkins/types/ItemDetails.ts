@@ -1461,4 +1461,84 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "A luxurious and expensive style of braids.",
     part: "hair",
   },
+  "Goblin Armor": {
+    description: "Armor from the Goblin faction.",
+    part: "shirt",
+  },
+  "Goblin Helmet": {
+    description: "A helmet from the Goblin faction.",
+    part: "hat",
+  },
+  "Goblin Pants": {
+    description: "Pants from the Goblin faction.",
+    part: "pants",
+  },
+  "Goblin Sabaton": {
+    description: "Sabatons from the Goblin faction.",
+    part: "shoes",
+  },
+  "Goblin Axe": {
+    description: "An axe from the Goblin faction.",
+    part: "tool",
+  },
+  "Nightshade Armor": {
+    description: "Armor from the Nightshade faction.",
+    part: "shirt",
+  },
+  "Nightshade Helmet": {
+    description: "A helmet from the Nightshade faction.",
+    part: "hat",
+  },
+  "Nightshade Pants": {
+    description: "Pants from the Nightshade faction.",
+    part: "pants",
+  },
+  "Nightshade Sabaton": {
+    description: "Sabatons from the Nightshade faction.",
+    part: "shoes",
+  },
+  "Nightshade Sword": {
+    description: "A sword from the Nightshade faction.",
+    part: "tool",
+  },
+  "Bumpkin Armor": {
+    description: "Armor from the Bumpkin faction.",
+    part: "shirt",
+  },
+  "Bumpkin Helmet": {
+    description: "A helmet from the Bumpkin faction.",
+    part: "hat",
+  },
+  "Bumpkin Sword": {
+    description: "A sword from the Bumpkin faction.",
+    part: "tool",
+  },
+  "Bumpkin Pants": {
+    description: "Pants from the Bumpkin faction.",
+    part: "pants",
+  },
+  "Bumpkin Sabaton": {
+    description: "Sabatons from the Bumpkin faction.",
+    part: "shoes",
+  },
+  "Sunflorian Armor": {
+    description: "Armor from the Sunflorian faction.",
+    part: "shirt",
+  },
+  "Sunflorian Sword": {
+    description: "A sword from the Sunflorian faction.",
+    part: "tool",
+  },
+  "Sunflorian Helmet": {
+    description: "A helmet from the Sunflorian faction.",
+    part: "hat",
+  },
+  "Sunflorian Pants": {
+    description: "Pants from the Sunflorian faction.",
+    part: "pants",
+  },
+  "Sunflorian Sabaton": {
+    description: "Sabatons from the Sunflorian faction.",
+    part: "shoes",
+  },
 };

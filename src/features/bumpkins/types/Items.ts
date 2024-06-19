@@ -114,7 +114,11 @@ export type BumpkinShirt =
   | "Green Monarch Shirt"
   | "Orange Monarch Shirt"
   | "Gift Giver"
-  | "Olive Royalty Shirt";
+  | "Olive Royalty Shirt"
+  | "Goblin Armor"
+  | "Nightshade Armor"
+  | "Bumpkin Armor"
+  | "Sunflorian Armor";
 
 export type BumpkinCoat =
   | "Chef Apron"
@@ -158,7 +162,11 @@ export type BumpkinTool =
   | "Crimstone Hammer"
   | "Oil Can"
   | "Pan"
-  | "Royal Scepter";
+  | "Royal Scepter"
+  | "Goblin Axe"
+  | "Nightshade Sword"
+  | "Bumpkin Sword"
+  | "Sunflorian Sword";
 
 export type BumpkinShoe =
   | "Black Farmer Boots"
@@ -174,7 +182,11 @@ export type BumpkinShoe =
   | "Wellies"
   | "Elf Shoes"
   | "Crimstone Boots"
-  | "Fairy Sandals";
+  | "Fairy Sandals"
+  | "Goblin Sabaton"
+  | "Nightshade Sabaton"
+  | "Sunflorian Sabaton"
+  | "Bumpkin Sabaton";
 
 export type BumpkinNecklace =
   | "Sunflower Amulet"
@@ -252,7 +264,11 @@ export type BumpkinHat =
   | "Love's Topper"
   | "Non La Hat"
   | "Crown"
-  | "Tofu Mask";
+  | "Tofu Mask"
+  | "Goblin Helmet"
+  | "Nightshade Helmet"
+  | "Bumpkin Helmet"
+  | "Sunflorian Helmet";
 
 export type BumpkinPant =
   | "Farmer Overalls"
@@ -280,7 +296,11 @@ export type BumpkinPant =
   | "Tiki Pants"
   | "Short Shorts"
   | "Gardening Overalls"
-  | "Crimstone Pants";
+  | "Crimstone Pants"
+  | "Goblin Pants"
+  | "Nightshade Pants"
+  | "Bumpkin Pants"
+  | "Sunflorian Pants";
 
 export type BumpkinDress =
   | "Royal Dress"
@@ -683,6 +703,26 @@ export const ITEM_IDS: Record<BumpkinItem, number> = {
   "Olive Royalty Shirt": 317,
   "Royal Scepter": 318,
   "Tofu Mask": 319,
+  "Goblin Armor": 320,
+  "Goblin Helmet": 321,
+  "Goblin Pants": 322,
+  "Goblin Sabaton": 323,
+  "Goblin Axe": 324,
+  "Nightshade Armor": 325,
+  "Nightshade Helmet": 326,
+  "Nightshade Pants": 327,
+  "Nightshade Sabaton": 328,
+  "Nightshade Sword": 329,
+  "Bumpkin Armor": 330,
+  "Bumpkin Helmet": 331,
+  "Bumpkin Sword": 332,
+  "Bumpkin Pants": 333,
+  "Bumpkin Sabaton": 334,
+  "Sunflorian Armor": 335,
+  "Sunflorian Sword": 336,
+  "Sunflorian Helmet": 337,
+  "Sunflorian Pants": 338,
+  "Sunflorian Sabaton": 339,
   "Cap n Bells": 340,
   "Knight Gambit": 341,
   "Pixel Perfect Hoodie": 342,
@@ -1068,6 +1108,26 @@ export const BUMPKIN_ITEM_PART: Record<BumpkinItem, keyof Wallet> = {
   "Olive Royalty Shirt": "shirt",
   "Royal Scepter": "tool",
   "Tofu Mask": "hat",
+  "Bumpkin Armor": "shirt",
+  "Bumpkin Helmet": "hat",
+  "Bumpkin Sword": "tool",
+  "Bumpkin Pants": "pants",
+  "Bumpkin Sabaton": "shoes",
+  "Sunflorian Armor": "shirt",
+  "Sunflorian Sword": "tool",
+  "Sunflorian Helmet": "hat",
+  "Sunflorian Pants": "pants",
+  "Sunflorian Sabaton": "shoes",
+  "Goblin Armor": "shirt",
+  "Goblin Helmet": "hat",
+  "Goblin Pants": "pants",
+  "Goblin Sabaton": "shoes",
+  "Goblin Axe": "tool",
+  "Nightshade Armor": "shirt",
+  "Nightshade Helmet": "hat",
+  "Nightshade Pants": "pants",
+  "Nightshade Sabaton": "shoes",
+  "Nightshade Sword": "tool",
   "Cap n Bells": "hat",
   "Knight Gambit": "hat",
   "Pixel Perfect Hoodie": "shirt",
