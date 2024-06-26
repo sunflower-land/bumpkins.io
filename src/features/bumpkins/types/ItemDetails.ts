@@ -1437,10 +1437,6 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "The fool's cap",
     part: "hat",
   },
-  "Knight Gambit": {
-    description: "Deception and chivalry in one.",
-    part: "hat",
-  },
   "Pixel Perfect Hoodie": {
     description: "The beautification of Sunflower Land.",
     part: "shirt",
@@ -1457,88 +1453,113 @@ export const DETAILS: Record<BumpkinItem, ItemDetails> = {
     description: "The traditional costume of a court room jester.",
     part: "suit",
   },
-  "Royal Braids": {
-    description: "A luxurious and expensive style of braids.",
-    part: "hair",
-  },
   "Goblin Armor": {
-    description: "Armor from the Goblin faction.",
+    description:
+      "Rugged and rowdy, Goblin-approved protection. Earn +20% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "shirt",
   },
   "Goblin Helmet": {
-    description: "A helmet from the Goblin faction.",
-    part: "hat",
+    description:
+      "Strong and sturdy, crafted for fearless adventures in untamed lands. Earn +10% marks when pledged to this faction. Multiples of this item do not stack.",
+    part: "shirt",
   },
   "Goblin Pants": {
-    description: "Pants from the Goblin faction.",
-    part: "pants",
+    description:
+      "These pants blend agility with Goblin craftsmanship for swift maneuvers. Earn +5% marks when pledged to this faction. Multiples of this item do not stack.",
+    part: "shirt",
   },
-  "Goblin Sabaton": {
-    description: "Sabatons from the Goblin faction.",
+  "Goblin Sabatons": {
+    description:
+      "Designed to outpace and outlast any foe. Earn +5% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "shoes",
   },
   "Goblin Axe": {
-    description: "An axe from the Goblin faction.",
+    description:
+      "This axe is a testament to Goblin strength and unmatched battle prowess. Earn +5% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "tool",
   },
   "Nightshade Armor": {
-    description: "Armor from the Nightshade faction.",
+    description:
+      "An Armor, crafted for stealth and resilience in the shadows. Earn +20% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "shirt",
   },
   "Nightshade Helmet": {
-    description: "A helmet from the Nightshade faction.",
+    description:
+      "A strong helmet of secrecy and silent strength. Earn +10% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "hat",
   },
   "Nightshade Pants": {
-    description: "Pants from the Nightshade faction.",
+    description:
+      "These pants are blending agility with the mystery of the night. Earn +5% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "pants",
   },
-  "Nightshade Sabaton": {
-    description: "Sabatons from the Nightshade faction.",
+  "Nightshade Sabatons": {
+    description:
+      "Perfect design where every step is a whisper in the dark. Earn +5% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "shoes",
   },
   "Nightshade Sword": {
-    description: "A sword from the Nightshade faction.",
+    description:
+      "A blade that strikes with the precision of moonlit steel. Earn +10% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "tool",
   },
   "Bumpkin Armor": {
-    description: "Armor from the Bumpkin faction.",
+    description:
+      "A sturdy protection that honors tradition and strength. Earn +20% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "shirt",
   },
   "Bumpkin Helmet": {
-    description: "A helmet from the Bumpkin faction.",
+    description:
+      "Adorn your head with a symbol of rustic fortitude and unwavering resolve. Earn +10% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "hat",
   },
   "Bumpkin Sword": {
-    description: "A sword from the Bumpkin faction.",
+    description:
+      "A weapon forged in fields and forests, ready for any challenge. Earn +10% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "tool",
   },
   "Bumpkin Pants": {
-    description: "Pants from the Bumpkin faction.",
+    description:
+      "Navigate countryside and city alike blending comfort with the spirit of adventure. Earn +5% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "pants",
   },
-  "Bumpkin Sabaton": {
-    description: "Sabatons from the Bumpkin faction.",
+  "Bumpkin Sabatons": {
+    description:
+      "Stampede through fields in this sturdy footwear echoing the resilience of rural life. Earn +5% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "shoes",
   },
   "Sunflorian Armor": {
-    description: "Armor from the Sunflorian faction.",
+    description:
+      "A shimmering protection that mirrors the sun's strength. Earn +20% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "shirt",
   },
   "Sunflorian Sword": {
-    description: "A sword from the Sunflorian faction.",
+    description:
+      "A blade ablaze with the courage and brilliance of the sun. Earn +10% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "tool",
   },
   "Sunflorian Helmet": {
-    description: "A helmet from the Sunflorian faction.",
+    description:
+      "This helmet is a beacon of light and guardian against shadows. Earn +10% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "hat",
   },
   "Sunflorian Pants": {
-    description: "Pants from the Sunflorian faction.",
+    description:
+      "Stride confidently in attire that captures the warmth and energy of all Sunflorians. Earn +5% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "pants",
   },
-  "Sunflorian Sabaton": {
-    description: "Sabatons from the Sunflorian faction.",
+  "Sunflorian Sabatons": {
+    description:
+      "Each step taken in these shoes resonating with the power and vitality. Earn +5% marks when pledged to this faction. Multiples of this item do not stack.",
     part: "shoes",
+  },
+  "Knight Gambit": {
+    description:
+      "Don this hat and be ready to charge into adventure with a playful twist of strategy and style.",
+    part: "hat",
+  },
+  "Royal Braids": {
+    description: "A hairstyle fit for a royal.",
+    part: "hair",
   },
 };
